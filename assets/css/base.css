@@ -241,21 +241,15 @@ main, .header, .footer, .marquee{ position:relative; z-index:1; }
 .logo{
   display:inline-flex;
   align-items:center;
-  gap:10px;
 }
-.logo__eq{
-  width:30px; height:21px;
-  fill:var(--cyan);
-  flex:none;
+.logo__img{
+  height:30px;
+  width:auto;
 }
-.logo__eq rect{ transform-origin:center; }
-.logo__text{
-  font-family:var(--font-display);
-  font-size:1.28rem;
-  font-weight:700;
-  letter-spacing:.16em;
-  color:var(--white);
-}
+.header.is-stuck .logo__img{ height:26px; }
+.logo__img,
+.footer__logo,
+.preloader__logo{ transition:height .35s var(--ease); }
 
 /* ---------- ПРЕЛОАДЕР ---------- */
 
@@ -295,12 +289,10 @@ main, .header, .footer, .marquee{ position:relative; z-index:1; }
   50%    { transform:scaleY(1); }
 }
 
-.preloader__word{
-  font-family:var(--font-display);
-  font-size:1rem;
-  letter-spacing:.44em;
-  color:var(--muted);
-  padding-left:.44em;
+.preloader__logo{
+  height:34px;
+  width:auto;
+  opacity:.85;
 }
 
 /* ---------- ДОСТУПНОСТЬ: меньше движения ---------- */

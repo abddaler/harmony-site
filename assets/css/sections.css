@@ -852,15 +852,17 @@ body.nav-open{ overflow:hidden; }
 .polaroid{
   position:relative;
   width:min(86vw, 320px);
-  margin:0;
+  /* поворот увеличивает габариты карточки — оставляем запас,
+     иначе соседние полароиды налезают друг на друга в сетке */
+  margin:0 auto;
   padding:14px 14px 20px;
   background:#f4f2ed;
   border-radius:3px;
-  transform:rotate(-2.2deg);
+  transform:rotate(-1.8deg);
   box-shadow:0 22px 45px -20px rgba(0,0,0,.85);
   transition:transform .4s var(--ease);
 }
-.polaroid--tilt-r{ transform:rotate(2.4deg); }
+.polaroid--tilt-r{ transform:rotate(1.9deg); }
 .polaroid:hover{ transform:rotate(0deg) translateY(-6px); }
 
 /* чёрный скотч по углу */
@@ -913,6 +915,58 @@ body.nav-open{ overflow:hidden; }
   text-transform:uppercase;
   color:#5c6070;
   margin:0;
+}
+
+/* ================= ОТЧЁТНЫЕ КОНЦЕРТЫ ================= */
+
+.gig{
+  margin-top:48px;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:26px;
+  padding:26px 22px;
+  border:1px solid var(--cyan-line);
+  border-radius:var(--radius);
+  background:
+    radial-gradient(120% 90% at 100% 0%, rgba(47,214,232,.1), transparent 60%),
+    var(--bg-2);
+}
+.gig__title{
+  font-family:var(--font-display);
+  font-size:1.6rem;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+  color:var(--cyan);
+  margin-bottom:12px;
+}
+.gig__text p{ color:var(--muted); font-size:.97rem; margin-bottom:20px; }
+
+.gig__photos{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:12px;
+}
+.gig__photo{
+  margin:0;
+  position:relative;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:10px;
+  overflow:hidden;
+  background:#20242e;
+}
+.gig__photo img{
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+}
+.gig__photo figcaption{
+  position:absolute;
+  left:0; right:0; bottom:10px;
+  text-align:center;
+  font-family:var(--font-display);
+  font-size:.7rem;
+  letter-spacing:.12em;
+  color:var(--cyan);
 }
 
 .reviews__note{
@@ -1292,6 +1346,10 @@ body.nav-open{ overflow:hidden; }
   display:grid;
   grid-template-columns:1fr;
   gap:30px;
+}
+.footer__logo{
+  height:44px;
+  width:auto;
 }
 .footer__tagline{
   margin-top:14px;
