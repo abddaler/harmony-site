@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Место для фото ученика">
+  <!-- ЗАМЕНИТЬ: фото ученика, кадр с занятия или скриншот отзыва (JPG/PNG, квадрат) -->
+  <rect width="400" height="400" fill="#20242e"/>
+  <g stroke="#39445c" stroke-width="1">
+    <path d="M0 40h400M0 80h400M0 120h400M0 160h400M0 200h400M0 240h400M0 280h400M0 320h400M0 360h400"/>
+    <path d="M40 0v400M80 0v400M120 0v400M160 0v400M200 0v400M240 0v400M280 0v400M320 0v400M360 0v400"/>
+  </g>
+  <g fill="#2fd6e8" opacity=".9">
+    <rect x="140" y="196" width="12" height="26" rx="6"/>
+    <rect x="160" y="176" width="12" height="66" rx="6"/>
+    <rect x="180" y="156" width="12" height="106" rx="6"/>
+    <rect x="200" y="172" width="12" height="74" rx="6"/>
+    <rect x="220" y="188" width="12" height="42" rx="6"/>
+    <rect x="240" y="199" width="12" height="20" rx="6"/>
+  </g>
+</svg>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#141c2e">
+
+<title>Harmony — вокальная студия в Ташкенте | Экстрим-вокал и вокал на научной основе</title>
+<meta name="description" content="Вокальная студия Harmony в Ташкенте. Учим петь на основе анатомии и физиологии голосового аппарата: без метафор, только механика. Единственные в Узбекистане, кто ставит экстрим-вокал — скрим, гроул, фрай. Запись на пробное занятие.">
+<meta name="keywords" content="вокал Ташкент, уроки вокала Ташкент, экстрим вокал, скрим обучение, гроул, вокальная студия Узбекистан, Harmony">
+<link rel="canonical" href="https://harmonyvocal.uz/">
+
+<!-- ЗАМЕНИТЬ: домен во всех og:url / canonical, когда сайт будет задеплоен -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Harmony Vocal Studio">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://harmonyvocal.uz/">
+<meta property="og:title" content="Harmony — вокальная студия в Ташкенте">
+<meta property="og:description" content="Учим петь на основе анатомии голосового аппарата. Без метафор — только механика. Единственные в Узбекистане, кто ставит экстрим-вокал.">
+<meta property="og:image" content="https://harmonyvocal.uz/assets/img/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Harmony — вокальная студия в Ташкенте">
+<meta name="twitter:description" content="Вокал и экстрим-вокал на анатомо-физиологической основе. Ташкент.">
+<meta name="twitter:image" content="https://harmonyvocal.uz/assets/img/og-cover.jpg">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/favicon.svg">
+
+<!-- Шрифты лежат локально (assets/fonts) — без запросов к Google, быстрее в UZ -->
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/oswald-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-cyrillic.woff2" crossorigin>
+
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/sections.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicSchool",
+  "name": "Harmony Vocal Studio",
+  "description": "Вокальная студия в Ташкенте. Обучение вокалу и экстрим-вокалу на анатомо-физиологической основе.",
+  "url": "https://harmonyvocal.uz/",
+  "image": "https://harmonyvocal.uz/assets/img/og-cover.jpg",
+  "sameAs": ["https://www.instagram.com/harmonyvocal.uz/"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ташкент",
+    "addressCountry": "UZ",
+    "streetAddress": "ВСТАВИТЬ АДРЕС СТУДИИ"
+  },
+  "areaServed": "Ташкент",
+  "telephone": "+998 XX XXX XX XX",
+  "priceRange": "$$"
+}
+</script>
+</head>
+
+<body>
+
+<!-- ============ ПРЕЛОАДЕР ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__eq">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="preloader__word">HARMONY</div>
+</div>
+
+<!-- ============ ФОНОВЫЙ ДЕКОР ============ -->
+<div class="bg-decor" aria-hidden="true">
+  <div class="bg-decor__rings" data-parallax="0.12"></div>
+  <div class="bg-decor__rings bg-decor__rings--2" data-parallax="-0.08"></div>
+  <div class="bg-decor__bars"></div>
+  <div class="bg-decor__noise"></div>
+</div>
+
+<!-- ============ ХЕДЕР ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#hero" class="logo" aria-label="Harmony — на главную">
+      <svg class="logo__eq" viewBox="0 0 40 28" aria-hidden="true" focusable="false">
+        <rect x="0"  y="10" width="5" height="8"  rx="2"/>
+        <rect x="8"  y="4"  width="5" height="20" rx="2"/>
+        <rect x="16" y="0"  width="5" height="28" rx="2"/>
+        <rect x="24" y="6"  width="5" height="16" rx="2"/>
+        <rect x="32" y="11" width="5" height="6"  rx="2"/>
+      </svg>
+      <span class="logo__text">HARMONY</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#method" class="nav__link">Метод</a>
+      <a href="#tracks" class="nav__link">Направления</a>
+      <a href="#teachers" class="nav__link">Преподаватели</a>
+      <a href="#reviews" class="nav__link">Ученики</a>
+      <a href="#app" class="nav__link">Приложение</a>
+      <a href="#contacts" class="nav__link">Контакты</a>
+      <a href="#booking" class="btn btn--primary btn--sm nav__cta" data-booking>Записаться</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="hero">
+  <div class="container hero__inner">
+
+    <div class="hero__content">
+      <p class="kicker reveal">Ташкент · вокальная студия</p>
+
+      <h1 class="hero__title display reveal">
+        <span class="display__line" data-text="ГОЛОС —">ГОЛОС —</span>
+        <span class="display__line" data-text="ЭТО АНАТОМИЯ,">ЭТО АНАТОМИЯ,</span>
+        <span class="display__line display__line--accent" data-text="А НЕ МАГИЯ">А НЕ МАГИЯ</span>
+      </h1>
+
+      <p class="hero__lead reveal">
+        Учим петь на основе анатомии и физиологии голосового аппарата.
+        Никаких «пой животом» и «открой купол» — только механика: гортань, связки,
+        дыхание, резонаторы. Единственная студия в Узбекистане, где ставят экстрим-вокал.
+      </p>
+
+      <div class="hero__cta reveal">
+        <a href="#booking" class="btn btn--primary" data-booking>Записаться на пробное</a>
+        <a href="#method" class="btn btn--ghost">Смотреть методику</a>
+      </div>
+
+      <ul class="hero__facts reveal">
+        <!-- ЗАМЕНИТЬ: подставить реальные цифры студии -->
+        <li><b>3</b><span>преподавателя-практика</span></li>
+        <li><b>1:1</b><span>и мини-группы</span></li>
+        <li><b>18+</b><span>техник экстрим-вокала</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__mic" data-parallax="0.06">
+        <img src="assets/img/mic.svg" alt="" width="420" height="640" fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero__glow"></div>
+    </div>
+
+  </div>
+
+  <a href="#method" class="hero__scroll" aria-label="Прокрутить вниз">
+    <span class="hero__scroll-line"></span>
+    <span class="hero__scroll-text">Вниз</span>
+  </a>
+</section>
+
+<!-- ============ БЕГУЩАЯ СТРОКА ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>СКРИМ</span><i>◆</i><span>ГРОУЛ</span><i>◆</i><span>ФРАЙ</span><i>◆</i><span>ДИСТОРШН</span><i>◆</i>
+    <span>ЧИСТЫЙ ВОКАЛ</span><i>◆</i><span>ДЫХАНИЕ</span><i>◆</i><span>РЕЗОНАНС</span><i>◆</i><span>ДИАПАЗОН</span><i>◆</i>
+    <span>СКРИМ</span><i>◆</i><span>ГРОУЛ</span><i>◆</i><span>ФРАЙ</span><i>◆</i><span>ДИСТОРШН</span><i>◆</i>
+    <span>ЧИСТЫЙ ВОКАЛ</span><i>◆</i><span>ДЫХАНИЕ</span><i>◆</i><span>РЕЗОНАНС</span><i>◆</i><span>ДИАПАЗОН</span><i>◆</i>
+  </div>
+</div>
+
+<!-- ============ 2. МЕТОД ============ -->
+<section class="section method" id="method">
+  <div class="container">
+
+    <header class="section__head">
+      <p class="kicker reveal">02 — Методика</p>
+      <h2 class="section__title display reveal" data-text="КАК МЫ УЧИМ">КАК МЫ УЧИМ</h2>
+      <p class="section__lead reveal">
+        Голос — это орган. У него есть строение, режимы работы и предсказуемая реакция на нагрузку.
+        Мы объясняем, что делает гортань в каждый момент, и даём упражнения под конкретную задачу.
+        Вы понимаете, что происходит внутри, и можете это повторить — без педагога рядом.
+      </p>
+    </header>
+
+    <div class="method__grid">
+      <article class="card card--method reveal-stagger">
+        <span class="card__num">01</span>
+        <h3>Гортань и режимы</h3>
+        <p>Разбираем работу связок: смыкание, массу, регистры и переходы. Микст — не «волшебство», а управляемое соотношение мышц.</p>
+      </article>
+      <article class="card card--method reveal-stagger">
+        <span class="card__num">02</span>
+        <h3>Дыхание как механика</h3>
+        <p>Опора — это управление подсвязочным давлением межрёберными мышцами и диафрагмой. Измеримо, проверяемо, тренируемо.</p>
+      </article>
+      <article class="card card--method reveal-stagger">
+        <span class="card__num">03</span>
+        <h3>Резонаторы и тракт</h3>
+        <p>Форма речевого тракта задаёт тембр. Меняем положение языка, гортани и мягкого нёба — получаем нужный звук осознанно.</p>
+      </article>
+      <article class="card card--method reveal-stagger">
+        <span class="card__num">04</span>
+        <h3>Слух и координация</h3>
+        <p>Чистота интонации — навык нейромышечной координации. Ставится повторами и обратной связью, а не «врождённым слухом».</p>
+      </article>
+    </div>
+
+    <div class="myths reveal">
+      <h3 class="myths__title">Ломаем стереотипы</h3>
+      <ul class="myths__list">
+        <li class="myth">
+          <p class="myth__wrong"><span>Миф</span>«Пой животом»</p>
+          <p class="myth__right"><span>Факт</span>Живот не издаёт звук. Он участвует в управлении выдохом — и это всё. Звук рождается на связках.</p>
+        </li>
+        <li class="myth">
+          <p class="myth__wrong"><span>Миф</span>«Нет слуха — петь не научишься»</p>
+          <p class="myth__right"><span>Факт</span>Слух и попадание в ноту — тренируемые навыки. Вопрос в количестве корректных повторений.</p>
+        </li>
+        <li class="myth">
+          <p class="myth__wrong"><span>Миф</span>«Скрим сажает голос»</p>
+          <p class="myth__right"><span>Факт</span>Голос сажает неправильный скрим. Экстрим-техники работают на ложных складках — при верной постановке связки не травмируются.</p>
+        </li>
+        <li class="myth">
+          <p class="myth__wrong"><span>Миф</span>«Нужен талант»</p>
+          <p class="myth__right"><span>Факт</span>Нужна анатомия, план занятий и регулярность. Талант ускоряет, но не заменяет технику.</p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 3. ДВА НАПРАВЛЕНИЯ ============ -->
+<section class="section tracks" id="tracks">
+  <div class="container">
+
+    <header class="section__head">
+      <p class="kicker reveal">03 — Направления</p>
+      <h2 class="section__title display reveal" data-text="ДВА ТРЕКА">ДВА ТРЕКА</h2>
+      <p class="section__lead reveal">
+        Один метод, две задачи. Можно идти по одному треку или совмещать —
+        экстрим без чистой базы мы не ставим.
+      </p>
+    </header>
+
+    <div class="tracks__grid">
+
+      <article class="track reveal-stagger">
+        <div class="track__top">
+          <span class="track__tag">Трек A</span>
+          <h3 class="track__title">Вокал с нуля</h3>
+          <p class="track__sub">Для взрослых, которые никогда не пели или пели «как получится»</p>
+        </div>
+        <ul class="track__list">
+          <li>Постановка дыхания и опоры</li>
+          <li>Чистая интонация и работа со слухом</li>
+          <li>Расширение диапазона без крика</li>
+          <li>Регистры и мягкие переходы</li>
+          <li>Разбор песни: фразировка, дикция, подача</li>
+          <li>Работа с микрофоном</li>
+        </ul>
+        <p class="track__meta">Индивидуально или мини-группа · офлайн в Ташкенте</p>
+        <a href="#booking" class="btn btn--ghost btn--full" data-booking>Записаться на пробное</a>
+      </article>
+
+      <article class="track track--accent reveal-stagger">
+        <div class="track__badge">Единственные в Узбекистане</div>
+        <div class="track__top">
+          <span class="track__tag">Трек B</span>
+          <h3 class="track__title">Экстрим-вокал</h3>
+          <p class="track__sub">Для рок- и метал-вокалистов: скрим, гроул, фрай, дисторшн</p>
+        </div>
+        <ul class="track__list">
+          <li>Фрай-скрим и фолс-корд скрим</li>
+          <li>Гроул и низкие техники</li>
+          <li>Дисторшн поверх чистого звука</li>
+          <li>Безопасность: почему техника не рвёт связки</li>
+          <li>Выносливость и разогрев под концерт</li>
+          <li>Сведение экстрима с чистым вокалом в песне</li>
+        </ul>
+        <p class="track__refs">
+          Ориентиры: <b>Chris Cornell</b>, <b>Bad Omens</b>, <b>Panic! At The Disco</b>, <b>Дима Билан</b>
+        </p>
+        <a href="#booking" class="btn btn--primary btn--full" data-booking>Записаться на пробное</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. ПРЕПОДАВАТЕЛИ ============ -->
+<section class="section teachers" id="teachers">
+  <div class="container">
+
+    <header class="section__head">
+      <p class="kicker reveal">04 — Команда</p>
+      <h2 class="section__title display reveal" data-text="ПРЕПОДАВАТЕЛИ">ПРЕПОДАВАТЕЛИ</h2>
+      <p class="section__lead reveal">Практикующие вокалисты. Каждый ведёт занятия по одному методу.</p>
+    </header>
+
+    <div class="teachers__grid">
+
+      <article class="teacher reveal-stagger">
+        <div class="teacher__photo">
+          <!-- ЗАМЕНИТЬ: фото Далера, вырезанное по контуру, PNG с прозрачным фоном -->
+          <img src="assets/img/teacher-placeholder.svg" alt="Далер — преподаватель вокала и экстрим-вокала" width="360" height="420" loading="lazy" decoding="async">
+          <span class="teacher__mark">[ФОТО]</span>
+        </div>
+        <div class="teacher__body">
+          <h3 class="teacher__name">Далер</h3>
+          <p class="teacher__role">Сооснователь · вокал и экстрим-вокал</p>
+          <p class="teacher__text">
+            Вокалист, участник X-Factor. Ведёт постановку экстрим-техник и чистого вокала,
+            отвечает за методику студии.
+          </p>
+          <ul class="teacher__tags"><li>Экстрим-вокал</li><li>Микст</li><li>Сцена</li></ul>
+        </div>
+      </article>
+
+      <article class="teacher reveal-stagger">
+        <div class="teacher__photo">
+          <!-- ЗАМЕНИТЬ: фото Гульшан, вырезанное по контуру -->
+          <img src="assets/img/teacher-placeholder.svg" alt="Гульшан — преподаватель вокала" width="360" height="420" loading="lazy" decoding="async">
+          <span class="teacher__mark">[ФОТО]</span>
+        </div>
+        <div class="teacher__body">
+          <h3 class="teacher__name">Гульшан</h3>
+          <p class="teacher__role">Преподаватель вокала</p>
+          <p class="teacher__text">
+            <!-- ЗАМЕНИТЬ: реальное описание, опыт, концертная практика -->
+            [ОПИСАНИЕ: образование, стаж, концертный опыт, с кем и что ведёт]
+          </p>
+          <ul class="teacher__tags"><li>Вокал с нуля</li><li>Дыхание</li><li>Слух</li></ul>
+        </div>
+      </article>
+
+      <article class="teacher reveal-stagger">
+        <div class="teacher__photo">
+          <!-- ЗАМЕНИТЬ: фото Азизы, вырезанное по контуру -->
+          <img src="assets/img/teacher-placeholder.svg" alt="Азиза — преподаватель вокала" width="360" height="420" loading="lazy" decoding="async">
+          <span class="teacher__mark">[ФОТО]</span>
+        </div>
+        <div class="teacher__body">
+          <h3 class="teacher__name">Азиза</h3>
+          <p class="teacher__role">Преподаватель вокала</p>
+          <p class="teacher__text">
+            <!-- ЗАМЕНИТЬ: реальное описание, опыт, концертная практика -->
+            [ОПИСАНИЕ: образование, стаж, концертный опыт, с кем и что ведёт]
+          </p>
+          <ul class="teacher__tags"><li>Вокал с нуля</li><li>Репертуар</li><li>Подача</li></ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. УЧЕНИКИ / ОТЗЫВЫ ============ -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+
+    <header class="section__head">
+      <p class="kicker reveal">05 — Ученики</p>
+      <h2 class="section__title display reveal" data-text="КАК ЭТО ЗВУЧИТ">КАК ЭТО ЗВУЧИТ</h2>
+      <p class="section__lead reveal">Отзывы и результаты занятий. Живые люди, живые записи.</p>
+    </header>
+
+    <div class="reviews__grid">
+
+      <figure class="polaroid reveal-stagger">
+        <div class="polaroid__tape"></div>
+        <div class="polaroid__img">
+          <!-- ЗАМЕНИТЬ: фото ученика / кадр с занятия -->
+          <img src="assets/img/photo-placeholder.svg" alt="Ученик студии Harmony" width="400" height="400" loading="lazy" decoding="async">
+          <span class="polaroid__mark">[ФОТО УЧЕНИКА]</span>
+        </div>
+        <figcaption>
+          <p class="polaroid__quote">[ЦИТАТА: 1–2 предложения от ученика, о конкретном результате]</p>
+          <p class="polaroid__author">[Имя] · [срок занятий]</p>
+        </figcaption>
+      </figure>
+
+      <figure class="polaroid polaroid--tilt-r reveal-stagger">
+        <div class="polaroid__tape"></div>
+        <div class="polaroid__img">
+          <img src="assets/img/photo-placeholder.svg" alt="Ученица студии Harmony" width="400" height="400" loading="lazy" decoding="async">
+          <span class="polaroid__mark">[ФОТО УЧЕНИКА]</span>
+        </div>
+        <figcaption>
+          <p class="polaroid__quote">[ЦИТАТА]</p>
+          <p class="polaroid__author">[Имя] · [срок занятий]</p>
+        </figcaption>
+      </figure>
+
+      <figure class="polaroid reveal-stagger">
+        <div class="polaroid__tape"></div>
+        <div class="polaroid__img">
+          <img src="assets/img/photo-placeholder.svg" alt="Занятие по экстрим-вокалу" width="400" height="400" loading="lazy" decoding="async">
+          <span class="polaroid__mark">[СКРИНШОТ ОТЗЫВА]</span>
+        </div>
+        <figcaption>
+          <p class="polaroid__quote">[ЦИТАТА или скриншот переписки из Instagram]</p>
+          <p class="polaroid__author">[Имя] · [срок занятий]</p>
+        </figcaption>
+      </figure>
+
+      <figure class="polaroid polaroid--tilt-r reveal-stagger">
+        <div class="polaroid__tape"></div>
+        <div class="polaroid__img">
+          <img src="assets/img/photo-placeholder.svg" alt="Выступление ученика студии" width="400" height="400" loading="lazy" decoding="async">
+          <span class="polaroid__mark">[ФОТО С КОНЦЕРТА]</span>
+        </div>
+        <figcaption>
+          <p class="polaroid__quote">[ЦИТАТА]</p>
+          <p class="polaroid__author">[Имя] · [срок занятий]</p>
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <p class="reviews__note reveal">
+      Больше разборов и записей учеников — в Instagram
+      <a href="https://www.instagram.com/harmonyvocal.uz/" target="_blank" rel="noopener">@harmonyvocal.uz</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ 6. ПРИЛОЖЕНИЕ-ТРЕНАЖЁР ============ -->
+<section class="section app" id="app">
+  <div class="container app__inner">
+
+    <div class="app__text">
+      <p class="kicker reveal">06 — Приложение</p>
+      <h2 class="section__title display reveal" data-text="ТРЕНАЖЁР HARMONY">ТРЕНАЖЁР HARMONY</h2>
+      <p class="section__lead reveal">
+        Занятие даёт технику. Между занятиями нужен объём повторений — для этого мы делаем
+        мобильный тренажёр. Он не заменяет педагога, а держит навык между уроками.
+      </p>
+
+      <ul class="app__features reveal">
+        <li><b>Слух и питч.</b> Интервалы, попадание в ноту, контроль в реальном времени.</li>
+        <li><b>Модуль экстрим-техник.</b> Разогрев и упражнения на фрай, скрим, дисторшн.</li>
+        <li><b>Прогресс.</b> История занятий и точность по дням — видно, что растёт.</li>
+        <li><b>Связь со студией.</b> Педагог даёт домашку прямо в приложение.</li>
+      </ul>
+
+      <div class="app__status reveal"><span class="dot"></span> В разработке — ранний доступ по записи</div>
+
+      <!-- ВСТАВИТЬ ИНТЕГРАЦИЮ: подключить Formspree / Google Forms / Telegram-бота.
+           Сейчас форма открывает Telegram-чат с заполненным сообщением (без бэкенда). -->
+      <form class="app__form reveal" id="earlyForm" novalidate>
+        <label class="sr-only" for="earlyName">Имя</label>
+        <input id="earlyName" name="name" type="text" placeholder="Имя" required autocomplete="name">
+        <label class="sr-only" for="earlyContact">Телеграм или e-mail</label>
+        <input id="earlyContact" name="contact" type="text" placeholder="@telegram или e-mail" required>
+        <button type="submit" class="btn btn--primary">Хочу ранний доступ</button>
+        <p class="app__form-msg" id="earlyMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="app__visual reveal" aria-hidden="true">
+      <div class="phone" data-parallax="0.05">
+        <div class="phone__screen">
+          <div class="phone__top"><span></span></div>
+          <div class="phone__title">Точность питча</div>
+          <div class="phone__pitch">
+            <div class="phone__bars">
+              <i style="--h:35%"></i><i style="--h:60%"></i><i style="--h:85%"></i><i style="--h:52%"></i>
+              <i style="--h:74%"></i><i style="--h:95%"></i><i style="--h:44%"></i><i style="--h:68%"></i>
+              <i style="--h:88%"></i><i style="--h:30%"></i><i style="--h:62%"></i><i style="--h:79%"></i>
+            </div>
+            <div class="phone__target"></div>
+          </div>
+          <div class="phone__row"><span>Fry / разогрев</span><b>4:00</b></div>
+          <div class="phone__row"><span>Интервалы</span><b>92%</b></div>
+          <div class="phone__row phone__row--accent"><span>Серия дней</span><b>12</b></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 7. ОНЛАЙН-ЗАПИСЬ (ALTEGIO) ============ -->
+<section class="section booking" id="booking">
+  <div class="container">
+
+    <header class="section__head section__head--center">
+      <p class="kicker reveal">07 — Запись</p>
+      <h2 class="section__title display reveal" data-text="ЗАПИСЬ НА ЗАНЯТИЕ">ЗАПИСЬ НА ЗАНЯТИЕ</h2>
+      <p class="section__lead reveal">
+        Выберите преподавателя, дату и время. Первое занятие — пробное:
+        разбираем ваш голос, показываем метод, ставим задачу.
+      </p>
+    </header>
+
+    <div class="booking__box reveal">
+      <!-- ALTEGIO_WIDGET_PLACEHOLDER: вставить embed-код из личного кабинета Altegio
+           (Настройки → Онлайн-запись → Установка виджета на сайт).
+           Обычно это <script> или <iframe>. Вставьте его прямо вместо блока .booking__stub ниже.
+           Тот же код можно вставить в модальное окно #bookingModal (см. ниже),
+           если нужна запись по кнопке из шапки. -->
+      <div class="booking__stub" id="altegioInline">
+        <svg class="booking__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v3M17 2v3M3 9h18M5 5h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>
+        <p class="booking__stub-title">Здесь будет виджет онлайн-записи Altegio</p>
+        <p class="booking__stub-text">
+          Вставьте embed-код из личного кабинета вместо этого блока —
+          он подхватит стиль сайта и заработает без бэкенда.
+        </p>
+        <a href="https://t.me/" class="btn btn--ghost" target="_blank" rel="noopener">
+          <!-- ЗАМЕНИТЬ: ссылка на Telegram студии как запасной канал записи -->
+          Пока записаться в Telegram
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 8. ЛОКАЦИЯ И КОНТАКТЫ ============ -->
+<section class="section contacts" id="contacts">
+  <div class="container">
+
+    <header class="section__head">
+      <p class="kicker reveal">08 — Контакты</p>
+      <h2 class="section__title display reveal" data-text="ГДЕ МЫ">ГДЕ МЫ</h2>
+    </header>
+
+    <div class="contacts__grid">
+
+      <div class="contacts__info reveal">
+        <div class="contacts__item">
+          <span class="contacts__label">Адрес</span>
+          <!-- ЗАМЕНИТЬ: точный адрес студии -->
+          <p class="contacts__value">Ташкент, [ВСТАВИТЬ АДРЕС СТУДИИ]</p>
+        </div>
+        <div class="contacts__item">
+          <span class="contacts__label">Время работы</span>
+          <!-- ЗАМЕНИТЬ: реальный график -->
+          <p class="contacts__value">Пн–Вс, [ЧЧ:ММ — ЧЧ:ММ]</p>
+        </div>
+        <div class="contacts__item">
+          <span class="contacts__label">Телефон</span>
+          <!-- ЗАМЕНИТЬ: номер студии -->
+          <p class="contacts__value"><a href="tel:+998000000000">+998 [XX XXX-XX-XX]</a></p>
+        </div>
+        <div class="contacts__item">
+          <span class="contacts__label">Соцсети</span>
+          <div class="contacts__socials">
+            <a href="https://www.instagram.com/harmonyvocal.uz/" target="_blank" rel="noopener" class="social">Instagram</a>
+            <!-- ЗАМЕНИТЬ: ссылка на Telegram-канал / бот студии -->
+            <a href="https://t.me/" target="_blank" rel="noopener" class="social">Telegram</a>
+            <!-- ЗАМЕНИТЬ: ссылка на YouTube, если есть -->
+            <a href="#" class="social">YouTube</a>
+          </div>
+        </div>
+        <a href="#booking" class="btn btn--primary" data-booking>Записаться на пробное</a>
+      </div>
+
+      <div class="contacts__map reveal">
+        <!-- ЗАМЕНИТЬ: iframe карты (Яндекс.Карты / Google Maps) с точкой студии.
+             Оставлен lazy-iframe: карта грузится только когда попадает во вьюпорт. -->
+        <div class="map-stub" id="mapStub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <p>[ВСТАВИТЬ КАРТУ]</p>
+          <span>iframe Яндекс.Карт или Google Maps с меткой студии</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ ФУТЕР ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+
+    <div class="footer__brand">
+      <div class="logo">
+        <svg class="logo__eq" viewBox="0 0 40 28" aria-hidden="true">
+          <rect x="0"  y="10" width="5" height="8"  rx="2"/>
+          <rect x="8"  y="4"  width="5" height="20" rx="2"/>
+          <rect x="16" y="0"  width="5" height="28" rx="2"/>
+          <rect x="24" y="6"  width="5" height="16" rx="2"/>
+          <rect x="32" y="11" width="5" height="6"  rx="2"/>
+        </svg>
+        <span class="logo__text">HARMONY</span>
+      </div>
+      <p class="footer__tagline">Вокальная студия. Ташкент, Узбекистан.<br>Вокал и экстрим-вокал на анатомической основе.</p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Навигация в футере">
+      <a href="#method">Метод</a>
+      <a href="#tracks">Направления</a>
+      <a href="#teachers">Преподаватели</a>
+      <a href="#reviews">Ученики</a>
+      <a href="#app">Приложение</a>
+      <a href="#booking">Запись</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="footer__socials">
+      <a href="https://www.instagram.com/harmonyvocal.uz/" target="_blank" rel="noopener">@harmonyvocal.uz</a>
+      <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+    </div>
+
+  </div>
+  <div class="container footer__bottom">
+    <p>© <span id="year">2026</span> Harmony Vocal Studio</p>
+    <p>Ташкент · Узбекистан</p>
+  </div>
+</footer>
+
+<!-- ============ МОДАЛКА ЗАПИСИ ============ -->
+<div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__box">
+    <button class="modal__close" aria-label="Закрыть" data-close>&times;</button>
+    <h2 class="modal__title" id="modalTitle">Онлайн-запись</h2>
+    <p class="modal__text">Выберите удобное время — подтверждение придёт сразу.</p>
+
+    <div class="modal__widget">
+      <!-- ALTEGIO_WIDGET_PLACEHOLDER: вставить embed-код из личного кабинета Altegio
+           (Настройки → Онлайн-запись → Установка виджета на сайт).
+           Если Altegio отдаёт кнопку-скрипт — вставьте его сюда и удалите .booking__stub ниже.
+           Если виджет вставлен только в секцию #booking, оставьте здесь как есть:
+           кнопки «Записаться» тогда просто скроллят к секции (см. main.js, USE_MODAL). -->
+      <div class="booking__stub booking__stub--sm">
+        <p class="booking__stub-title">Место для виджета Altegio</p>
+        <p class="booking__stub-text">Вставьте embed-код — модалка сразу станет рабочей формой записи.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GSAP 3.12.5 — лежит локально, чтобы сайт не зависел от доступности CDN.
+     Если предпочитаете CDN, замените на:
+     https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js
+     https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js -->
+<script src="assets/js/vendor/gsap.min.js" defer></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/animations.js" defer></script>
+
+</body>
+</html>

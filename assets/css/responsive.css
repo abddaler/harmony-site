@@ -1,0 +1,137 @@
+/* ===========================================================
+   HARMONY — responsive.css
+   Брейкпоинты поверх мобильной базы: 600 / 900 / 1200
+   =========================================================== */
+
+/* ---------- ≥ 600px: планшет в портрете ---------- */
+@media (min-width: 600px){
+  :root{ --gutter:28px; --section-pad:92px; }
+
+  .method__grid{ grid-template-columns:repeat(2, 1fr); gap:16px; }
+  .myths__list{ grid-template-columns:repeat(2, 1fr); gap:22px 30px; }
+  .myth{ border-bottom:0; padding-bottom:0; }
+
+  .reviews__grid{ grid-template-columns:repeat(2, 1fr); gap:40px 24px; }
+  .polaroid{ width:100%; max-width:330px; }
+
+  .footer__nav{ grid-template-columns:repeat(3, 1fr); }
+
+  .hero__facts{ gap:16px 44px; }
+  .modal__box{ padding:36px 32px; }
+  .myths{ padding:32px 30px; }
+  .card{ padding:30px 26px; }
+  .track{ padding:34px 30px; }
+}
+
+/* ---------- ≥ 900px: десктоп ---------- */
+@media (min-width: 900px){
+  :root{ --gutter:32px; --section-pad:120px; }
+
+  html{ scroll-padding-top:90px; }
+
+  /* Горизонтальное меню */
+  .burger{ display:none; }
+  .nav{
+    position:static;
+    width:auto;
+    padding:0;
+    background:none;
+    border:0;
+    flex-direction:row;
+    align-items:center;
+    gap:26px;
+    transform:none;
+    overflow:visible;
+  }
+  .nav__link{
+    font-size:.86rem;
+    letter-spacing:.14em;
+    padding:6px 0;
+    border-bottom:0;
+    position:relative;
+  }
+  .nav__link::after{
+    content:'';
+    position:absolute;
+    left:0; bottom:0;
+    width:100%; height:1px;
+    background:var(--cyan);
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform .3s var(--ease);
+  }
+  .nav__link:hover::after,
+  .nav__link.is-active::after{ transform:scaleX(1); }
+  .nav__cta{ margin-top:0; margin-left:6px; }
+
+  /* Hero в две колонки */
+  .hero{ padding:130px 0 100px; }
+  .hero__inner{
+    flex-direction:row;
+    align-items:center;
+    gap:40px;
+  }
+  .hero__content{ flex:1 1 58%; }
+  .hero__visual{
+    position:static;
+    transform:none;
+    width:auto;
+    opacity:1;
+    flex:1 1 42%;
+  }
+  .hero__mic{ width:min(34vw, 400px); }
+  .hero__cta .btn{ flex:0 0 auto; }
+  .hero__lead{ font-size:1.08rem; }
+  .hero__facts b{ font-size:2.1rem; }
+
+  .section__lead{ font-size:1.05rem; }
+  .section__head{ margin-bottom:52px; }
+
+  .method__grid{ grid-template-columns:repeat(4, 1fr); }
+
+  .tracks__grid{ grid-template-columns:repeat(2, 1fr); gap:24px; }
+
+  .teachers__grid{ grid-template-columns:repeat(3, 1fr); gap:30px; }
+
+  .reviews__grid{ grid-template-columns:repeat(4, 1fr); gap:30px 20px; }
+  .polaroid{ width:100%; }
+
+  /* Приложение: текст + телефон */
+  .app__inner{
+    flex-direction:row;
+    align-items:center;
+    gap:60px;
+  }
+  .app__text{ flex:1 1 56%; }
+  .app__visual{ flex:1 1 44%; }
+  .phone{ width:min(26vw, 300px); }
+
+  .contacts__grid{ grid-template-columns:1fr 1.15fr; gap:40px; align-items:start; }
+  .contacts__map, .contacts__map iframe, .map-stub{ min-height:420px; }
+
+  .footer__inner{ grid-template-columns:1.4fr 1fr auto; gap:40px; align-items:start; }
+  .footer__nav{ grid-template-columns:repeat(2, 1fr); }
+
+  .booking__box{ padding:20px; min-height:460px; }
+}
+
+/* ---------- ≥ 1200px ---------- */
+@media (min-width: 1200px){
+  :root{ --section-pad:140px; }
+
+  .hero__title{ font-size:clamp(3.6rem, 5.4vw, 6.6rem); }
+  .section__title{ font-size:clamp(3rem, 4.6vw, 4.6rem); }
+  .marquee__track{ font-size:1.15rem; gap:28px; }
+}
+
+/* ---------- Ландшафт на телефоне ---------- */
+@media (max-width: 899px) and (orientation: landscape){
+  .hero{ min-height:auto; padding:120px 0 70px; }
+  .hero__scroll{ display:none; }
+}
+
+/* ---------- Печать ---------- */
+@media print{
+  .bg-decor, .header, .preloader, .hero__scroll, .marquee, .modal{ display:none !important; }
+  body{ background:#fff; color:#000; }
+}

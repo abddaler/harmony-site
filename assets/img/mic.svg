@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 640" width="420" height="640" fill="none" role="img" aria-label="Студийный микрофон">
+  <defs>
+    <linearGradient id="grille" x1="0.1" y1="0" x2="0.95" y2="1">
+      <stop offset="0" stop-color="#2b3a58"/>
+      <stop offset="0.45" stop-color="#1a2338"/>
+      <stop offset="1" stop-color="#101725"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f1626"/>
+      <stop offset="0.35" stop-color="#2c3a56"/>
+      <stop offset="0.6" stop-color="#1a2337"/>
+      <stop offset="1" stop-color="#0f1626"/>
+    </linearGradient>
+    <clipPath id="grilleClip">
+      <rect x="112" y="62" width="196" height="276" rx="98"/>
+    </clipPath>
+  </defs>
+
+  <g stroke="#2fd6e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Подвес (шок-маунт) -->
+    <path d="M74 132 C 40 210, 40 300, 74 372" stroke-opacity=".65"/>
+    <path d="M346 132 C 380 210, 380 300, 346 372" stroke-opacity=".65"/>
+    <path d="M74 372 L 130 400 M346 372 L290 400" stroke-opacity=".45"/>
+    <circle cx="74" cy="132" r="8" fill="#101725"/>
+    <circle cx="346" cy="132" r="8" fill="#101725"/>
+
+    <!-- Корпус-решётка -->
+    <rect x="112" y="62" width="196" height="276" rx="98" fill="url(#grille)"/>
+
+    <!-- Сетка -->
+    <g clip-path="url(#grilleClip)" stroke-width="1.4" stroke-opacity=".38">
+      <path d="M112 92h196M112 122h196M112 152h196M112 182h196M112 212h196M112 242h196M112 272h196M112 302h196M112 332h196"/>
+      <path d="M142 62v276M172 62v276M202 62v276M232 62v276M262 62v276M292 62v276" stroke-opacity=".22"/>
+    </g>
+
+    <!-- Блик на решётке -->
+    <path d="M150 110 C 132 160, 132 240, 150 292" stroke-opacity=".5" stroke-width="4"/>
+
+    <!-- Хомут / основание капсюля -->
+    <rect x="132" y="344" width="156" height="46" rx="12" fill="url(#metal)"/>
+    <path d="M156 358v18M186 358v18M216 358v18M246 358v18M276 358v18" stroke-width="2" stroke-opacity=".35"/>
+
+    <!-- Логотип-эквалайзер на корпусе -->
+    <g stroke="none" fill="#2fd6e8">
+      <rect x="176" y="196" width="9" height="18" rx="4" fill-opacity=".85"/>
+      <rect x="192" y="184" width="9" height="42" rx="4" fill-opacity=".95"/>
+      <rect x="208" y="176" width="9" height="58" rx="4"/>
+      <rect x="224" y="188" width="9" height="34" rx="4" fill-opacity=".95"/>
+      <rect x="240" y="198" width="9" height="14" rx="4" fill-opacity=".85"/>
+    </g>
+
+    <!-- Стойка -->
+    <rect x="194" y="390" width="32" height="152" rx="10" fill="url(#metal)"/>
+    <path d="M210 404v122" stroke-width="2" stroke-opacity=".3"/>
+
+    <!-- База -->
+    <ellipse cx="210" cy="556" rx="96" ry="24" fill="url(#metal)"/>
+    <ellipse cx="210" cy="548" rx="96" ry="24" fill="#141c2e"/>
+    <ellipse cx="210" cy="548" rx="62" ry="15" stroke-opacity=".35" stroke-width="2"/>
+
+    <!-- Звуковые дуги -->
+    <g stroke-opacity=".35" stroke-width="2.5">
+      <path d="M356 168 C 392 224, 392 292, 356 348"/>
+      <path d="M64 168 C 28 224, 28 292, 64 348"/>
+    </g>
+    <g stroke-opacity=".18" stroke-width="2">
+      <path d="M382 140 C 428 214, 428 302, 382 376"/>
+      <path d="M38 140 C -8 214, -8 302, 38 376"/>
+    </g>
+  </g>
+</svg>
