@@ -196,7 +196,7 @@
         <li><b>1:1</b><span>только индивидуально</span></li>
         <li><b>60</b><span>минут занятие</span></li>
         <li><b>5</b><span>педагогов</span></li>
-        <li><b>2</b><span>площадки в городе</span></li>
+        <li><b>2</b><span>филиала в городе</span></li>
       </ul>
     </div>
 
@@ -204,7 +204,7 @@
       <div class="hero__mic" data-parallax="0.06">
         <img src="assets/img/mic.svg" alt="" width="420" height="640" fetchpriority="high" decoding="async">
       </div>
-      <div class="hero__glow"></div>
+      <div class="hero__rings"><span></span><span></span><span></span></div>
     </div>
 
   </div>
@@ -522,30 +522,14 @@
     </div>
 
     <div class="sub reveal">
-      <div class="sub__text">
-        <h3 class="sub__title">Как работает абонемент</h3>
-        <p>
-          Это не фиксированный пакет, который сгорает. Вы выбираете дни недели —
-          и платите ровно за то количество занятий, которое выпадает на этот месяц.
-          Минимум — 4 занятия в месяц, то есть раз в неделю.
-        </p>
-        <p class="sub__formula">
-          <span>Цена по абонементу</span><i>×</i><span>занятий в месяце</span><i>=</i><b>сумма</b>
-        </p>
-      </div>
-
-      <div class="sub__example">
-        <p class="sub__example-title">Пример: занятия по субботам</p>
-        <div class="sub__case">
-          <span>Август — 5 суббот</span>
-          <b>270 000 × 5 = 1 350 000 сум</b>
-        </div>
-        <div class="sub__case">
-          <span>Сентябрь — 4 субботы</span>
-          <b>270 000 × 4 = 1 080 000 сум</b>
-        </div>
-        <p class="sub__note">Два раза в неделю — считается так же, обычно выходит 8–10 занятий.</p>
-      </div>
+      <h3 class="sub__title">Абонемент</h3>
+      <p class="sub__lead">
+        Выбираете дни недели — платите за количество занятий в месяце.
+        Минимум 4 занятия. Детали посчитает администратор при записи.
+      </p>
+      <p class="sub__formula">
+        <span>Цена по абонементу</span><i>×</i><span>занятий в месяце</span><i>=</i><b>сумма</b>
+      </p>
     </div>
 
     <p class="prices__pay reveal">Оплата наличными или по QR-коду через платёжное приложение.</p>
@@ -565,13 +549,13 @@
       </p>
     </header>
 
+    <!-- ПРОВЕРИТЬ: сопоставление фото и имён у Гульшан и Камилы.
+         Если перепутано — поменяйте местами src и alt в двух карточках ниже. -->
     <div class="teachers__grid">
 
       <article class="teacher reveal-stagger">
         <div class="teacher__photo">
-          <!-- ЗАМЕНИТЬ: фото Далера, вырезанное по контуру, PNG с прозрачным фоном -->
-          <img src="assets/img/teacher-placeholder.svg" alt="Далер Абдуллаев — сооснователь Harmony, педагог по extreme- и современному вокалу" width="360" height="420" loading="lazy" decoding="async">
-          <span class="teacher__mark">[ФОТО]</span>
+          <img src="assets/img/teachers/daler.jpg" alt="Далер Абдуллаев — сооснователь Harmony, педагог по extreme- и современному вокалу" width="560" height="560" loading="lazy" decoding="async">
         </div>
         <div class="teacher__body">
           <h3 class="teacher__name">Далер Абдуллаев</h3>
@@ -582,14 +566,13 @@
           </p>
           <p class="teacher__likes">Слушает: Chris Cornell, Bad Omens, Panic! At The Disco, Дима Билан</p>
           <p class="teacher__time">Пн 10:00–21:00 · Вт 10:00–17:00 · Чт 10:00–20:00 · Сб 10:00–19:00</p>
+          <p class="teacher__place">Филиал Юсуф Хос Ходжиб</p>
         </div>
       </article>
 
       <article class="teacher reveal-stagger">
         <div class="teacher__photo">
-          <!-- ЗАМЕНИТЬ: фото Гульшан, вырезанное по контуру -->
-          <img src="assets/img/teacher-placeholder.svg" alt="Гульшан — педагог по современному вокалу Harmony" width="360" height="420" loading="lazy" decoding="async">
-          <span class="teacher__mark">[ФОТО]</span>
+          <img src="assets/img/teachers/gulshan.jpg" alt="Гульшан — педагог по современному вокалу Harmony" width="560" height="560" loading="lazy" decoding="async">
         </div>
         <div class="teacher__body">
           <h3 class="teacher__name">Гульшан</h3>
@@ -600,14 +583,13 @@
           </p>
           <p class="teacher__likes">Слушает: Halestorm, Bruno Mars, Queen, Jamiroquai, Arctic Monkeys</p>
           <p class="teacher__time">Ср 12:00–17:00 · Пт 12:00–17:00 · Вс 12:00–17:00</p>
+          <p class="teacher__place">Филиал Юсуф Хос Ходжиб</p>
         </div>
       </article>
 
       <article class="teacher reveal-stagger">
         <div class="teacher__photo">
-          <!-- ЗАМЕНИТЬ: фото Азизы, вырезанное по контуру -->
-          <img src="assets/img/teacher-placeholder.svg" alt="Азиза — педагог по вокалу Harmony, лауреат международных конкурсов" width="360" height="420" loading="lazy" decoding="async">
-          <span class="teacher__mark">[ФОТО]</span>
+          <img src="assets/img/teachers/aziza.jpg" alt="Азиза — педагог по вокалу Harmony, лауреат международных конкурсов" width="560" height="560" loading="lazy" decoding="async">
         </div>
         <div class="teacher__body">
           <h3 class="teacher__name">Азиза</h3>
@@ -618,14 +600,13 @@
           </p>
           <p class="teacher__likes">Слушает: Lara Fabian, Мот, Звери, Bruno Mars, Анна Герман, Король и Шут</p>
           <p class="teacher__time">Пн 11:00–21:00 · Ср 11:00–21:00 · Пт 11:00–21:00</p>
+          <p class="teacher__place">Филиал Дворец железнодорожников</p>
         </div>
       </article>
 
       <article class="teacher reveal-stagger">
         <div class="teacher__photo">
-          <!-- ЗАМЕНИТЬ: фото Камилы, вырезанное по контуру -->
-          <img src="assets/img/teacher-placeholder.svg" alt="Камила — педагог современного и академического вокала, музыкальная грамотность" width="360" height="420" loading="lazy" decoding="async">
-          <span class="teacher__mark">[ФОТО]</span>
+          <img src="assets/img/teachers/kamila.jpg" alt="Камила — педагог современного и академического вокала, музыкальная грамотность" width="560" height="560" loading="lazy" decoding="async">
         </div>
         <div class="teacher__body">
           <h3 class="teacher__name">Камила</h3>
@@ -636,13 +617,14 @@
           </p>
           <p class="teacher__likes">Слушает: Мария Каллас, Франко Корелли, Eagles, The Beatles, Elton John, Леонтина Прайс</p>
           <p class="teacher__time">Расписание уточняется</p>
+          <p class="teacher__place">Филиал Дворец железнодорожников</p>
         </div>
       </article>
 
       <article class="teacher reveal-stagger">
         <div class="teacher__photo">
-          <!-- ЗАМЕНИТЬ: фото Мохитобон, вырезанное по контуру -->
-          <img src="assets/img/teacher-placeholder.svg" alt="Мохитобон — педагог по вокалу Harmony" width="360" height="420" loading="lazy" decoding="async">
+          <!-- ЗАМЕНИТЬ: круглое фото Мохитобон (как у остальных) -->
+          <img src="assets/img/teacher-placeholder.svg" alt="Мохитобон — педагог по вокалу Harmony" width="560" height="560" loading="lazy" decoding="async">
           <span class="teacher__mark">[ФОТО]</span>
         </div>
         <div class="teacher__body">
@@ -654,6 +636,7 @@
           </p>
           <p class="teacher__likes">[ЛЮБИМЫЕ ИСПОЛНИТЕЛИ]</p>
           <p class="teacher__time">Расписание уточняется</p>
+          <p class="teacher__place">Филиал Дворец железнодорожников</p>
         </div>
       </article>
 
@@ -760,45 +743,46 @@
         <a href="#booking" class="btn btn--primary reveal" data-booking>Начать заниматься</a>
       </div>
 
-      <div class="app__visual reveal" aria-hidden="true">
+      <!-- Слайдер скриншотов платформы внутри телефона.
+           ВСТАВИТЬ: замените src у .slide img на реальные скриншоты
+           (вертикальные, примерно 9:19.5) и поправьте подписи. -->
+      <div class="app__visual reveal">
         <div class="phone" data-parallax="0.05">
           <div class="phone__screen">
-            <div class="phone__top"><span></span></div>
-            <div class="phone__title">Точность питча</div>
-            <div class="phone__pitch">
-              <div class="phone__bars">
-                <i style="--h:35%"></i><i style="--h:60%"></i><i style="--h:85%"></i><i style="--h:52%"></i>
-                <i style="--h:74%"></i><i style="--h:95%"></i><i style="--h:44%"></i><i style="--h:68%"></i>
-                <i style="--h:88%"></i><i style="--h:30%"></i><i style="--h:62%"></i><i style="--h:79%"></i>
-              </div>
-              <div class="phone__target"></div>
-            </div>
-            <div class="phone__row"><span>Разогрев</span><b>10:00</b></div>
-            <div class="phone__row"><span>Интервалы</span><b>92%</b></div>
-            <div class="phone__row phone__row--accent"><span>Серия дней</span><b>12</b></div>
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="phone__notch" aria-hidden="true"></div>
 
-    <!-- ВСТАВИТЬ: реальные скриншоты платформы вместо плейсхолдеров.
-         Формат — примерно 16:10, тёмные интерфейсы смотрятся лучше всего. -->
-    <div class="shots">
-      <figure class="shot reveal-stagger">
-        <div class="shot__tape"></div>
-        <img src="assets/img/photo-placeholder.svg" alt="Экран платформы: упражнения" width="400" height="400" loading="lazy" decoding="async">
-        <figcaption>[СКРИНШОТ: главный экран платформы]</figcaption>
-      </figure>
-      <figure class="shot reveal-stagger">
-        <div class="shot__tape"></div>
-        <img src="assets/img/photo-placeholder.svg" alt="Экран платформы: тренировка слуха" width="400" height="400" loading="lazy" decoding="async">
-        <figcaption>[СКРИНШОТ: тренировка слуха / питча]</figcaption>
-      </figure>
-      <figure class="shot reveal-stagger">
-        <div class="shot__tape"></div>
-        <img src="assets/img/photo-placeholder.svg" alt="Экран платформы: прогресс ученика" width="400" height="400" loading="lazy" decoding="async">
-        <figcaption>[СКРИНШОТ: прогресс ученика]</figcaption>
-      </figure>
+            <div class="slider" id="platformSlider">
+              <div class="slider__viewport" data-slider-viewport>
+                <figure class="slide">
+                  <img src="assets/img/photo-placeholder.svg" alt="Экран платформы: главный экран" width="400" height="400" loading="lazy" decoding="async">
+                  <figcaption>[СКРИНШОТ 1]</figcaption>
+                </figure>
+                <figure class="slide">
+                  <img src="assets/img/photo-placeholder.svg" alt="Экран платформы: тренировка слуха" width="400" height="400" loading="lazy" decoding="async">
+                  <figcaption>[СКРИНШОТ 2]</figcaption>
+                </figure>
+                <figure class="slide">
+                  <img src="assets/img/photo-placeholder.svg" alt="Экран платформы: упражнения от педагога" width="400" height="400" loading="lazy" decoding="async">
+                  <figcaption>[СКРИНШОТ 3]</figcaption>
+                </figure>
+                <figure class="slide">
+                  <img src="assets/img/photo-placeholder.svg" alt="Экран платформы: прогресс ученика" width="400" height="400" loading="lazy" decoding="async">
+                  <figcaption>[СКРИНШОТ 4]</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider__arrow slider__arrow--prev" type="button" data-slider-prev aria-label="Предыдущий экран">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <button class="slider__arrow slider__arrow--next" type="button" data-slider-next aria-label="Следующий экран">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <div class="slider__dots" data-slider-dots aria-hidden="true"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -835,7 +819,7 @@
       </details>
       <details class="faq__item reveal-stagger">
         <summary>Сколько занятий в месяц нужно брать?</summary>
-        <p>Минимум четыре — одно в неделю. Абонемент не фиксированный: вы выбираете дни недели и платите за то количество занятий, которое реально выпадает на месяц. Пять суббот в августе — платите за пять, четыре в сентябре — за четыре.</p>
+        <p>Минимум четыре — одно в неделю. Вы выбираете дни недели, а сумма считается по количеству занятий в этом месяце. Точную сумму назовёт администратор при записи.</p>
       </details>
       <details class="faq__item reveal-stagger">
         <summary>Не сорву ли я голос на скриме?</summary>
@@ -865,7 +849,7 @@
       <p class="kicker reveal">10 — Запись</p>
       <h2 class="section__title display reveal" data-text="ЗАПИСЬ НА ЗАНЯТИЕ">ЗАПИСЬ НА ЗАНЯТИЕ</h2>
       <p class="section__lead reveal">
-        Выберите педагога, площадку, дату и время. Занятие один на один, 60 минут.
+        Выберите филиал, педагога, дату и время. Занятие один на один, 60 минут.
       </p>
     </header>
 
@@ -897,27 +881,31 @@
 
     <header class="section__head">
       <p class="kicker reveal">11 — Контакты</p>
-      <h2 class="section__title display reveal" data-text="ДВЕ ПЛОЩАДКИ В ТАШКЕНТЕ">ДВЕ ПЛОЩАДКИ В ТАШКЕНТЕ</h2>
-      <p class="section__lead reveal">Выбирайте ту, до которой ближе ехать — педагоги работают на обеих.</p>
+      <h2 class="section__title display reveal" data-text="ДВА ФИЛИАЛА В ТАШКЕНТЕ">ДВА ФИЛИАЛА В ТАШКЕНТЕ</h2>
+      <p class="section__lead reveal">Выбирайте филиал по педагогу или по тому, куда ближе ехать.</p>
     </header>
 
     <div class="places">
       <article class="place reveal-stagger">
-        <span class="place__num">01</span>
-        <h3 class="place__title">ул. Амира Темура, 30</h3>
+        <span class="place__num">Филиал 01</span>
+        <h3 class="place__title">Дворец железнодорожников</h3>
+        <p class="place__addr">ул. Амира Темура, 30</p>
         <p class="place__text">
           Дворец культуры железнодорожников, 2 этаж.
           От лестницы направо, кабинет 16.
         </p>
         <p class="place__metro">Рядом со станцией метро «Ташкент»</p>
+        <p class="place__who"><span>Педагоги:</span> Камила, Азиза, Мохитобон</p>
       </article>
       <article class="place reveal-stagger">
-        <span class="place__num">02</span>
-        <h3 class="place__title">ул. Юсуф Хос Ходжиба, 43</h3>
+        <span class="place__num">Филиал 02</span>
+        <h3 class="place__title">Юсуф Хос Ходжиб</h3>
+        <p class="place__addr">ул. Юсуф Хос Ходжиба, 43</p>
         <p class="place__text">
           Напротив «Mazzali», под магазином «LEGION».
         </p>
         <p class="place__metro">Вход со стороны улицы</p>
+        <p class="place__who"><span>Педагоги:</span> Далер, Гульшан</p>
       </article>
     </div>
 
@@ -1009,7 +997,7 @@
   <div class="modal__box">
     <button class="modal__close" aria-label="Закрыть" data-close>&times;</button>
     <h2 class="modal__title" id="modalTitle">Онлайн-запись</h2>
-    <p class="modal__text">Выберите педагога, площадку и удобное время — подтверждение придёт сразу.</p>
+    <p class="modal__text">Выберите филиал, педагога и удобное время — подтверждение придёт сразу.</p>
 
     <div class="modal__widget">
       <!-- ALTEGIO_WIDGET_PLACEHOLDER: вставить embed-код из личного кабинета Altegio

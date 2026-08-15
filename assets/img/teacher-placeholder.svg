@@ -1,20 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" width="360" height="420" role="img" aria-label="Место для фото преподавателя">
-  <!-- ЗАМЕНИТЬ: PNG-фото преподавателя, вырезанное по контуру (прозрачный фон).
-       Обводку циановым контуром рисует CSS (.teacher__photo img { filter: drop-shadow… }),
-       поэтому от файла нужен только силуэт без фона. -->
-  <defs>
-    <linearGradient id="fig" x1="0.2" y1="0" x2="0.9" y2="1">
-      <stop offset="0" stop-color="#33415f"/>
-      <stop offset="1" stop-color="#1b2438"/>
-    </linearGradient>
-  </defs>
-  <g fill="url(#fig)">
-    <!-- голова -->
-    <path d="M180 46c34 0 60 27 60 63 0 39-27 71-60 71s-60-32-60-71c0-36 26-63 60-63z"/>
-    <!-- плечи и корпус -->
-    <path d="M180 190c62 0 112 46 122 108 4 25 6 54 6 82H52c0-28 2-57 6-82 10-62 60-108 122-108z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560" role="img" aria-label="Место для фото педагога">
+  <!-- ЗАМЕНИТЬ: круглое фото педагога (квадратный JPG, лицо по центру) -->
+  <rect width="560" height="560" fill="#1b2438"/>
+  <g fill="none" stroke="#2fd6e8" stroke-opacity=".45" stroke-width="6" stroke-linecap="round">
+    <circle cx="280" cy="228" r="74"/>
+    <path d="M150 452c0-66 58-114 130-114s130 48 130 114"/>
   </g>
-  <g fill="none" stroke="#2fd6e8" stroke-opacity=".55" stroke-width="2" stroke-dasharray="7 7">
-    <path d="M180 190c62 0 112 46 122 108 4 25 6 54 6 82H52c0-28 2-57 6-82 10-62 60-108 122-108z"/>
+  <g fill="#2fd6e8" fill-opacity=".5">
+    <rect x="238" y="500" width="8" height="16" rx="4"/>
+    <rect x="254" y="490" width="8" height="36" rx="4"/>
+    <rect x="270" y="482" width="8" height="52" rx="4"/>
+    <rect x="286" y="492" width="8" height="32" rx="4"/>
+    <rect x="302" y="502" width="8" height="12" rx="4"/>
   </g>
 </svg>

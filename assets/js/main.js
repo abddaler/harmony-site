@@ -207,6 +207,62 @@
     mapObserver.observe(mapBox);
   }
 
+  /* ================= СЛАЙДЕР СКРИНШОТОВ ================= */
+  /* Прокрутка нативная (scroll-snap), JS добавляет стрелки и точки.
+     Без JS слайдер всё равно листается свайпом. */
+  (function initSlider() {
+    var slider = $('#platformSlider');
+    if (!slider) return;
+
+    var viewport = $('[data-slider-viewport]', slider);
+    var slides = $$('.slide', viewport);
+    var dotsBox = $('[data-slider-dots]');
+    var prev = $('[data-slider-prev]');
+    var next = $('[data-slider-next]');
+    if (!viewport || slides.length < 2) return;
+
+    var dots = [];
+    if (dotsBox) {
+      slides.forEach(function (slide, i) {
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', 'Экран ' + (i + 1));
+        dot.addEventListener('click', function () { goTo(i); });
+        dotsBox.appendChild(dot);
+        dots.push(dot);
+      });
+    }
+
+    function current() {
+      return Math.round(viewport.scrollLeft / viewport.clientWidth);
+    }
+
+    function goTo(i) {
+      var index = Math.max(0, Math.min(slides.length - 1, i));
+      viewport.scrollTo({ left: index * viewport.clientWidth, behavior: 'smooth' });
+    }
+
+    function sync() {
+      var i = current();
+      dots.forEach(function (d, n) { d.classList.toggle('is-active', n === i); });
+      if (prev) prev.disabled = i === 0;
+      if (next) next.disabled = i === slides.length - 1;
+    }
+
+    if (prev) prev.addEventListener('click', function () { goTo(current() - 1); });
+    if (next) next.addEventListener('click', function () { goTo(current() + 1); });
+
+    var ticking = false;
+    viewport.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () { sync(); ticking = false; });
+    }, { passive: true });
+
+    window.addEventListener('resize', sync);
+    sync();
+  })();
+
   /* ================= FAQ ================= */
   /* Аккордеон нативный (<details>), JS нужен только чтобы пересчитать
      позиции ScrollTrigger после изменения высоты страницы. */
