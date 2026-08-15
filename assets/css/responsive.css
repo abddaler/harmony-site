@@ -8,8 +8,19 @@
   :root{ --gutter:28px; --section-pad:92px; }
 
   .method__grid{ grid-template-columns:repeat(2, 1fr); gap:16px; }
+  .solo__grid{ grid-template-columns:repeat(2, 1fr); gap:16px; }
+  .steps{ grid-template-columns:repeat(2, 1fr); gap:16px; }
+  .teachers__grid{ grid-template-columns:repeat(2, 1fr); gap:34px 24px; }
   .myths__list{ grid-template-columns:repeat(2, 1fr); gap:22px 30px; }
   .myth{ border-bottom:0; padding-bottom:0; }
+
+  .first__cta{
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding:28px 30px;
+  }
+  .first__price{ grid-template-columns:repeat(2, auto); gap:10px 40px; }
 
   .reviews__grid{ grid-template-columns:repeat(2, 1fr); gap:40px 24px; }
   .polaroid{ width:100%; max-width:330px; }
@@ -91,7 +102,14 @@
 
   .tracks__grid{ grid-template-columns:repeat(2, 1fr); gap:24px; }
 
-  .teachers__grid{ grid-template-columns:repeat(3, 1fr); gap:30px; }
+  .solo__grid{ grid-template-columns:repeat(4, 1fr); }
+  .steps{ grid-template-columns:repeat(4, 1fr); }
+  .faq__item summary{ font-size:1.12rem; padding:21px 60px 21px 26px; }
+  .faq__item p{ padding:0 26px 23px; }
+
+  .teachers__grid{ grid-template-columns:repeat(4, 1fr); gap:30px 22px; }
+  .teacher__photo{ width:100%; max-width:230px; }
+  .teacher__name{ font-size:1.55rem; }
 
   .reviews__grid{ grid-template-columns:repeat(4, 1fr); gap:30px 20px; }
   .polaroid{ width:100%; }

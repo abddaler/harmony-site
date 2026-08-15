@@ -331,6 +331,24 @@ body.nav-open{ overflow:hidden; }
 .myth__wrong span{ background:rgba(255,255,255,.1); color:var(--muted); }
 .myth__right span{ background:var(--cyan); color:var(--ink); }
 
+/* ================= ТОЛЬКО ОДИН НА ОДИН ================= */
+
+.solo__grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+}
+
+.solo__note{
+  margin-top:26px;
+  padding:20px 22px;
+  border-left:2px solid var(--cyan);
+  background:rgba(47,214,232,.06);
+  border-radius:0 var(--radius) var(--radius) 0;
+  color:var(--white);
+  font-size:1rem;
+}
+
 /* ================= ТРЕКИ ================= */
 
 .tracks__grid{
@@ -414,6 +432,144 @@ body.nav-open{ overflow:hidden; }
 }
 .track__refs b{ color:var(--white); font-weight:600; }
 
+.tracks__extra{
+  margin-top:24px;
+  text-align:center;
+  color:var(--muted);
+  font-size:.95rem;
+}
+.tracks__extra b{ color:var(--white); font-weight:600; }
+
+/* ================= ПЕРВОЕ ЗАНЯТИЕ ================= */
+
+.steps{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+  counter-reset:step;
+  padding:0;
+  list-style:none;
+}
+
+.step{
+  position:relative;
+  padding:24px 22px 24px 66px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius);
+  background:linear-gradient(160deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
+  transition:border-color .3s, transform .35s var(--ease);
+}
+.step:hover{ border-color:var(--cyan-line); transform:translateY(-3px); }
+
+.step__num{
+  position:absolute;
+  left:20px; top:22px;
+  width:32px; height:32px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  border:1px solid var(--cyan);
+  color:var(--cyan);
+  font-family:var(--font-display);
+  font-size:1rem;
+}
+.step h3{
+  font-family:var(--font-display);
+  font-size:1.25rem;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+  margin-bottom:7px;
+}
+.step p{ color:var(--muted); font-size:.95rem; }
+
+.first__cta{
+  margin-top:28px;
+  padding:24px 22px;
+  border:1px solid var(--cyan-line);
+  border-radius:var(--radius);
+  background:
+    radial-gradient(100% 130% at 0% 0%, rgba(47,214,232,.12), transparent 60%),
+    var(--bg-2);
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.first__price{ display:grid; gap:12px; }
+.first__price-line{
+  margin:0;
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.first__price-line b{
+  font-family:var(--font-display);
+  font-size:1.5rem;
+  color:var(--cyan);
+  line-height:1;
+}
+.first__price-line span{ color:var(--muted); font-size:.9rem; }
+
+/* ================= ВОПРОСЫ ================= */
+
+.faq__list{
+  display:grid;
+  gap:10px;
+}
+
+.faq__item{
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:var(--radius);
+  background:rgba(255,255,255,.03);
+  overflow:hidden;
+  transition:border-color .3s, background-color .3s;
+}
+.faq__item[open]{
+  border-color:var(--cyan-line);
+  background:rgba(47,214,232,.05);
+}
+
+.faq__item summary{
+  position:relative;
+  list-style:none;
+  cursor:pointer;
+  padding:19px 54px 19px 22px;
+  font-family:var(--font-display);
+  font-size:1.05rem;
+  letter-spacing:.01em;
+  color:var(--white);
+  text-transform:uppercase;
+  transition:color .25s;
+}
+.faq__item summary::-webkit-details-marker{ display:none; }
+.faq__item summary:hover{ color:var(--cyan); }
+
+/* плюс/минус */
+.faq__item summary::after{
+  content:'';
+  position:absolute;
+  right:22px; top:50%;
+  width:13px; height:13px;
+  margin-top:-6px;
+  background:
+    linear-gradient(var(--cyan), var(--cyan)) center/13px 1.5px no-repeat,
+    linear-gradient(var(--cyan), var(--cyan)) center/1.5px 13px no-repeat;
+  transition:transform .3s var(--ease);
+}
+.faq__item[open] summary::after{
+  transform:rotate(90deg);
+  background:linear-gradient(var(--cyan), var(--cyan)) center/13px 1.5px no-repeat;
+}
+
+.faq__item p{
+  margin:0;
+  padding:0 22px 21px;
+  color:var(--muted);
+  font-size:.95rem;
+  max-width:76ch;
+}
+
 /* ================= ПРЕПОДАВАТЕЛИ ================= */
 
 .teachers__grid{
@@ -481,6 +637,15 @@ body.nav-open{ overflow:hidden; }
   margin:6px 0 12px;
 }
 .teacher__text{ color:var(--muted); font-size:.95rem; max-width:38ch; margin-inline:auto; }
+
+.teacher__likes{
+  margin:12px auto 0;
+  max-width:38ch;
+  font-size:.82rem;
+  color:rgba(255,255,255,.42);
+  border-top:1px solid rgba(255,255,255,.08);
+  padding-top:11px;
+}
 
 .teacher__tags{
   display:flex;

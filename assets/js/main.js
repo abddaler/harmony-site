@@ -207,6 +207,15 @@
     mapObserver.observe(mapBox);
   }
 
+  /* ================= FAQ ================= */
+  /* Аккордеон нативный (<details>), JS нужен только чтобы пересчитать
+     позиции ScrollTrigger после изменения высоты страницы. */
+  $$('.faq__item').forEach(function (item) {
+    item.addEventListener('toggle', function () {
+      if (window.ScrollTrigger) window.ScrollTrigger.refresh();
+    });
+  });
+
   /* ================= МЕЛОЧИ ================= */
   var year = $('#year');
   if (year) year.textContent = new Date().getFullYear();
