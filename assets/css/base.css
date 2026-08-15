@@ -56,7 +56,9 @@ body{
   text-rendering:optimizeLegibility;
 }
 
-img,svg{ max-width:100%; display:block; }
+/* height:auto — чтобы атрибут height в разметке не ломал пропорции,
+   когда ширину задаёт CSS (иначе aspect-ratio не срабатывает) */
+img,svg{ max-width:100%; display:block; height:auto; }
 a{ color:inherit; text-decoration:none; }
 button{ font:inherit; color:inherit; cursor:pointer; border:0; background:none; }
 ul{ margin:0; padding:0; list-style:none; }

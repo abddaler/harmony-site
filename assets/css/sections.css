@@ -511,6 +511,180 @@ body.nav-open{ overflow:hidden; }
 }
 .first__price-line span{ color:var(--muted); font-size:.9rem; }
 
+.first__honest{
+  margin-top:22px;
+  padding:20px 22px;
+  border-left:2px solid var(--cyan);
+  background:rgba(47,214,232,.06);
+  border-radius:0 var(--radius) var(--radius) 0;
+  color:var(--muted);
+  font-size:.97rem;
+  max-width:78ch;
+}
+.first__honest b{ color:var(--white); font-weight:600; }
+
+/* ================= ЦЕНЫ ================= */
+
+.prices__grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin-bottom:24px;
+}
+
+.price{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  padding:30px 22px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--radius);
+  background:linear-gradient(170deg, var(--bg-2), rgba(27,36,56,.4));
+  transition:transform .35s var(--ease), border-color .3s;
+}
+.price:hover{ transform:translateY(-5px); border-color:var(--cyan-line); }
+
+.price--accent{
+  border-color:var(--cyan-line);
+  background:
+    radial-gradient(120% 80% at 100% 0%, rgba(47,214,232,.14), transparent 60%),
+    linear-gradient(170deg, var(--bg-2), rgba(27,36,56,.5));
+  box-shadow:0 24px 60px -30px rgba(47,214,232,.5);
+}
+
+.price__badge{
+  position:absolute;
+  top:-11px; left:20px;
+  padding:5px 12px;
+  background:var(--cyan);
+  color:var(--ink);
+  font-family:var(--font-display);
+  font-size:.72rem;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  border-radius:4px;
+}
+
+.price__title{
+  font-family:var(--font-display);
+  font-size:clamp(1.7rem, 6vw, 2.2rem);
+  text-transform:uppercase;
+  letter-spacing:.01em;
+  margin-bottom:6px;
+}
+.price__sub{ color:var(--muted); font-size:.92rem; margin-bottom:22px; }
+
+.price__rows{ display:grid; gap:2px; margin-bottom:18px; }
+
+.price__row{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:14px;
+  padding:14px 16px;
+  border-radius:9px;
+  background:rgba(255,255,255,.04);
+}
+.price__row--best{
+  background:rgba(47,214,232,.12);
+  border:1px solid var(--cyan-line);
+}
+.price__label{ color:var(--muted); font-size:.92rem; }
+.price__value{
+  font-family:var(--font-display);
+  font-size:1.5rem;
+  color:var(--white);
+  white-space:nowrap;
+}
+.price__row--best .price__value{ color:var(--cyan); }
+.price__value i{
+  font-style:normal;
+  font-size:.82rem;
+  letter-spacing:.08em;
+  color:var(--muted);
+}
+
+.price__save{
+  font-size:.88rem;
+  color:var(--muted);
+  margin-bottom:20px;
+  margin-top:auto;
+}
+
+/* Абонемент */
+.sub{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:22px;
+  padding:26px 20px;
+  border:1px solid var(--cyan-line);
+  border-radius:var(--radius);
+  background:rgba(47,214,232,.04);
+}
+.sub__title{
+  font-family:var(--font-display);
+  font-size:1.5rem;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+  color:var(--cyan);
+  margin-bottom:12px;
+}
+.sub__text p{ color:var(--muted); font-size:.97rem; }
+
+.sub__formula{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px;
+  margin-top:16px;
+  padding-top:16px;
+  border-top:1px solid rgba(255,255,255,.09);
+  font-family:var(--font-display);
+  font-size:.92rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--white);
+}
+.sub__formula i{ font-style:normal; color:var(--cyan); font-size:1.1rem; }
+.sub__formula b{ color:var(--cyan); }
+
+.sub__example{
+  padding:20px 18px;
+  border-radius:10px;
+  background:rgba(14,21,35,.7);
+  border:1px solid rgba(255,255,255,.08);
+}
+.sub__example-title{
+  font-family:var(--font-display);
+  font-size:.82rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--cyan);
+  margin-bottom:14px;
+}
+.sub__case{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+  padding:11px 0;
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.sub__case span{ color:var(--muted); font-size:.86rem; }
+.sub__case b{
+  font-family:var(--font-display);
+  font-size:1.12rem;
+  color:var(--white);
+  letter-spacing:.02em;
+}
+.sub__note{ margin-top:13px; font-size:.83rem; color:var(--muted); }
+
+.prices__pay{
+  margin-top:22px;
+  text-align:center;
+  color:var(--muted);
+  font-size:.92rem;
+}
+
 /* ================= ВОПРОСЫ ================= */
 
 .faq__list{
@@ -663,6 +837,17 @@ body.nav-open{ overflow:hidden; }
   color:var(--muted);
 }
 
+/* График работы педагога */
+.teacher__time{
+  margin:12px auto 0;
+  max-width:34ch;
+  font-family:var(--font-display);
+  font-size:.78rem;
+  letter-spacing:.06em;
+  color:var(--cyan);
+  line-height:1.6;
+}
+
 /* ================= ОТЗЫВЫ / ПОЛАРОИДЫ ================= */
 
 .reviews__grid{
@@ -798,33 +983,55 @@ body.nav-open{ overflow:hidden; }
   100%{ box-shadow:0 0 0 0 rgba(47,214,232,0); }
 }
 
-.app__form{
+/* Скриншоты платформы — «приклеенные» кадры в стиле аккаунта */
+.shots{
   display:grid;
-  gap:10px;
-  max-width:460px;
+  grid-template-columns:1fr;
+  gap:26px;
+  margin-top:48px;
+  justify-items:center;
 }
-.app__form input{
-  width:100%;
-  padding:14px 16px;
-  background:rgba(255,255,255,.05);
-  border:1px solid rgba(255,255,255,.14);
-  border-radius:6px;
-  color:var(--white);
-  font-size:.95rem;
-  transition:border-color .25s, background-color .25s;
-}
-.app__form input::placeholder{ color:rgba(255,255,255,.38); }
-.app__form input:focus{
-  outline:none;
-  border-color:var(--cyan);
-  background:rgba(47,214,232,.07);
-}
-.app__form input.is-error{ border-color:#ff6b6b; }
-.app__form-msg{
-  font-size:.85rem;
-  color:var(--cyan);
+
+.shot{
+  position:relative;
+  width:min(88vw, 340px);
   margin:0;
-  min-height:1.2em;
+  padding:12px 12px 16px;
+  background:#f4f2ed;
+  border-radius:3px;
+  transform:rotate(-1.4deg);
+  box-shadow:0 22px 45px -22px rgba(0,0,0,.85);
+  transition:transform .4s var(--ease);
+}
+.shot:nth-child(even){ transform:rotate(1.6deg); }
+.shot:hover{ transform:rotate(0deg) translateY(-5px); }
+
+.shot__tape{
+  position:absolute;
+  top:-13px; left:50%;
+  width:96px; height:26px;
+  transform:translateX(-50%) rotate(-3deg);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.09), rgba(0,0,0,.25)),
+    #14161c;
+  opacity:.94;
+  box-shadow:0 4px 12px rgba(0,0,0,.5);
+}
+
+.shot img{
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  background:#20242e;
+}
+.shot figcaption{
+  padding-top:11px;
+  font-family:var(--font-display);
+  font-size:.76rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#5c6070;
+  text-align:center;
 }
 
 /* Телефон-мокап */
@@ -966,6 +1173,45 @@ body.nav-open{ overflow:hidden; }
 
 /* ================= КОНТАКТЫ ================= */
 
+.places{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+  margin-bottom:34px;
+}
+
+.place{
+  position:relative;
+  padding:26px 22px 26px 24px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--radius);
+  background:linear-gradient(160deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
+  transition:border-color .3s, transform .35s var(--ease);
+}
+.place:hover{ border-color:var(--cyan-line); transform:translateY(-3px); }
+
+.place__num{
+  display:block;
+  font-family:var(--font-display);
+  font-size:.8rem;
+  letter-spacing:.2em;
+  color:var(--cyan);
+  margin-bottom:10px;
+}
+.place__title{
+  font-family:var(--font-display);
+  font-size:1.42rem;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+  margin-bottom:9px;
+}
+.place__text{ color:var(--muted); font-size:.95rem; margin-bottom:8px; }
+.place__metro{
+  margin:0;
+  font-size:.85rem;
+  color:var(--cyan);
+}
+
 .contacts__grid{
   display:grid;
   grid-template-columns:1fr;
@@ -1056,6 +1302,13 @@ body.nav-open{ overflow:hidden; }
   color:var(--muted);
   font-size:.9rem;
 }
+.footer__phone{
+  margin-top:12px;
+  font-family:var(--font-display);
+  font-size:1.15rem;
+  letter-spacing:.06em;
+}
+.footer__phone a{ color:var(--cyan); }
 .footer__nav{
   display:grid;
   grid-template-columns:repeat(2, 1fr);
