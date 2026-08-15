@@ -27,13 +27,13 @@
   gsap.set(heroBits, { opacity: 0, y: 26 });
   gsap.set(heroLines, { opacity: 0, y: 40, rotateX: -35 });
   gsap.set('.hero__mic', { opacity: 0, y: 40, scale: .94 });
-  gsap.set('.hero__glow', { opacity: 0, scale: .7 });
+  gsap.set('.hero__rings span', { opacity: 0, scale: .82 });
   gsap.set('.hero__scroll', { opacity: 0 });
 
   function playHero() {
     var tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-    tl.to('.hero__glow', { opacity: 1, scale: 1, duration: 1.4, ease: 'power2.out' }, 0)
+    tl.to('.hero__rings span', { opacity: 1, scale: 1, duration: 1.3, stagger: .12, ease: 'power2.out' }, 0)
       .to('.hero__mic', { opacity: 1, y: 0, scale: 1, duration: 1.2 }, .1)
       .to(qa('#hero .kicker'), { opacity: 1, y: 0, duration: .6 }, .15)
       .to(heroLines, { opacity: 1, y: 0, rotateX: 0, duration: .9, stagger: .11 }, .25)
@@ -41,10 +41,8 @@
           { opacity: 1, y: 0, duration: .8, stagger: .12 }, .7)
       .to('.hero__scroll', { opacity: 1, duration: .6 }, 1.2);
 
-    // Полоски логотипа «дышат» один раз при входе
-    tl.from('.header .logo__eq rect', {
-      scaleY: .2, transformOrigin: 'center', duration: .6, stagger: .06, ease: 'back.out(2)'
-    }, .2);
+    // Логотип проявляется вместе с первым экраном
+    tl.from('.header .logo__img', { opacity: 0, y: -8, duration: .7 }, .1);
   }
 
   // Ждём, пока уйдёт прелоадер
@@ -159,20 +157,6 @@
         gsap.to(marqueeTrack, { timeScale: v, duration: .3, overwrite: true });
       }
     });
-  }
-
-  /* ================= ТЕЛЕФОН: наклон при скролле ================= */
-
-  var phone = q('.phone');
-  if (phone && isDesktop) {
-    gsap.fromTo(phone,
-      { rotateX: 9, rotateY: -11, y: 40 },
-      {
-        rotateX: 0, rotateY: 0, y: -20,
-        ease: 'none',
-        scrollTrigger: { trigger: '.app', start: 'top bottom', end: 'bottom top', scrub: .6 }
-      }
-    );
   }
 
   /* Пересчёт после подгрузки шрифтов/картинок */

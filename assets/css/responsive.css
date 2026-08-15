@@ -107,9 +107,12 @@
   .method__grid{ grid-template-columns:repeat(4, 1fr); }
 
   .tracks__grid{ grid-template-columns:repeat(2, 1fr); gap:24px; }
-  .tracks__grid--three{ grid-template-columns:repeat(3, 1fr); gap:20px; }
+  /* auto-fit: при 900–1050 три колонки не помещаются, раскладываем в две */
+  .tracks__grid--three{ grid-template-columns:repeat(auto-fit, minmax(270px, 1fr)); gap:20px; }
 
   .sub{ padding:34px 32px; }
+  .terms{ padding:30px 32px; }
+  .terms__list{ grid-template-columns:repeat(2, 1fr); gap:12px 30px; }
 
   .solo__grid{ grid-template-columns:repeat(4, 1fr); }
   .steps{ grid-template-columns:repeat(4, 1fr); }
