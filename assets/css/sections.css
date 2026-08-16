@@ -13,9 +13,8 @@
   transition:background-color .35s var(--ease), padding .35s var(--ease), box-shadow .35s;
 }
 .header.is-stuck{
-  background:rgba(16,22,36,.86);
-  backdrop-filter:blur(14px);
-  -webkit-backdrop-filter:blur(14px);
+  background:#111827;
+  background:color-mix(in srgb, var(--ink) 97%, transparent);
   padding:9px 0;
   box-shadow:0 1px 0 rgba(47,214,232,.16);
 }
@@ -29,17 +28,18 @@
 
 .nav{
   position:fixed;
-  inset:0 0 0 auto;
-  width:min(84vw, 340px);
-  padding:96px 26px 40px;
-  background:var(--bg-2);
-  border-left:1px solid var(--cyan-line);
+  inset:0;
+  width:100%;
+  height:100dvh;
+  padding:100px 26px 40px;
+  background:var(--ink);
   display:flex;
   flex-direction:column;
   gap:4px;
   transform:translateX(100%);
   transition:transform .4s var(--ease);
   overflow-y:auto;
+  z-index:105;
 }
 .nav.is-open{ transform:translateX(0); }
 
@@ -293,21 +293,42 @@ body.nav-open{ overflow:hidden; }
 }
 .card p{ color:var(--muted); font-size:.95rem; }
 
-/* Мифы */
+/* Мифы — раскрывающийся блок, чтобы не растягивать секцию */
 .myths{
   border:1px solid var(--cyan-line);
   border-radius:var(--radius);
-  padding:26px 20px;
   background:rgba(47,214,232,.04);
+  overflow:hidden;
 }
 .myths__title{
+  position:relative;
+  display:block;
+  list-style:none;
+  cursor:pointer;
+  padding:22px 56px 22px 20px;
   font-family:var(--font-display);
-  font-size:1.6rem;
+  font-size:1.3rem;
   text-transform:uppercase;
   letter-spacing:.04em;
-  margin-bottom:20px;
   color:var(--cyan);
 }
+.myths__title::-webkit-details-marker{ display:none; }
+.myths__title::after{
+  content:'';
+  position:absolute;
+  right:22px; top:50%;
+  width:14px; height:14px;
+  margin-top:-7px;
+  background:
+    linear-gradient(var(--cyan), var(--cyan)) center/14px 2px no-repeat,
+    linear-gradient(var(--cyan), var(--cyan)) center/2px 14px no-repeat;
+  transition:transform .3s var(--ease);
+}
+.myths[open] .myths__title::after{
+  transform:rotate(90deg);
+  background:linear-gradient(var(--cyan), var(--cyan)) center/14px 2px no-repeat;
+}
+.myths .myths__list{ padding:0 20px 24px; }
 .myths__list{
   display:grid;
   grid-template-columns:1fr;
@@ -957,7 +978,7 @@ body.nav-open{ overflow:hidden; }
 /* ================= ОТЧЁТНЫЕ КОНЦЕРТЫ ================= */
 
 .gig{
-  margin-top:48px;
+  margin-top:72px;
   display:grid;
   grid-template-columns:1fr;
   gap:26px;

@@ -35,7 +35,8 @@
 
   .hero__facts{ gap:16px 44px; }
   .modal__box{ padding:36px 32px; }
-  .myths{ padding:32px 30px; }
+  .myths__title{ padding:24px 60px 24px 30px; }
+  .myths .myths__list{ padding:0 30px 30px; }
   .card{ padding:30px 26px; }
   .track{ padding:34px 30px; }
 }
@@ -105,6 +106,7 @@
   .section__head{ margin-bottom:52px; }
 
   .method__grid{ grid-template-columns:repeat(4, 1fr); }
+  .method__grid--three{ grid-template-columns:repeat(3, 1fr); }
 
   .tracks__grid{ grid-template-columns:repeat(2, 1fr); gap:24px; }
   /* auto-fit: при 900–1050 три колонки не помещаются, раскладываем в две */
@@ -164,6 +166,11 @@
   .hero__title{ font-size:clamp(3.6rem, 5.4vw, 6.6rem); }
   .section__title{ font-size:clamp(3rem, 4.6vw, 4.6rem); }
   .marquee__track{ font-size:1.15rem; gap:28px; }
+}
+
+/* ---------- Стрелки слайдера только на десктопе ---------- */
+@media (max-width: 899px){
+  .slider__arrow{ display:none; }
 }
 
 /* ---------- Ландшафт на телефоне ---------- */
