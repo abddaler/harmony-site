@@ -9,7 +9,12 @@
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (typeof gsap === 'undefined' || reduced) return;
 
-  if (typeof ScrollTrigger !== 'undefined') gsap.registerPlugin(ScrollTrigger);
+  if (typeof ScrollTrigger !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger);
+    // iOS Safari меняет высоту вьюпорта при скролле (адресная строка).
+    // Без этого ScrollTrigger пересчитывает позиции на ходу и блоки «прыгают».
+    ScrollTrigger.config({ ignoreMobileResize: true });
+  }
 
   var q  = function (s, ctx) { return (ctx || document).querySelector(s); };
   var qa = function (s, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(s)); };
@@ -24,9 +29,9 @@
   var heroBits = qa('#hero .reveal').filter(function (el) { return el !== heroTitle; });
   var heroLines = qa('#hero .display__line');
 
-  gsap.set(heroBits, { opacity: 0, y: 26 });
-  gsap.set(heroLines, { opacity: 0, y: 40, rotateX: -35 });
-  gsap.set('.hero__mic', { opacity: 0, y: 40, scale: .94 });
+  gsap.set(heroBits, { opacity: 0 });
+  gsap.set(heroLines, { opacity: 0 });
+  gsap.set('.hero__mic', { opacity: 0, scale: .94 });
   gsap.set('.hero__rings span', { opacity: 0, scale: .82 });
   gsap.set('.hero__scroll', { opacity: 0 });
 
@@ -34,15 +39,15 @@
     var tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
     tl.to('.hero__rings span', { opacity: 1, scale: 1, duration: 1.3, stagger: .12, ease: 'power2.out' }, 0)
-      .to('.hero__mic', { opacity: 1, y: 0, scale: 1, duration: 1.2 }, .1)
-      .to(qa('#hero .kicker'), { opacity: 1, y: 0, duration: .6 }, .15)
-      .to(heroLines, { opacity: 1, y: 0, rotateX: 0, duration: .9, stagger: .11 }, .25)
+      .to('.hero__mic', { opacity: 1, scale: 1, duration: 1.2 }, .1)
+      .to(qa('#hero .kicker'), { opacity: 1, duration: .6 }, .15)
+      .to(heroLines, { opacity: 1, duration: .9, stagger: .11 }, .25)
       .to(qa('#hero .hero__lead, #hero .hero__cta, #hero .hero__facts'),
-          { opacity: 1, y: 0, duration: .8, stagger: .12 }, .7)
+          { opacity: 1, duration: .8, stagger: .12 }, .7)
       .to('.hero__scroll', { opacity: 1, duration: .6 }, 1.2);
 
     // Логотип проявляется вместе с первым экраном
-    tl.from('.header .logo__img', { opacity: 0, y: -8, duration: .7 }, .1);
+    tl.from('.header .logo__img', { opacity: 0, duration: .7 }, .1);
   }
 
   // Ждём, пока уйдёт прелоадер
@@ -60,7 +65,6 @@
     var parts = qa('.kicker, .section__title, .section__lead', head);
     gsap.from(parts, {
       opacity: 0,
-      y: 44,
       duration: .9,
       ease: 'power3.out',
       stagger: .1,
@@ -74,7 +78,6 @@
     if (el.closest('#hero') || el.closest('.section__head')) return;
     gsap.from(el, {
       opacity: 0,
-      y: 34,
       duration: .85,
       ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 88%' }
@@ -98,8 +101,7 @@
       var items = groups.items[i];
       gsap.from(items, {
         opacity: 0,
-        y: 56,
-        scale: .97,
+        scale: .98,
         duration: .8,
         ease: 'power3.out',
         stagger: .12,
@@ -107,17 +109,6 @@
       });
     });
   }
-
-  /* ================= ПОЛАРОИДЫ: лёгкий доворот ================= */
-
-  qa('.polaroid').forEach(function (card, i) {
-    gsap.from(card, {
-      rotate: i % 2 ? 9 : -9,
-      duration: 1,
-      ease: 'power3.out',
-      scrollTrigger: { trigger: card, start: 'top 88%' }
-    });
-  });
 
   /* ================= ПАРАЛЛАКС ФОНА И ДЕКОРА ================= */
 

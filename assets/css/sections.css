@@ -371,7 +371,7 @@ body.nav-open{ overflow:hidden; }
 }
 
 .solo__note{
-  margin-top:26px;
+  margin-top:34px;
   padding:20px 22px;
   border-left:2px solid var(--cyan);
   background:rgba(47,214,232,.06);
@@ -685,7 +685,7 @@ body.nav-open{ overflow:hidden; }
 
 /* Условия занятий */
 .terms{
-  margin-top:18px;
+  margin-top:24px;
   padding:24px 22px;
   border:1px solid rgba(255,255,255,.1);
   border-radius:var(--radius);
@@ -959,7 +959,9 @@ body.nav-open{ overflow:hidden; }
   color:var(--cyan);
 }
 
-.polaroid figcaption{ padding:14px 4px 0; }
+/* внешний отступ, а не padding: у повёрнутой карточки габариты шире,
+   и соседние блоки должны расходиться, а не просто отступать текстом */
+.polaroid figcaption{ margin-top:20px; padding:0 4px; }
 .polaroid__quote{
   color:#1a1d26;
   font-size:.92rem;
@@ -1510,3 +1512,24 @@ body.nav-open{ overflow:hidden; }
   margin-bottom:8px;
 }
 .modal__text{ color:var(--muted); font-size:.95rem; margin-bottom:20px; }
+
+
+/* ===========================================================
+   ТАЧ-УСТРОЙСТВА
+   На iOS :hover «залипает» после касания — карточка остаётся
+   сдвинутой и наезжает на соседний блок. Поэтому на устройствах
+   без мыши все hover-сдвиги отключены.
+   =========================================================== */
+@media (hover: none){
+  .card:hover,
+  .track:hover,
+  .price:hover,
+  .step:hover,
+  .place:hover{ transform:none; }
+
+  .polaroid:hover{ transform:rotate(-1.8deg); }
+  .polaroid--tilt-r:hover{ transform:rotate(1.9deg); }
+
+  .teacher:hover .teacher__photo::before,
+  .teacher:hover .teacher__photo::after{ transform:none; }
+}
