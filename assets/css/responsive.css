@@ -28,15 +28,15 @@
   .price{ padding:34px 28px; }
 
   .reviews__grid{ columns:2; column-gap:34px; }
-  .polaroid{ width:calc(100% - 18px); max-width:none; }
+  .polaroid{ width:100%; }
   .gig{ grid-template-columns:1.2fr 1fr; align-items:center; padding:30px 28px; }
 
   .footer__nav{ grid-template-columns:repeat(3, 1fr); }
 
   .hero__facts{ gap:16px 44px; }
   .modal__box{ padding:36px 32px; }
-  .myths__title{ padding:24px 60px 24px 30px; }
-  .myths .myths__list{ padding:0 30px 30px; }
+  .myths__title{ padding:28px 30px 4px; }
+  .myths .myths__list{ padding:16px 30px 30px; }
   .card{ padding:30px 26px; }
   .track{ padding:34px 30px; }
 }
@@ -133,7 +133,7 @@
   .teacher__name{ font-size:1.6rem; }
 
   .reviews__grid{ columns:2; column-gap:44px; }
-  .polaroid{ width:calc(100% - 20px); margin-bottom:48px; }
+  .polaroid{ width:100%; margin-bottom:44px; }
   .gig{ padding:36px 34px; gap:40px; }
   .logo__img{ height:36px; }
   .header.is-stuck .logo__img{ height:30px; }

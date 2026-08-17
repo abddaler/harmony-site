@@ -293,7 +293,7 @@ body.nav-open{ overflow:hidden; }
 }
 .card p{ color:var(--muted); font-size:.95rem; }
 
-/* Мифы — раскрывающийся блок, чтобы не растягивать секцию */
+/* Мифы */
 .myths{
   border:1px solid var(--cyan-line);
   border-radius:var(--radius);
@@ -301,34 +301,14 @@ body.nav-open{ overflow:hidden; }
   overflow:hidden;
 }
 .myths__title{
-  position:relative;
-  display:block;
-  list-style:none;
-  cursor:pointer;
-  padding:22px 56px 22px 20px;
+  padding:24px 20px 4px;
   font-family:var(--font-display);
   font-size:1.3rem;
   text-transform:uppercase;
   letter-spacing:.04em;
   color:var(--cyan);
 }
-.myths__title::-webkit-details-marker{ display:none; }
-.myths__title::after{
-  content:'';
-  position:absolute;
-  right:22px; top:50%;
-  width:14px; height:14px;
-  margin-top:-7px;
-  background:
-    linear-gradient(var(--cyan), var(--cyan)) center/14px 2px no-repeat,
-    linear-gradient(var(--cyan), var(--cyan)) center/2px 14px no-repeat;
-  transition:transform .3s var(--ease);
-}
-.myths[open] .myths__title::after{
-  transform:rotate(90deg);
-  background:linear-gradient(var(--cyan), var(--cyan)) center/14px 2px no-repeat;
-}
-.myths .myths__list{ padding:0 20px 24px; }
+.myths .myths__list{ padding:14px 20px 24px; }
 .myths__list{
   display:grid;
   grid-template-columns:1fr;
@@ -910,19 +890,19 @@ body.nav-open{ overflow:hidden; }
 .polaroid{
   position:relative;
   break-inside:avoid;
-  width:min(86vw, 340px);
-  /* поворот увеличивает габариты карточки — нижний отступ с запасом,
-     иначе соседние полароиды цепляются углами */
-  margin:0 auto 46px;
-  padding:14px 14px 20px;
+  /* отзывы должны читаться, поэтому карточка во всю ширину колонки
+     и без наклона — наклонённый скриншот выглядит обрезанным */
+  width:100%;
+  margin:0 auto 40px;
+  padding:12px 12px 16px;
   background:#f4f2ed;
-  border-radius:3px;
-  transform:rotate(-1.8deg);
+  border-radius:4px;
+  transform:none;
   box-shadow:0 22px 45px -20px rgba(0,0,0,.85);
   transition:transform .4s var(--ease);
 }
-.polaroid--tilt-r{ transform:rotate(1.9deg); }
-.polaroid:hover{ transform:rotate(0deg) translateY(-6px); }
+.polaroid--tilt-r{ transform:none; }
+.polaroid:hover{ transform:translateY(-5px); }
 
 /* чёрный скотч по углу */
 .polaroid__tape{
@@ -964,9 +944,7 @@ body.nav-open{ overflow:hidden; }
   color:var(--cyan);
 }
 
-/* внешний отступ, а не padding: у повёрнутой карточки габариты шире,
-   и соседние блоки должны расходиться, а не просто отступать текстом */
-.polaroid figcaption{ margin-top:20px; padding:0 4px; }
+.polaroid figcaption{ margin-top:14px; padding:0 4px; }
 .polaroid__quote{
   color:#1a1d26;
   font-size:.92rem;
@@ -1532,8 +1510,7 @@ body.nav-open{ overflow:hidden; }
   .step:hover,
   .place:hover{ transform:none; }
 
-  .polaroid:hover{ transform:rotate(-1.8deg); }
-  .polaroid--tilt-r:hover{ transform:rotate(1.9deg); }
+  .polaroid:hover{ transform:none; }
 
   .teacher:hover .teacher__photo::before,
   .teacher:hover .teacher__photo::after{ transform:none; }
