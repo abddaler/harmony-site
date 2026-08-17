@@ -900,19 +900,20 @@ body.nav-open{ overflow:hidden; }
 
 /* ================= ОТЗЫВЫ / ПОЛАРОИДЫ ================= */
 
+/* Отзывы разной высоты: раскладываем колонками-потоком,
+   иначе под коротким скриншотом остаётся дыра */
 .reviews__grid{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:34px;
-  justify-items:center;
+  columns:1;
+  column-gap:34px;
 }
 
 .polaroid{
   position:relative;
-  width:min(86vw, 320px);
-  /* поворот увеличивает габариты карточки — оставляем запас,
-     иначе соседние полароиды налезают друг на друга в сетке */
-  margin:0 auto;
+  break-inside:avoid;
+  width:min(86vw, 340px);
+  /* поворот увеличивает габариты карточки — нижний отступ с запасом,
+     иначе соседние полароиды цепляются углами */
+  margin:0 auto 46px;
   padding:14px 14px 20px;
   background:#f4f2ed;
   border-radius:3px;
@@ -943,11 +944,15 @@ body.nav-open{ overflow:hidden; }
 
 .polaroid__img{
   position:relative;
-  aspect-ratio:1;
+  display:block;
   background:#20242e;
   overflow:hidden;
 }
-.polaroid__img img{ width:100%; height:100%; object-fit:cover; }
+/* Скриншоты отзывов показываем целиком, без обрезки */
+.polaroid__img img{ width:100%; height:auto; display:block; }
+/* Плейсхолдеры без реального содержимого остаются квадратными */
+.polaroid__img--square{ aspect-ratio:1; }
+.polaroid__img--square img{ height:100%; object-fit:cover; }
 
 .polaroid__mark{
   position:absolute;

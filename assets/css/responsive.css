@@ -27,8 +27,8 @@
   .sub{ padding:30px 26px; }
   .price{ padding:34px 28px; }
 
-  .reviews__grid{ grid-template-columns:repeat(2, 1fr); gap:44px 34px; }
-  .polaroid{ width:calc(100% - 18px); max-width:330px; }
+  .reviews__grid{ columns:2; column-gap:34px; }
+  .polaroid{ width:calc(100% - 18px); max-width:none; }
   .gig{ grid-template-columns:1.2fr 1fr; align-items:center; padding:30px 28px; }
 
   .footer__nav{ grid-template-columns:repeat(3, 1fr); }
@@ -132,8 +132,8 @@
   .teacher__photo{ width:100%; max-width:230px; }
   .teacher__name{ font-size:1.6rem; }
 
-  .reviews__grid{ grid-template-columns:repeat(4, 1fr); gap:34px 34px; }
-  .polaroid{ width:calc(100% - 20px); }
+  .reviews__grid{ columns:2; column-gap:44px; }
+  .polaroid{ width:calc(100% - 20px); margin-bottom:48px; }
   .gig{ padding:36px 34px; gap:40px; }
   .logo__img{ height:36px; }
   .header.is-stuck .logo__img{ height:30px; }
