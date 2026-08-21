@@ -151,7 +151,7 @@
   .phone{ width:min(26vw, 300px); }
 
   .contacts__grid{ grid-template-columns:1fr 1.15fr; gap:40px; align-items:start; }
-  .contacts__map, .contacts__map iframe, .map-stub{ min-height:420px; }
+  .map__frame, .map__frame iframe, .map-stub{ min-height:420px; }
 
   .footer__inner{ grid-template-columns:1.4fr 1fr auto; gap:40px; align-items:start; }
   .footer__nav{ grid-template-columns:repeat(2, 1fr); }
