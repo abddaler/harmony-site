@@ -34,7 +34,6 @@
   .footer__nav{ grid-template-columns:repeat(3, 1fr); }
 
   .hero__facts{ gap:16px 44px; }
-  .modal__box{ padding:36px 32px; }
   .myths__title{ padding:28px 30px 4px; }
   .myths .myths__list{ padding:16px 30px 30px; }
   .card{ padding:30px 26px; }
@@ -185,6 +184,6 @@
 
 /* ---------- Печать ---------- */
 @media print{
-  .bg-decor, .header, .preloader, .hero__scroll, .marquee, .modal{ display:none !important; }
+  .bg-decor, .header, .preloader, .hero__scroll, .marquee{ display:none !important; }
   body{ background:#fff; color:#000; }
 }
