@@ -181,6 +181,54 @@
     btn.addEventListener('click', function () { closeNav(); });
   });
 
+  /* ============ ПЛАВАЮЩАЯ КНОПКА ВИДЖЕТА ALTEGIO ============ */
+  /* Виджет сам вешает в угол круглую кнопку «Онлайн-запись». Она не нужна:
+     на странице 11 своих кнопок записи, а чужая перекрывает текст.
+     Штатно её отключают в кабинете Altegio (настройки виджета); здесь —
+     подстраховка на стороне сайта.
+
+     Класс виджета заранее неизвестен, поэтому ищем по признакам: небольшой
+     элемент с position:fixed, который скрипт добавил в body до того, как
+     посетитель нажал нашу кнопку. Само окно записи крупное и появляется
+     после клика — его не трогаем. */
+  (function hideWidgetFab() {
+    if (!('MutationObserver' in window)) return;
+
+    var clicked = false;
+    document.addEventListener('click', function (e) {
+      if (e.target.closest && e.target.closest('[data-booking]')) clicked = true;
+    }, true);
+
+    function isFloatingButton(el) {
+      if (!el || el.nodeType !== 1) return false;
+      // свои элементы не трогаем
+      if (el.closest('#preloader, .modal, .header, main, .footer')) return false;
+      var cs = window.getComputedStyle(el);
+      if (cs.position !== 'fixed' && cs.position !== 'absolute') return false;
+      if (cs.display === 'none' || cs.visibility === 'hidden') return false;
+      var r = el.getBoundingClientRect();
+      // круглая кнопка — небольшая; окно записи заметно крупнее
+      return r.width > 24 && r.width <= 240 && r.height > 24 && r.height <= 240;
+    }
+
+    var obs = new MutationObserver(function (mutations) {
+      if (clicked) { obs.disconnect(); return; }
+      mutations.forEach(function (m) {
+        Array.prototype.forEach.call(m.addedNodes, function (node) {
+          if (!node || node.nodeType !== 1) return;
+          // ждём кадр: виджет успевает применить свои стили
+          requestAnimationFrame(function () {
+            if (clicked) return;
+            if (isFloatingButton(node)) node.style.setProperty('display', 'none', 'important');
+          });
+        });
+      });
+    });
+
+    obs.observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () { obs.disconnect(); }, 20000);
+  })();
+
   /* ================= КАРТА ФИЛИАЛОВ ================= */
   /* Грузится лениво: iframe появляется, когда блок подходит к экрану.
      Вкладки переключают филиал. */
