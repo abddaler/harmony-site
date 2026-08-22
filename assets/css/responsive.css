@@ -8,7 +8,6 @@
   :root{ --gutter:28px; --section-pad:56px; }
 
   .method__grid{ grid-template-columns:repeat(2, 1fr); gap:16px; }
-  .solo__grid{ grid-template-columns:repeat(2, 1fr); gap:16px; }
   .steps{ grid-template-columns:repeat(2, 1fr); gap:16px; }
   .teachers__grid{ grid-template-columns:repeat(2, 1fr); gap:34px 24px; }
   .myths__list{ grid-template-columns:repeat(2, 1fr); gap:22px 30px; }
@@ -109,7 +108,8 @@
   .section__head{ margin-bottom:30px; }
 
   .method__grid{ grid-template-columns:repeat(4, 1fr); }
-  .method__grid--three{ grid-template-columns:repeat(3, 1fr); }
+  /* три мифа — в один ряд, иначе третья колонка пустует */
+  .myths__list{ grid-template-columns:repeat(3, 1fr); }
 
   .tracks__grid{ grid-template-columns:repeat(2, 1fr); gap:24px; }
   /* auto-fit: при 900–1050 три колонки не помещаются, раскладываем в две */
@@ -119,7 +119,6 @@
   .terms{ padding:30px 32px; }
   .terms__list{ grid-template-columns:repeat(2, 1fr); gap:12px 30px; }
 
-  .solo__grid{ grid-template-columns:repeat(4, 1fr); }
   .steps{ grid-template-columns:repeat(4, 1fr); }
   .faq__item summary{ font-size:1.12rem; padding:21px 60px 21px 26px; }
   .faq__item p{ padding:0 26px 23px; }

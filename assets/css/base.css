@@ -71,7 +71,7 @@ h1,h2,h3,h4,p,li,summary,b,span{ overflow-wrap:break-word; }
 
 /* Элемент грида по умолчанию не сжимается уже своего контента (min-width:auto),
    из-за этого колонки расползались и карточки уезжали за вьюпорт */
-.method__grid > *, .solo__grid > *, .tracks__grid > *, .steps > *,
+.method__grid > *, .tracks__grid > *, .steps > *,
 .prices__grid > *, .teachers__grid > *, .places > *, .reviews__grid > *,
 .myths__list > *, .footer__inner > *, .contacts__grid > *, .app__inner > *{
   min-width:0;
