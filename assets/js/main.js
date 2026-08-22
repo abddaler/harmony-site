@@ -192,41 +192,60 @@
      посетитель нажал нашу кнопку. Само окно записи крупное и появляется
      после клика — его не трогаем. */
   (function hideWidgetFab() {
-    if (!('MutationObserver' in window)) return;
+    // наши собственные блоки — их не трогаем ни при каких условиях
+    var OURS = '#preloader, .modal, .header, main, .footer, .bg-decor';
 
     var clicked = false;
     document.addEventListener('click', function (e) {
       if (e.target.closest && e.target.closest('[data-booking]')) clicked = true;
     }, true);
 
-    function isFloatingButton(el) {
+    function looksLikeFab(el) {
       if (!el || el.nodeType !== 1) return false;
-      // свои элементы не трогаем
-      if (el.closest('#preloader, .modal, .header, main, .footer')) return false;
+      if (el.closest(OURS)) return false;
+      if (el.getAttribute('data-fab-hidden')) return false;
+
       var cs = window.getComputedStyle(el);
-      if (cs.position !== 'fixed' && cs.position !== 'absolute') return false;
-      if (cs.display === 'none' || cs.visibility === 'hidden') return false;
+      if (cs.position !== 'fixed') return false;
+      if (cs.display === 'none' || cs.visibility === 'hidden' || cs.opacity === '0') return false;
+
       var r = el.getBoundingClientRect();
-      // круглая кнопка — небольшая; окно записи заметно крупнее
-      return r.width > 24 && r.width <= 240 && r.height > 24 && r.height <= 240;
+      // размер круглой кнопки; окно записи заметно крупнее
+      if (r.width < 30 || r.height < 30 || r.width > 260 || r.height > 260) return false;
+
+      // и она прижата к нижнему углу экрана — окно записи так не стоит
+      var nearSide = (window.innerWidth - r.right < 90) || (r.left < 90);
+      var nearBottom = (window.innerHeight - r.bottom < 140);
+      return nearSide && nearBottom;
     }
 
-    var obs = new MutationObserver(function (mutations) {
-      if (clicked) { obs.disconnect(); return; }
-      mutations.forEach(function (m) {
-        Array.prototype.forEach.call(m.addedNodes, function (node) {
-          if (!node || node.nodeType !== 1) return;
-          // ждём кадр: виджет успевает применить свои стили
-          requestAnimationFrame(function () {
-            if (clicked) return;
-            if (isFloatingButton(node)) node.style.setProperty('display', 'none', 'important');
-          });
+    function hide(el) {
+      el.style.setProperty('display', 'none', 'important');
+      el.setAttribute('data-fab-hidden', '1');
+    }
+
+    // Виджет добавляет свои узлы отдельными детьми body. Обходим только их
+    // поддеревья: и дёшево, и в свою разметку не лезем.
+    function sweep() {
+      Array.prototype.forEach.call(document.body.children, function (root) {
+        if (root.tagName === 'SCRIPT' || root.tagName === 'NOSCRIPT') return;
+        if (root.matches(OURS)) return;
+        if (looksLikeFab(root)) { hide(root); return; }
+        Array.prototype.forEach.call(root.querySelectorAll('*'), function (el) {
+          if (looksLikeFab(el)) hide(el);
         });
       });
-    });
+    }
 
-    obs.observe(document.body, { childList: true, subtree: true });
-    setTimeout(function () { obs.disconnect(); }, 20000);
+    // Кнопка появляется не сразу и может дорисоваться позже, поэтому
+    // проверяем повторно ~30 секунд, а после первого клика по записи
+    // перестаём вмешиваться — чтобы не задеть окно виджета.
+    var tries = 0;
+    var timer = setInterval(function () {
+      if (clicked || ++tries > 75) { clearInterval(timer); return; }
+      sweep();
+    }, 400);
+    sweep();
   })();
 
   /* ================= КАРТА ФИЛИАЛОВ ================= */
