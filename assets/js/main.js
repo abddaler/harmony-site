@@ -187,54 +187,118 @@
      Штатно её отключают в кабинете Altegio (настройки виджета); здесь —
      подстраховка на стороне сайта.
 
-     Класс виджета заранее неизвестен, поэтому ищем по признакам: небольшой
-     элемент с position:fixed, который скрипт добавил в body до того, как
-     посетитель нажал нашу кнопку. Само окно записи крупное и появляется
-     после клика — его не трогаем. */
+     Класс виджета заранее неизвестен и его домен недоступен из сборки,
+     поэтому ищем кнопку не по признакам, а по тому, что реально нарисовано
+     в нижних углах экрана: elementFromPoint возвращает верхний элемент в
+     точке. Всё, что там оказалось и не принадлежит нам, — чужая кнопка.
+
+     Диагностика: откройте сайт с ?fabdebug=1 — сверху появится список того,
+     что найдено в углах, вместе с классами. По нему можно поставить точное
+     правило, не залезая в инструменты разработчика. */
   (function hideWidgetFab() {
     // наши собственные блоки — их не трогаем ни при каких условиях
     var OURS = '#preloader, .modal, .header, main, .footer, .bg-decor';
+    var DEBUG = /(\?|&)fabdebug=1/.test(window.location.search);
+    var report = [];
 
     var clicked = false;
     document.addEventListener('click', function (e) {
       if (e.target.closest && e.target.closest('[data-booking]')) clicked = true;
     }, true);
 
-    function looksLikeFab(el) {
-      if (!el || el.nodeType !== 1) return false;
-      if (el.closest(OURS)) return false;
-      if (el.getAttribute('data-fab-hidden')) return false;
-
-      var cs = window.getComputedStyle(el);
-      if (cs.position !== 'fixed') return false;
-      if (cs.display === 'none' || cs.visibility === 'hidden' || cs.opacity === '0') return false;
-
-      var r = el.getBoundingClientRect();
-      // размер круглой кнопки; окно записи заметно крупнее
-      if (r.width < 30 || r.height < 30 || r.width > 260 || r.height > 260) return false;
-
-      // и она прижата к нижнему углу экрана — окно записи так не стоит
-      var nearSide = (window.innerWidth - r.right < 90) || (r.left < 90);
-      var nearBottom = (window.innerHeight - r.bottom < 140);
-      return nearSide && nearBottom;
+    function ours(el) {
+      return !el || el === document.body || el === document.documentElement || !!el.closest(OURS);
     }
+
+    function describe(el) {
+      var cs = window.getComputedStyle(el);
+      var r = el.getBoundingClientRect();
+      return el.tagName.toLowerCase() +
+        (el.id ? '#' + el.id : '') +
+        (typeof el.className === 'string' && el.className ? '.' + el.className.trim().replace(/\s+/g, '.') : '') +
+        ' [' + cs.position + ' ' + Math.round(r.width) + '×' + Math.round(r.height) + ']';
+    }
+
+    var hidden = 0;
 
     function hide(el) {
+      if (el.getAttribute('data-fab-hidden')) return;
+      /* Скрыв кнопку, следующим проходом мы бы нашли под ней обёртку и
+         спрятали уже её — а вместе с ней и окно записи. Поэтому вверх по
+         цепочке не идём: элемент, внутри которого уже что-то скрыто,
+         не трогаем. Плюс общий предел на всякий случай. */
+      if (el.querySelector('[data-fab-hidden]')) return;
+      if (hidden >= 3) return;
       el.style.setProperty('display', 'none', 'important');
       el.setAttribute('data-fab-hidden', '1');
+      hidden++;
     }
 
-    // Виджет добавляет свои узлы отдельными детьми body. Обходим только их
-    // поддеревья: и дёшево, и в свою разметку не лезем.
-    function sweep() {
-      Array.prototype.forEach.call(document.body.children, function (root) {
-        if (root.tagName === 'SCRIPT' || root.tagName === 'NOSCRIPT') return;
-        if (root.matches(OURS)) return;
-        if (looksLikeFab(root)) { hide(root); return; }
-        Array.prototype.forEach.call(root.querySelectorAll('*'), function (el) {
-          if (looksLikeFab(el)) hide(el);
+    /* Точки в нижних углах: кнопка может стоять справа или слева,
+       на разном отступе от края. */
+    function cornerPoints() {
+      var w = window.innerWidth, h = window.innerHeight, pts = [];
+      [w - 26, w - 55, w - 90, 26, 55, 90].forEach(function (x) {
+        [h - 26, h - 55, h - 90].forEach(function (y) {
+          if (x > 0 && y > 0) pts.push([x, y]);
         });
       });
+      return pts;
+    }
+
+    /* Поднимаемся к внешней обёртке кнопки — но только через обёртки с
+       единственным потомком и небольшого размера. Если у родителя есть
+       другие дети, останавливаемся: там может лежать окно записи, и
+       скрыв родителя, мы сломали бы саму запись. */
+    function outermostSmall(el) {
+      var node = el;
+      while (node.parentElement && !ours(node.parentElement)) {
+        var parent = node.parentElement;
+        if (parent.children.length !== 1) break;
+        var r = parent.getBoundingClientRect();
+        if (r.width > 320 || r.height > 320) break;
+        node = parent;
+      }
+      return node;
+    }
+
+    function sweep() {
+      var hits = [];
+
+      cornerPoints().forEach(function (pt) {
+        var el = document.elementFromPoint(pt[0], pt[1]);
+        if (ours(el)) return;
+
+        if (DEBUG) report.push('(' + pt[0] + ',' + pt[1] + ') ' + describe(el));
+
+        // крупный элемент в углу — скорее всего прозрачная подложка или
+        // окно записи: трогать опасно, только показываем в диагностике
+        var r = el.getBoundingClientRect();
+        if (r.width > 320 || r.height > 320) return;
+
+        if (hits.indexOf(el) === -1) hits.push(el);
+      });
+
+      /* Кнопка круглая, поэтому часть точек попадает мимо неё — в обёртку,
+         внутри которой может лежать и окно записи. Поэтому из найденного
+         оставляем только самое вложенное: если один элемент содержит
+         другой, внешний отбрасываем. */
+      hits.filter(function (el) {
+        return !hits.some(function (other) { return other !== el && el.contains(other); });
+      }).forEach(function (el) {
+        hide(outermostSmall(el));
+      });
+    }
+
+    function showReport() {
+      var box = document.createElement('div');
+      box.style.cssText = 'position:fixed;left:0;right:0;top:0;z-index:2147483647;' +
+        'background:#000;color:#0f0;font:11px/1.45 ui-monospace,Menlo,monospace;' +
+        'padding:10px 12px;max-height:52vh;overflow:auto;white-space:pre-wrap;word-break:break-all';
+      box.textContent = report.length
+        ? 'В УГЛАХ НАЙДЕНО:\n' + report.join('\n')
+        : 'В углах ничего чужого не найдено — кнопка либо уже скрыта, либо лежит внутри iframe виджета.';
+      document.body.appendChild(box);
     }
 
     // Кнопка появляется не сразу и может дорисоваться позже, поэтому
@@ -246,6 +310,9 @@
       sweep();
     }, 400);
     sweep();
+
+    // отчёт показываем один раз, дав виджету время прогрузиться
+    if (DEBUG) setTimeout(showReport, 6000);
   })();
 
   /* ================= КАРТА ФИЛИАЛОВ ================= */
