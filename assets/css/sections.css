@@ -251,7 +251,7 @@ body.nav-open{ overflow:hidden; }
   display:grid;
   grid-template-columns:1fr;
   gap:14px;
-  margin-bottom:52px;
+  margin-bottom:36px;
 }
 
 .card{
@@ -831,8 +831,12 @@ body.nav-open{ overflow:hidden; }
 /* Отзывы разной высоты: раскладываем колонками-потоком,
    иначе под коротким скриншотом остаётся дыра */
 .reviews__grid{
-  columns:1;
-  column-gap:34px;
+  /* сетка, а не columns: колонки балансировали по высоте и один длинный
+     отзыв растягивал весь блок, оставляя пустоту рядом */
+  display:grid;
+  grid-template-columns:1fr;
+  gap:28px;
+  align-items:start;
 }
 
 .polaroid{
@@ -841,15 +845,14 @@ body.nav-open{ overflow:hidden; }
   /* отзывы должны читаться, поэтому карточка во всю ширину колонки
      и без наклона — наклонённый скриншот выглядит обрезанным */
   width:100%;
-  margin:0 auto 40px;
-  padding:12px 12px 16px;
+  margin:0;
+  padding:10px 10px 14px;
   background:#f4f2ed;
   border-radius:4px;
   transform:none;
   box-shadow:0 22px 45px -20px rgba(0,0,0,.85);
   transition:transform .4s var(--ease);
 }
-.polaroid--tilt-r{ transform:none; }
 .polaroid:hover{ transform:translateY(-5px); }
 
 /* чёрный скотч по углу */
@@ -876,8 +879,17 @@ body.nav-open{ overflow:hidden; }
   background:#20242e;
   overflow:hidden;
 }
-/* Скриншоты отзывов показываем целиком, без обрезки */
-.polaroid__img img{ width:100%; height:auto; display:block; }
+/* Высота ограничена, иначе вертикальный скриншот вырастает вдвое выше
+   соседей и распирает секцию. Обрезаем снизу — текст отзыва идёт сверху,
+   по клику открывается целиком. */
+.polaroid__img img{
+  width:100%;
+  height:auto;
+  max-height:380px;
+  object-fit:cover;
+  object-position:top center;
+  display:block;
+}
 /* Плейсхолдеры без реального содержимого остаются квадратными */
 
 .polaroid figcaption{ margin-top:14px; padding:0 4px; }
@@ -893,7 +905,7 @@ body.nav-open{ overflow:hidden; }
 /* ================= ОТЧЁТНЫЕ КОНЦЕРТЫ ================= */
 
 .gig{
-  margin-top:72px;
+  margin-top:48px;
   display:grid;
   grid-template-columns:1fr;
   gap:26px;

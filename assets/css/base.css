@@ -31,7 +31,7 @@
   --container: 1200px;
   --gutter: 20px;
   --radius: 14px;
-  --section-pad: 76px;
+  --section-pad: 54px;
 
   --ease: cubic-bezier(.22,.61,.36,1);
 }
@@ -240,7 +240,7 @@ main, .footer, .marquee{ position:relative; z-index:1; }
   position:relative;
 }
 
-.section__head{ margin-bottom:38px; }
+.section__head{ margin-bottom:28px; }
 
 /* ---------- ЛОГОТИП-ЭКВАЛАЙЗЕР ---------- */
 

@@ -5,7 +5,7 @@
 
 /* ---------- ≥ 600px: планшет в портрете ---------- */
 @media (min-width: 600px){
-  :root{ --gutter:28px; --section-pad:92px; }
+  :root{ --gutter:28px; --section-pad:66px; }
 
   .method__grid{ grid-template-columns:repeat(2, 1fr); gap:16px; }
   .solo__grid{ grid-template-columns:repeat(2, 1fr); gap:16px; }
@@ -27,8 +27,7 @@
   .sub{ padding:30px 26px; }
   .price{ padding:34px 28px; }
 
-  .reviews__grid{ columns:2; column-gap:34px; }
-  .polaroid{ width:100%; }
+  .reviews__grid{ grid-template-columns:repeat(2, 1fr); }
   .gig{ grid-template-columns:1.2fr 1fr; align-items:center; padding:30px 28px; }
 
   .footer__nav{ grid-template-columns:repeat(3, 1fr); }
@@ -42,7 +41,7 @@
 
 /* ---------- ≥ 900px: десктоп ---------- */
 @media (min-width: 900px){
-  :root{ --gutter:32px; --section-pad:120px; }
+  :root{ --gutter:32px; --section-pad:84px; }
 
   html{ scroll-padding-top:90px; }
 
@@ -107,7 +106,7 @@
   .hero__facts b{ font-size:2.1rem; }
 
   .section__lead{ font-size:1.05rem; }
-  .section__head{ margin-bottom:52px; }
+  .section__head{ margin-bottom:36px; }
 
   .method__grid{ grid-template-columns:repeat(4, 1fr); }
   .method__grid--three{ grid-template-columns:repeat(3, 1fr); }
@@ -136,8 +135,7 @@
   .teacher__photo{ width:100%; max-width:230px; }
   .teacher__name{ font-size:1.6rem; }
 
-  .reviews__grid{ columns:2; column-gap:44px; }
-  .polaroid{ width:100%; margin-bottom:44px; }
+  .reviews__grid{ grid-template-columns:repeat(3, 1fr); }
   /* фотоколонка шире текстовой: общий план зала должен читаться */
   .gig{ grid-template-columns:1fr 1.15fr; padding:36px 34px; gap:40px; }
   .logo__img{ height:36px; }
@@ -164,7 +162,7 @@
 
 /* ---------- ≥ 1200px ---------- */
 @media (min-width: 1200px){
-  :root{ --section-pad:140px; }
+  :root{ --section-pad:96px; }
 
   .hero__title{ font-size:clamp(3.6rem, 5.4vw, 6.6rem); }
   .section__title{ font-size:clamp(3rem, 4.6vw, 4.6rem); }
