@@ -51,7 +51,12 @@
   .burger{ display:none; }
   .nav{
     position:static;
+    /* обязательно сбрасываем размеры мобильного полноэкранного меню:
+       без height:auto шапка вырастает на всю высоту экрана */
+    inset:auto;
     width:auto;
+    height:auto;
+    min-height:0;
     padding:0;
     background:none;
     border:0;
@@ -83,7 +88,7 @@
   .nav__cta{ margin-top:0; margin-left:6px; }
 
   /* Hero в две колонки */
-  .hero{ padding:130px 0 100px; }
+  .hero{ padding:50px 0 100px; min-height:calc(100svh - 76px); }
   .hero__inner{
     flex-direction:row;
     align-items:center;
@@ -175,7 +180,7 @@
 
 /* ---------- Ландшафт на телефоне ---------- */
 @media (max-width: 899px) and (orientation: landscape){
-  .hero{ min-height:auto; padding:120px 0 70px; }
+  .hero{ min-height:auto; padding:40px 0 70px; }
   .hero__scroll{ display:none; }
 }
 

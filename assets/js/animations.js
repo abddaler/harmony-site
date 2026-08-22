@@ -59,57 +59,6 @@
 
   if (typeof ScrollTrigger === 'undefined') return;
 
-  /* ================= ПАРЯЩИЕ ЗАГОЛОВКИ СЕКЦИЙ ================= */
-
-  qa('.section__head').forEach(function (head) {
-    var parts = qa('.kicker, .section__title, .section__lead', head);
-    gsap.from(parts, {
-      opacity: 0,
-      duration: .9,
-      ease: 'power3.out',
-      stagger: .1,
-      scrollTrigger: { trigger: head, start: 'top 82%' }
-    });
-  });
-
-  /* ================= ОДИНОЧНЫЕ БЛОКИ ================= */
-
-  qa('.reveal').forEach(function (el) {
-    if (el.closest('#hero') || el.closest('.section__head')) return;
-    gsap.from(el, {
-      opacity: 0,
-      duration: .85,
-      ease: 'power3.out',
-      scrollTrigger: { trigger: el, start: 'top 88%' }
-    });
-  });
-
-  /* ================= STAGGER-ГРУППЫ ================= */
-  /* Карточки метода, треки, преподаватели, полароиды */
-
-  var groups = {};
-  qa('.reveal-stagger').forEach(function (el) {
-    var key = el.parentNode;
-    var idx = groups.list ? groups.list.indexOf(key) : -1;
-    if (!groups.list) { groups.list = []; groups.items = []; }
-    if (idx === -1) { groups.list.push(key); groups.items.push([el]); }
-    else { groups.items[idx].push(el); }
-  });
-
-  if (groups.list) {
-    groups.list.forEach(function (parent, i) {
-      var items = groups.items[i];
-      gsap.from(items, {
-        opacity: 0,
-        scale: .98,
-        duration: .8,
-        ease: 'power3.out',
-        stagger: .12,
-        scrollTrigger: { trigger: parent, start: 'top 82%' }
-      });
-    });
-  }
-
   /* ================= ПАРАЛЛАКС ФОНА И ДЕКОРА ================= */
 
   qa('[data-parallax]').forEach(function (el) {
@@ -144,8 +93,10 @@
       start: 'top bottom',
       end: 'bottom top',
       onUpdate: function (self) {
+        // строка едет CSS-анимацией, поэтому ускоряем её через playbackRate
+        if (!marqueeTrack.getAnimations) return;
         var v = 1 + Math.min(Math.abs(self.getVelocity()) / 3000, 2.2);
-        gsap.to(marqueeTrack, { timeScale: v, duration: .3, overwrite: true });
+        marqueeTrack.getAnimations().forEach(function (a) { a.playbackRate = v; });
       }
     });
   }

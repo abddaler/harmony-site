@@ -137,6 +137,43 @@
     sync();
   })();
 
+  /* ================= ПОЯВЛЕНИЕ БЛОКОВ ================= */
+  /* Нативный IntersectionObserver вместо ScrollTrigger: он гарантированно
+     срабатывает даже при очень быстрой прокрутке, поэтому блоки не остаются
+     полупрозрачными. Сама анимация — CSS-переход по opacity. */
+  (function initReveal() {
+    if (!('IntersectionObserver' in window)) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    document.documentElement.classList.add('js-anim');
+
+    // элементы одной группы проявляются друг за другом
+    var groups = new Map();
+    $$('.reveal-stagger').forEach(function (el) {
+      var list = groups.get(el.parentNode) || [];
+      list.push(el);
+      groups.set(el.parentNode, list);
+    });
+    groups.forEach(function (list) {
+      list.forEach(function (el, i) {
+        el.style.transitionDelay = Math.min(i, 5) * 90 + 'ms';
+      });
+    });
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-in');
+        io.unobserve(entry.target);
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.04 });
+
+    $$('.reveal, .reveal-stagger').forEach(function (el) {
+      if (el.closest('#hero')) return;   // первый экран ведёт таймлайн
+      io.observe(el);
+    });
+  })();
+
   /* ================= КНОПКИ ЗАПИСИ ================= */
   /* Кнопки помечены классом ms_booking — их перехватывает виджет Altegio
      и открывает своё окно. Наша задача только закрыть мобильное меню. */

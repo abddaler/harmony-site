@@ -51,7 +51,9 @@ body{
   font-family:var(--font-body);
   font-size:16px;
   line-height:1.6;
-  overflow-x:hidden;
+  /* overflow-x:hidden здесь НЕ ставим: в этом режиме браузер может считать
+     точкой отсчёта для position:fixed сам body, и шапка уезжает в середину
+     страницы. Вылет декора обрезают сами секции (.hero{overflow:hidden}). */
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
@@ -161,7 +163,6 @@ p:last-child{ margin-bottom:0; }
   text-transform:uppercase;
   border-radius:6px;
   transition:transform .25s var(--ease), background-color .25s, color .25s, box-shadow .25s, border-color .25s;
-  will-change:transform;
 }
 .btn:active{ transform:translateY(1px); }
 
@@ -235,8 +236,9 @@ p:last-child{ margin-bottom:0; }
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* Секции лежат над декором */
-main, .header, .footer, .marquee{ position:relative; z-index:1; }
+/* Секции лежат над декором. Шапку сюда не включаем — у неё своя
+   позиция (sticky), и это правило её перебивало бы. */
+main, .footer, .marquee{ position:relative; z-index:1; }
 
 .section{
   padding:var(--section-pad) 0;
@@ -305,6 +307,23 @@ main, .header, .footer, .marquee{ position:relative; z-index:1; }
   width:auto;
   opacity:.85;
 }
+
+/* ---------- ПОЯВЛЕНИЕ БЛОКОВ ПРИ ПРОКРУТКЕ ----------
+   Класс js-anim ставит JS, поэтому без скриптов весь контент виден сразу.
+   Анимация — только прозрачность: никаких сдвигов, чтобы блоки
+   не могли наехать друг на друга ни в одном браузере. */
+
+.js-anim .reveal,
+.js-anim .reveal-stagger{
+  opacity:0;
+  transition:opacity .5s var(--ease);
+}
+.js-anim .reveal.is-in,
+.js-anim .reveal-stagger.is-in{ opacity:1; }
+
+/* Первый экран ведёт GSAP-таймлайн; если GSAP не загрузился —
+   эти элементы всё равно остаются видимыми */
+.js-anim #hero .reveal{ opacity:1; }
 
 /* ---------- ДОСТУПНОСТЬ: меньше движения ---------- */
 

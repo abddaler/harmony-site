@@ -5,9 +5,11 @@
 
 /* ================= ХЕДЕР ================= */
 
+/* sticky вместо fixed: не зависит от того, какие свойства окажутся
+   у предков (transform, filter, overflow), — шапка всегда липнет к верху */
 .header{
-  position:fixed;
-  top:0; left:0; right:0;
+  position:sticky;
+  top:0;
   z-index:100;
   padding:14px 0;
   transition:background-color .35s var(--ease), padding .35s var(--ease), box-shadow .35s;
@@ -85,10 +87,10 @@ body.nav-open{ overflow:hidden; }
 
 .hero{
   position:relative;
-  min-height:100svh;
+  min-height:calc(100svh - 68px);
   display:flex;
   align-items:center;
-  padding:110px 0 90px;
+  padding:40px 0 90px;
   overflow:hidden;
 }
 
