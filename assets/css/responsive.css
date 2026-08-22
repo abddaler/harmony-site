@@ -161,8 +161,6 @@
 
   .footer__inner{ grid-template-columns:1.4fr 1fr auto; gap:40px; align-items:start; }
   .footer__nav{ grid-template-columns:repeat(2, 1fr); }
-
-  .booking__box{ padding:20px; min-height:460px; }
 }
 
 /* ---------- ≥ 1200px ---------- */
