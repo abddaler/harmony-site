@@ -1004,6 +1004,9 @@ body.nav-open{ overflow:hidden; }
   aspect-ratio:4/5;
   object-fit:cover;
 }
+/* Широкий общий план на всю ширину блока — по нему читается масштаб зала */
+.gig__photo--wide{ grid-column:1 / -1; }
+.gig__photo--wide img{ aspect-ratio:16/9; }
 .gig__photo figcaption{
   position:absolute;
   left:0; right:0; bottom:10px;
@@ -1049,7 +1052,10 @@ body.nav-open{ overflow:hidden; }
 .app__features b{ color:var(--white); font-weight:600; }
 
 .app__status{
-  display:inline-flex;
+  /* flex, а не inline-flex: плашка занимает свою строку и не липнет к кнопке */
+  display:flex;
+  width:fit-content;
+  max-width:100%;
   align-items:center;
   gap:9px;
   font-family:var(--font-display);
@@ -1061,17 +1067,6 @@ body.nav-open{ overflow:hidden; }
   border-radius:100px;
   padding:8px 15px;
   margin-bottom:22px;
-}
-.app__status .dot{
-  width:7px; height:7px;
-  border-radius:50%;
-  background:var(--cyan);
-  box-shadow:0 0 0 0 rgba(47,214,232,.6);
-  animation:pulse 2s infinite;
-}
-@keyframes pulse{
-  70% { box-shadow:0 0 0 9px rgba(47,214,232,0); }
-  100%{ box-shadow:0 0 0 0 rgba(47,214,232,0); }
 }
 
 /* ================= ТЕЛЕФОН СО СЛАЙДЕРОМ ================= */

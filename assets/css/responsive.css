@@ -139,7 +139,8 @@
 
   .reviews__grid{ columns:2; column-gap:44px; }
   .polaroid{ width:100%; margin-bottom:44px; }
-  .gig{ padding:36px 34px; gap:40px; }
+  /* фотоколонка шире текстовой: общий план зала должен читаться */
+  .gig{ grid-template-columns:1fr 1.15fr; padding:36px 34px; gap:40px; }
   .logo__img{ height:36px; }
   .header.is-stuck .logo__img{ height:30px; }
   .footer__logo{ height:52px; }
