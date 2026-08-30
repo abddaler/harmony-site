@@ -1,0 +1,3693 @@
+[
+ {
+  "section": "head",
+  "el": "title",
+  "parents": [],
+  "start": 204,
+  "end": 274,
+  "html": "Harmony — вокальная студия в Ташкенте | Индивидуальные занятия вокалом",
+  "id": "TITLE-01",
+  "name": "Вкладка браузера"
+ },
+ {
+  "section": "header",
+  "el": "a.nav__link",
+  "parents": [
+   "header.header",
+   "div.container",
+   "nav.nav"
+  ],
+  "start": 6017,
+  "end": 6028,
+  "html": "Направления",
+  "id": "MENU-01",
+  "name": "Шапка сайта"
+ },
+ {
+  "section": "header",
+  "el": "a.nav__link",
+  "parents": [
+   "header.header",
+   "div.container",
+   "nav.nav"
+  ],
+  "start": 6077,
+  "end": 6085,
+  "html": "Педагоги",
+  "id": "MENU-02",
+  "name": "Шапка сайта"
+ },
+ {
+  "section": "header",
+  "el": "a.nav__link",
+  "parents": [
+   "header.header",
+   "div.container",
+   "nav.nav"
+  ],
+  "start": 6133,
+  "end": 6140,
+  "html": "Ученики",
+  "id": "MENU-03",
+  "name": "Шапка сайта"
+ },
+ {
+  "section": "header",
+  "el": "a.nav__link",
+  "parents": [
+   "header.header",
+   "div.container",
+   "nav.nav"
+  ],
+  "start": 6187,
+  "end": 6191,
+  "html": "Цены",
+  "id": "MENU-04",
+  "name": "Шапка сайта"
+ },
+ {
+  "section": "header",
+  "el": "a.nav__link",
+  "parents": [
+   "header.header",
+   "div.container",
+   "nav.nav"
+  ],
+  "start": 6235,
+  "end": 6242,
+  "html": "Вопросы",
+  "id": "MENU-05",
+  "name": "Шапка сайта"
+ },
+ {
+  "section": "header",
+  "el": "a.nav__link",
+  "parents": [
+   "header.header",
+   "div.container",
+   "nav.nav"
+  ],
+  "start": 6291,
+  "end": 6299,
+  "html": "Контакты",
+  "id": "MENU-06",
+  "name": "Шапка сайта"
+ },
+ {
+  "section": "header",
+  "el": "a.btn",
+  "parents": [
+   "header.header",
+   "div.container",
+   "nav.nav"
+  ],
+  "start": 6432,
+  "end": 6442,
+  "html": "Записаться",
+  "id": "MENU-07",
+  "name": "Шапка сайта"
+ },
+ {
+  "section": "hero",
+  "el": "p.kicker",
+  "parents": [
+   "section.hero",
+   "div.container",
+   "div.hero__content"
+  ],
+  "start": 6822,
+  "end": 6848,
+  "html": "Ташкент · вокальная студия",
+  "id": "HERO-01",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "span.display__line",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "h1.hero__title"
+  ],
+  "start": 6956,
+  "end": 6963,
+  "html": "ГОЛОС —",
+  "id": "HERO-02",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "span.display__line",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "h1.hero__title"
+  ],
+  "start": 7033,
+  "end": 7046,
+  "html": "ЭТО АНАТОМИЯ,",
+  "id": "HERO-03",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "span.display__line",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "h1.hero__title"
+  ],
+  "start": 7135,
+  "end": 7145,
+  "html": "А НЕ МАГИЯ",
+  "id": "HERO-04",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "p.hero__lead",
+  "parents": [
+   "section.hero",
+   "div.container",
+   "div.hero__content"
+  ],
+  "start": 7201,
+  "end": 7409,
+  "html": "Научим петь так, как хочется именно вам: от первой чистой ноты до скрима.\n        Разбираем, как устроен ваш голос, — и вы начинаете им управлять.\n        Разницу слышно уже на первом занятии.",
+  "id": "HERO-05",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "div.hero__cta"
+  ],
+  "start": 7565,
+  "end": 7586,
+  "html": "Записаться на занятие",
+  "id": "HERO-06",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "div.hero__cta"
+  ],
+  "start": 7639,
+  "end": 7659,
+  "html": "Как проходит занятие",
+  "id": "HERO-07",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "b",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "ul.hero__facts"
+  ],
+  "start": 7731,
+  "end": 7734,
+  "html": "1:1",
+  "id": "HERO-08",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "span",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "ul.hero__facts"
+  ],
+  "start": 7744,
+  "end": 7764,
+  "html": "только индивидуально",
+  "id": "HERO-09",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "b",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "ul.hero__facts"
+  ],
+  "start": 7792,
+  "end": 7794,
+  "html": "60",
+  "id": "HERO-10",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "span",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "ul.hero__facts"
+  ],
+  "start": 7804,
+  "end": 7817,
+  "html": "минут занятие",
+  "id": "HERO-11",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "b",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "ul.hero__facts"
+  ],
+  "start": 7845,
+  "end": 7846,
+  "html": "5",
+  "id": "HERO-12",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "span",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "ul.hero__facts"
+  ],
+  "start": 7856,
+  "end": 7865,
+  "html": "педагогов",
+  "id": "HERO-13",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "b",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "ul.hero__facts"
+  ],
+  "start": 7893,
+  "end": 7894,
+  "html": "2",
+  "id": "HERO-14",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "span",
+  "parents": [
+   "div.container",
+   "div.hero__content",
+   "ul.hero__facts"
+  ],
+  "start": 7904,
+  "end": 7920,
+  "html": "филиала в городе",
+  "id": "HERO-15",
+  "name": "Первый экран"
+ },
+ {
+  "section": "hero",
+  "el": "span.hero__scroll-text",
+  "parents": [
+   "section.hero",
+   "a.hero__scroll"
+  ],
+  "start": 8431,
+  "end": 8435,
+  "html": "Вниз",
+  "id": "HERO-16",
+  "name": "Первый экран"
+ },
+ {
+  "section": "marquee",
+  "el": "span",
+  "parents": [
+   "div.marquee",
+   "div.marquee__track"
+  ],
+  "start": 8594,
+  "end": 8599,
+  "html": "СКРИМ",
+  "id": "MARQ-01",
+  "name": "Бегущая строка"
+ },
+ {
+  "section": "marquee",
+  "el": "i",
+  "parents": [
+   "div.marquee",
+   "div.marquee__track"
+  ],
+  "start": 8609,
+  "end": 8610,
+  "html": "◆",
+  "id": "MARQ-02",
+  "name": "Бегущая строка"
+ },
+ {
+  "section": "marquee",
+  "el": "span",
+  "parents": [
+   "div.marquee",
+   "div.marquee__track"
+  ],
+  "start": 8620,
+  "end": 8625,
+  "html": "ГРОУЛ",
+  "id": "MARQ-03",
+  "name": "Бегущая строка"
+ },
+ {
+  "section": "marquee",
+  "el": "span",
+  "parents": [
+   "div.marquee",
+   "div.marquee__track"
+  ],
+  "start": 8646,
+  "end": 8654,
+  "html": "ШТРОБАСС",
+  "id": "MARQ-04",
+  "name": "Бегущая строка"
+ },
+ {
+  "section": "marquee",
+  "el": "span",
+  "parents": [
+   "div.marquee",
+   "div.marquee__track"
+  ],
+  "start": 8675,
+  "end": 8680,
+  "html": "МИКСТ",
+  "id": "MARQ-05",
+  "name": "Бегущая строка"
+ },
+ {
+  "section": "marquee",
+  "el": "span",
+  "parents": [
+   "div.marquee",
+   "div.marquee__track"
+  ],
+  "start": 8706,
+  "end": 8713,
+  "html": "БЕЛТИНГ",
+  "id": "MARQ-06",
+  "name": "Бегущая строка"
+ },
+ {
+  "section": "marquee",
+  "el": "span",
+  "parents": [
+   "div.marquee",
+   "div.marquee__track"
+  ],
+  "start": 8734,
+  "end": 8739,
+  "html": "ТВЭНГ",
+  "id": "MARQ-07",
+  "name": "Бегущая строка"
+ },
+ {
+  "section": "marquee",
+  "el": "span",
+  "parents": [
+   "div.marquee",
+   "div.marquee__track"
+  ],
+  "start": 8760,
+  "end": 8766,
+  "html": "СУБТОН",
+  "id": "MARQ-08",
+  "name": "Бегущая строка"
+ },
+ {
+  "section": "marquee",
+  "el": "span",
+  "parents": [
+   "div.marquee",
+   "div.marquee__track"
+  ],
+  "start": 8787,
+  "end": 8796,
+  "html": "АНКЕРОВКА",
+  "id": "MARQ-09",
+  "name": "Бегущая строка"
+ },
+ {
+  "section": "tracks",
+  "el": "p.kicker",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 9242,
+  "end": 9253,
+  "html": "Направления",
+  "id": "TRACK-01",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "h2.section__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 9334,
+  "end": 9349,
+  "html": "ТРИ НАПРАВЛЕНИЯ",
+  "id": "TRACK-02",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "p.section__lead",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 9393,
+  "end": 9518,
+  "html": "Их легко совмещать: вокал вместе с музыкальной грамотностью идёт\n        заметно быстрее, чем по отдельности.",
+  "id": "TRACK-03",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "span.track__tag",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "div.track__top"
+  ],
+  "start": 9703,
+  "end": 9718,
+  "html": "С нуля и дальше",
+  "id": "TRACK-04",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "h3.track__title",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "div.track__top"
+  ],
+  "start": 9761,
+  "end": 9778,
+  "html": "Современный вокал",
+  "id": "TRACK-05",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "p.track__sub",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "div.track__top"
+  ],
+  "start": 9816,
+  "end": 9878,
+  "html": "Поп, рок, джаз, эстрада. От первой чистой ноты до своей манеры",
+  "id": "TRACK-06",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 9945,
+  "end": 9991,
+  "html": "Чистая интонация: попадать в ноту и держать её",
+  "id": "TRACK-07",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 10011,
+  "end": 10051,
+  "html": "Высокие ноты без крика — микст и белтинг",
+  "id": "TRACK-08",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 10071,
+  "end": 10107,
+  "html": "Переходы между регистрами без щелчка",
+  "id": "TRACK-09",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 10127,
+  "end": 10169,
+  "html": "Анкеровка — то, что обычно называют опорой",
+  "id": "TRACK-10",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 10189,
+  "end": 10239,
+  "html": "Тембр и подача: твэнг, субтон, работа с микрофоном",
+  "id": "TRACK-11",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 10259,
+  "end": 10305,
+  "html": "Разбор вашей песни от первой строчки до финала",
+  "id": "TRACK-12",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "p.track__meta",
+  "parents": [
+   "div.container",
+   "div.tracks__grid",
+   "article.track"
+  ],
+  "start": 10356,
+  "end": 10387,
+  "html": "С 7–8 лет и без верхней границы",
+  "id": "TRACK-13",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.tracks__grid",
+   "article.track"
+  ],
+  "start": 10513,
+  "end": 10523,
+  "html": "Записаться",
+  "id": "TRACK-14",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "div.track__badge",
+  "parents": [
+   "div.container",
+   "div.tracks__grid",
+   "article.track"
+  ],
+  "start": 10639,
+  "end": 10667,
+  "html": "Экстрим без вреда для связок",
+  "id": "TRACK-15",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "span.track__tag",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "div.track__top"
+  ],
+  "start": 10742,
+  "end": 10753,
+  "html": "Рок и метал",
+  "id": "TRACK-16",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "h3.track__title",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "div.track__top"
+  ],
+  "start": 10796,
+  "end": 10809,
+  "html": "Экстрим-вокал",
+  "id": "TRACK-17",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "p.track__sub",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "div.track__top"
+  ],
+  "start": 10847,
+  "end": 10918,
+  "html": "Ставим механику, а не подражание: вы понимаете, чем именно издаёте звук",
+  "id": "TRACK-18",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 10985,
+  "end": 11018,
+  "html": "Фрай-скрим — высокий режущий крик",
+  "id": "TRACK-19",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 11038,
+  "end": 11068,
+  "html": "Фолс-корд — плотный низкий рык",
+  "id": "TRACK-20",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 11088,
+  "end": 11121,
+  "html": "Дисторшн: хрип поверх чистой ноты",
+  "id": "TRACK-21",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 11141,
+  "end": 11189,
+  "html": "Переход из чистого голоса в экстрим внутри песни",
+  "id": "TRACK-22",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 11209,
+  "end": 11248,
+  "html": "Разогрев, охлаждение и границы нагрузки",
+  "id": "TRACK-23",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 11268,
+  "end": 11317,
+  "html": "Выносливость на весь концерт, а не на два куплета",
+  "id": "TRACK-24",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "p.track__meta",
+  "parents": [
+   "div.container",
+   "div.tracks__grid",
+   "article.track"
+  ],
+  "start": 11368,
+  "end": 11389,
+  "html": "Подросткам и взрослым",
+  "id": "TRACK-25",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.tracks__grid",
+   "article.track"
+  ],
+  "start": 11517,
+  "end": 11527,
+  "html": "Записаться",
+  "id": "TRACK-26",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "span.track__tag",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "div.track__top"
+  ],
+  "start": 11663,
+  "end": 11682,
+  "html": "Теория и фортепиано",
+  "id": "TRACK-27",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "h3.track__title",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "div.track__top"
+  ],
+  "start": 11725,
+  "end": 11748,
+  "html": "Музыкальная грамотность",
+  "id": "TRACK-28",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "p.track__sub",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "div.track__top"
+  ],
+  "start": 11786,
+  "end": 11842,
+  "html": "Понимание музыки, которое ускоряет вокал в несколько раз",
+  "id": "TRACK-29",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 11909,
+  "end": 11933,
+  "html": "Ноты, ритм, длительности",
+  "id": "TRACK-30",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 11953,
+  "end": 11984,
+  "html": "Интервалы, аккорды, тональности",
+  "id": "TRACK-31",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 12004,
+  "end": 12032,
+  "html": "Фортепиано с первого занятия",
+  "id": "TRACK-32",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 12052,
+  "end": 12083,
+  "html": "Чтение с листа и подбор на слух",
+  "id": "TRACK-33",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "li",
+  "parents": [
+   "div.tracks__grid",
+   "article.track",
+   "ul.track__list"
+  ],
+  "start": 12103,
+  "end": 12130,
+  "html": "Разбор гармонии своих песен",
+  "id": "TRACK-34",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "p.track__meta",
+  "parents": [
+   "div.container",
+   "div.tracks__grid",
+   "article.track"
+  ],
+  "start": 12181,
+  "end": 12193,
+  "html": "Ведёт Камила",
+  "id": "TRACK-35",
+  "name": "Направления"
+ },
+ {
+  "section": "tracks",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.tracks__grid",
+   "article.track"
+  ],
+  "start": 12319,
+  "end": 12329,
+  "html": "Записаться",
+  "id": "TRACK-36",
+  "name": "Направления"
+ },
+ {
+  "section": "first",
+  "el": "p.kicker",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 12570,
+  "end": 12584,
+  "html": "Первое занятие",
+  "id": "FIRST-01",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "h2.section__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 12675,
+  "end": 12700,
+  "html": "ЧТО БУДЕТ НА ПЕРВОМ УРОКЕ",
+  "id": "FIRST-02",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "p.section__lead",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 12744,
+  "end": 12903,
+  "html": "Это не прослушивание: вас никто не оценивает и ни с кем не сравнивает.\n        Вы поёте, педагог слушает и объясняет, что происходит с голосом.",
+  "id": "FIRST-03",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "span.step__num",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13017,
+  "end": 13018,
+  "html": "1",
+  "id": "FIRST-04",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "h3",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13038,
+  "end": 13046,
+  "html": "Распевка",
+  "id": "FIRST-05",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13063,
+  "end": 13145,
+  "html": "Разогреваем голос и настраиваем интонирование — с этого начинается каждое занятие.",
+  "id": "FIRST-06",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "span.step__num",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13233,
+  "end": 13234,
+  "html": "2",
+  "id": "FIRST-07",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "h3",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13254,
+  "end": 13271,
+  "html": "Слушаем ваш голос",
+  "id": "FIRST-08",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13288,
+  "end": 13365,
+  "html": "Смотрим диапазон, в каких режимах вы поёте сейчас, что уже получается хорошо.",
+  "id": "FIRST-09",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "span.step__num",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13453,
+  "end": 13454,
+  "html": "3",
+  "id": "FIRST-10",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "h3",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13474,
+  "end": 13492,
+  "html": "Разбираем механику",
+  "id": "FIRST-11",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13509,
+  "end": 13594,
+  "html": "Как работает голос и из чего состоит нужный вам приём. Простыми словами, без метафор.",
+  "id": "FIRST-12",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "span.step__num",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13682,
+  "end": 13683,
+  "html": "4",
+  "id": "FIRST-13",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "h3",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13703,
+  "end": 13719,
+  "html": "Берём вашу песню",
+  "id": "FIRST-14",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "ol.steps",
+   "li.step"
+  ],
+  "start": 13736,
+  "end": 13821,
+  "html": "Начинаем работать над тем, что вы хотите спеть, и намечаем план на ближайшие занятия.",
+  "id": "FIRST-15",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "b",
+  "parents": [
+   "div.first__cta",
+   "div.first__price",
+   "p.first__price-line"
+  ],
+  "start": 13958,
+  "end": 13966,
+  "html": "1–2 раза",
+  "id": "FIRST-16",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "span",
+  "parents": [
+   "div.first__cta",
+   "div.first__price",
+   "p.first__price-line"
+  ],
+  "start": 13976,
+  "end": 13999,
+  "html": "в неделю — обычный ритм",
+  "id": "FIRST-17",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "b",
+  "parents": [
+   "div.first__cta",
+   "div.first__price",
+   "p.first__price-line"
+  ],
+  "start": 14051,
+  "end": 14058,
+  "html": "300 000",
+  "id": "FIRST-18",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "span",
+  "parents": [
+   "div.first__cta",
+   "div.first__price",
+   "p.first__price-line"
+  ],
+  "start": 14068,
+  "end": 14087,
+  "html": "сум разовое занятие",
+  "id": "FIRST-19",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "a.btn",
+  "parents": [
+   "section.section",
+   "div.container",
+   "div.first__cta"
+  ],
+  "start": 14223,
+  "end": 14236,
+  "html": "Выбрать время",
+  "id": "FIRST-20",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "first",
+  "el": "p.first__honest",
+  "parents": [
+   "section.section",
+   "div.container"
+  ],
+  "start": 14289,
+  "end": 14572,
+  "html": "<b>Бесплатного пробного у нас нет — и это честнее.</b>\n      За «пробные» пятнадцать минут вам успеют только улыбнуться. Здесь первое занятие\n      полноценное: педагог разбирает голос, объясняет механику и даёт упражнения.\n      Вы уходите с планом, а не со знакомством.",
+  "id": "FIRST-21",
+  "name": "Первое занятие"
+ },
+ {
+  "section": "method",
+  "el": "p.kicker",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 14777,
+  "end": 14788,
+  "html": "Как мы учим",
+  "id": "METHOD-01",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "h2.section__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 14885,
+  "end": 14916,
+  "html": "ПРАВИЛЬНОГО ПЕНИЯ НЕ СУЩЕСТВУЕТ",
+  "id": "METHOD-02",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "p.section__lead",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 14960,
+  "end": 15204,
+  "html": "«Правильно» и «неправильно» в вокале — вопрос вкуса и стиля. Важно другое:\n        <b>безопасно ли это для голоса</b>. Звучать вы будете так, как хочется вам —\n        а мы объясним, как это устроено, чтобы получалось и без нас.",
+  "id": "METHOD-03",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "h3",
+  "parents": [
+   "div.container",
+   "div.method__grid",
+   "article.card"
+  ],
+  "start": 15324,
+  "end": 15343,
+  "html": "Только один на один",
+  "id": "METHOD-04",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.method__grid",
+   "article.card"
+  ],
+  "start": 15360,
+  "end": 15510,
+  "html": "Никаких групп и потоков. Длина связок, форма тракта, речевые привычки у всех разные — упражнение, которое открывает голос одному, другому не подойдёт.",
+  "id": "METHOD-05",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "h3",
+  "parents": [
+   "div.container",
+   "div.method__grid",
+   "article.card"
+  ],
+  "start": 15601,
+  "end": 15627,
+  "html": "Объясняем, а не показываем",
+  "id": "METHOD-06",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.method__grid",
+   "article.card"
+  ],
+  "start": 15644,
+  "end": 15751,
+  "html": "Вы понимаете, что делают связки, гортань и язык на вашей ноте, — и повторяете это дома, без педагога рядом.",
+  "id": "METHOD-07",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "h3",
+  "parents": [
+   "div.container",
+   "div.method__grid",
+   "article.card"
+  ],
+  "start": 15842,
+  "end": 15860,
+  "html": "Ошибку ловим сразу",
+  "id": "METHOD-08",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.method__grid",
+   "article.card"
+  ],
+  "start": 15877,
+  "end": 15987,
+  "html": "Педагог слышит только ваш голос. Неточность вы поправляете на этом же занятии, а не привыкаете к ней месяцами.",
+  "id": "METHOD-09",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "h3",
+  "parents": [
+   "div.container",
+   "div.method__grid",
+   "article.card"
+  ],
+  "start": 16078,
+  "end": 16101,
+  "html": "Голос остаётся здоровым",
+  "id": "METHOD-10",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.method__grid",
+   "article.card"
+  ],
+  "start": 16118,
+  "end": 16248,
+  "html": "Мы показываем, где проходит граница нагрузки и по каким признакам её видно. Даже экстрим не вредит связкам, если делать его верно.",
+  "id": "METHOD-11",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "h3.myths__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "div.myths"
+  ],
+  "start": 16344,
+  "end": 16378,
+  "html": "Три совета, которые вам давали зря",
+  "id": "METHOD-12",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "p.myth__wrong",
+  "parents": [
+   "div.myths",
+   "ul.myths__list",
+   "li.myth"
+  ],
+  "start": 16474,
+  "end": 16490,
+  "html": "«Пой диафрагмой»",
+  "id": "METHOD-13",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "p.myth__right",
+  "parents": [
+   "div.myths",
+   "ul.myths__list",
+   "li.myth"
+  ],
+  "start": 16528,
+  "end": 16615,
+  "html": "В диафрагме нет нервных окончаний — почувствовать её нельзя. Звук рождается на связках.",
+  "id": "METHOD-14",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "p.myth__wrong",
+  "parents": [
+   "div.myths",
+   "ul.myths__list",
+   "li.myth"
+  ],
+  "start": 16693,
+  "end": 16713,
+  "html": "«Раскрой резонаторы»",
+  "id": "METHOD-15",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "p.myth__right",
+  "parents": [
+   "div.myths",
+   "ul.myths__list",
+   "li.myth"
+  ],
+  "start": 16751,
+  "end": 16847,
+  "html": "Камер-резонаторов в теле нет. Есть форма голосового тракта — её меняют языком, нёбом и гортанью.",
+  "id": "METHOD-16",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "p.myth__wrong",
+  "parents": [
+   "div.myths",
+   "ul.myths__list",
+   "li.myth"
+  ],
+  "start": 16925,
+  "end": 16951,
+  "html": "«Расслабься, у тебя зажим»",
+  "id": "METHOD-17",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "method",
+  "el": "p.myth__right",
+  "parents": [
+   "div.myths",
+   "ul.myths__list",
+   "li.myth"
+  ],
+  "start": 16989,
+  "end": 17088,
+  "html": "Чаще это несбалансированная работа мышц. У неё есть причина и конкретный приём, который её убирает.",
+  "id": "METHOD-18",
+  "name": "Как мы учим"
+ },
+ {
+  "section": "teachers",
+  "el": "p.kicker",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 17338,
+  "end": 17345,
+  "html": "Команда",
+  "id": "TEACH-01",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "h2.section__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 17419,
+  "end": 17427,
+  "html": "ПЕДАГОГИ",
+  "id": "TEACH-02",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.section__lead",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 17471,
+  "end": 17652,
+  "html": "Все пятеро сами выходят на сцену и работают по одной методике — различаются\n        стилями и задачами. Не знаете, к кому пойти, — напишите, подберём под ваш запрос.",
+  "id": "TEACH-03",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "h3.teacher__name",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 18065,
+  "end": 18070,
+  "html": "Далер",
+  "id": "TEACH-04",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__role",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 18111,
+  "end": 18139,
+  "html": "Сооснователь · экстрим-вокал",
+  "id": "TEACH-05",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__text",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 18179,
+  "end": 18419,
+  "html": "Ставит скрим, гроул и дисторшн — от первого рыка до полного концерта\n            без посаженного голоса. Исполнитель и автор песен, участник прямых\n            эфиров шоу X-Factor: показывает не на словах, а голосом.",
+  "id": "TEACH-06",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__likes",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 18460,
+  "end": 18526,
+  "html": "Слушает: Chris Cornell, Bad Omens, Panic! At The Disco, Дима Билан",
+  "id": "TEACH-07",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__time",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 18566,
+  "end": 18631,
+  "html": "Пн 10:00–21:00 · Вт 10:00–17:00 · Чт 10:00–20:00 · Сб 10:00–19:00",
+  "id": "TEACH-08",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__place",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 18672,
+  "end": 18694,
+  "html": "Филиал Юсуф Хос Ходжиб",
+  "id": "TEACH-09",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "h3.teacher__name",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 19084,
+  "end": 19091,
+  "html": "Гульшан",
+  "id": "TEACH-10",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__role",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 19132,
+  "end": 19164,
+  "html": "Сооснователь · современный вокал",
+  "id": "TEACH-11",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__text",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 19204,
+  "end": 19426,
+  "html": "Музыкальная школа и колледж за плечами, преподаёт с 2022 года и каждый год\n            доучивается сама. Профиль — верхний участок диапазона: микст и белтинг там,\n            где раньше был потолок.",
+  "id": "TEACH-12",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__likes",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 19467,
+  "end": 19532,
+  "html": "Слушает: Halestorm, Bruno Mars, Queen, Jamiroquai, Arctic Monkeys",
+  "id": "TEACH-13",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__time",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 19572,
+  "end": 19620,
+  "html": "Ср 12:00–17:00 · Пт 12:00–17:00 · Вс 12:00–17:00",
+  "id": "TEACH-14",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__place",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 19661,
+  "end": 19683,
+  "html": "Филиал Юсуф Хос Ходжиб",
+  "id": "TEACH-15",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "h3.teacher__name",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 20075,
+  "end": 20080,
+  "html": "Азиза",
+  "id": "TEACH-16",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__role",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 20121,
+  "end": 20160,
+  "html": "Вокал · лауреат международных конкурсов",
+  "id": "TEACH-17",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__text",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 20200,
+  "end": 20413,
+  "html": "15 лет в профессиональном вокале, 5 из них преподаёт — детям и взрослым.\n            Берёт тех, кто идёт на первое занятие со страхом: сначала снимает зажим,\n            потом ставит голос.",
+  "id": "TEACH-18",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__likes",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 20454,
+  "end": 20525,
+  "html": "Слушает: Lara Fabian, Мот, Звери, Bruno Mars, Анна Герман, Король и Шут",
+  "id": "TEACH-19",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__time",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 20565,
+  "end": 20613,
+  "html": "Пн 11:00–21:00 · Ср 11:00–21:00 · Пт 11:00–21:00",
+  "id": "TEACH-20",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__place",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 20654,
+  "end": 20685,
+  "html": "Филиал Дворец железнодорожников",
+  "id": "TEACH-21",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "h3.teacher__name",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 21090,
+  "end": 21096,
+  "html": "Камила",
+  "id": "TEACH-22",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__role",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 21137,
+  "end": 21181,
+  "html": "Вокал · музыкальная грамотность и фортепиано",
+  "id": "TEACH-23",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__text",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 21221,
+  "end": 21450,
+  "html": "Гран-при и звания лауреата международных конкурсов, участница X Factor.\n            Ведёт музыкальную грамотность: с ней ученик перестаёт петь наугад\n            и начинает понимать, из чего собрана песня.",
+  "id": "TEACH-24",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__likes",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 21491,
+  "end": 21577,
+  "html": "Слушает: Мария Каллас, Франко Корелли, Eagles, The Beatles, Elton John, Леонтина Прайс",
+  "id": "TEACH-25",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__time",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 21617,
+  "end": 21638,
+  "html": "Расписание уточняется",
+  "id": "TEACH-26",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__place",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 21679,
+  "end": 21710,
+  "html": "Филиал Дворец железнодорожников",
+  "id": "TEACH-27",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "h3.teacher__name",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 22116,
+  "end": 22125,
+  "html": "Мохитобон",
+  "id": "TEACH-28",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__role",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 22166,
+  "end": 22210,
+  "html": "Эстрадный вокал · занятия на узбекском языке",
+  "id": "TEACH-29",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__text",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 22250,
+  "end": 22517,
+  "html": "Государственная консерватория Узбекистана, специальность «Эстрадное пение»,\n            8 лет преподавания. Действующая концертная вокалистка, снималась\n            в телепроектах. Работает над тембром и подачей — чтобы вас узнавали по голосу.",
+  "id": "TEACH-30",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__likes",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 22558,
+  "end": 22641,
+  "html": "Слушает: Adele, Beyoncé, Christina Aguilera, Billie Eilish, Lana Del Rey, Sam Smith",
+  "id": "TEACH-31",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__time",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 22681,
+  "end": 22702,
+  "html": "Расписание уточняется",
+  "id": "TEACH-32",
+  "name": "Педагоги"
+ },
+ {
+  "section": "teachers",
+  "el": "p.teacher__place",
+  "parents": [
+   "div.teachers__grid",
+   "article.teacher",
+   "div.teacher__body"
+  ],
+  "start": 22743,
+  "end": 22774,
+  "html": "Филиал Дворец железнодорожников",
+  "id": "TEACH-33",
+  "name": "Педагоги"
+ },
+ {
+  "section": "reviews",
+  "el": "p.kicker",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 23027,
+  "end": 23034,
+  "html": "Ученики",
+  "id": "REV-01",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "h2.section__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 23114,
+  "end": 23128,
+  "html": "КАК ЭТО ЗВУЧИТ",
+  "id": "REV-02",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "p.section__lead",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 23172,
+  "end": 23249,
+  "html": "Что пишут ученики после занятий. Нажмите на отзыв, чтобы открыть его целиком.",
+  "id": "REV-03",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "p.polaroid__author",
+  "parents": [
+   "div.container",
+   "div.reviews__grid",
+   "figure.polaroid"
+  ],
+  "start": 23769,
+  "end": 23789,
+  "html": "Рената · апрель 2024",
+  "id": "REV-04",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "p.polaroid__author",
+  "parents": [
+   "div.container",
+   "div.reviews__grid",
+   "figure.polaroid"
+  ],
+  "start": 24317,
+  "end": 24338,
+  "html": "Анастасия · март 2025",
+  "id": "REV-05",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "p.polaroid__author",
+  "parents": [
+   "div.container",
+   "div.reviews__grid",
+   "figure.polaroid"
+  ],
+  "start": 24838,
+  "end": 24858,
+  "html": "Елена · декабрь 2023",
+  "id": "REV-06",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "h3.gig__title",
+  "parents": [
+   "div.container",
+   "div.gig",
+   "div.gig__text"
+  ],
+  "start": 25061,
+  "end": 25078,
+  "html": "Отчётные концерты",
+  "id": "REV-07",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.gig",
+   "div.gig__text"
+  ],
+  "start": 25095,
+  "end": 25403,
+  "html": "Раз в полгода мы собираем зал: сцена, свет, звук и живой зритель.\n          Выступают ученики любого уровня — и те, кто занимается пару месяцев, тоже.\n          Участие по желанию, но соглашаются почти все: один такой вечер снимает страх сцены\n          лучше, чем месяц разговоров о нём.",
+  "id": "REV-08",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.gig",
+   "div.gig__text"
+  ],
+  "start": 25519,
+  "end": 25532,
+  "html": "Хочу на сцену",
+  "id": "REV-09",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "figcaption",
+  "parents": [
+   "div.gig",
+   "div.gig__photos",
+   "figure.gig__photo"
+  ],
+  "start": 26040,
+  "end": 26057,
+  "html": "[ОБЩИЙ ПЛАН ЗАЛА]",
+  "id": "REV-10",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "figcaption",
+  "parents": [
+   "div.gig",
+   "div.gig__photos",
+   "figure.gig__photo"
+  ],
+  "start": 26300,
+  "end": 26314,
+  "html": "[КРУПНЫЙ ПЛАН]",
+  "id": "REV-11",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "figcaption",
+  "parents": [
+   "div.gig",
+   "div.gig__photos",
+   "figure.gig__photo"
+  ],
+  "start": 26559,
+  "end": 26575,
+  "html": "[ЗРИТЕЛИ В ЗАЛЕ]",
+  "id": "REV-12",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "reviews",
+  "el": "p.reviews__note",
+  "parents": [
+   "section.section",
+   "div.container"
+  ],
+  "start": 26668,
+  "end": 26838,
+  "html": "Больше разборов и записей учеников — в Instagram\n      <a href=\"https://www.instagram.com/harmonyvocal.uz\" target=\"_blank\" rel=\"noopener\">@harmonyvocal.uz</a>",
+  "id": "REV-13",
+  "name": "Ученики и концерты"
+ },
+ {
+  "section": "prices",
+  "el": "p.kicker",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 27042,
+  "end": 27051,
+  "html": "Стоимость",
+  "id": "PRICE-01",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "h2.section__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 27121,
+  "end": 27125,
+  "html": "ЦЕНЫ",
+  "id": "PRICE-02",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.section__lead",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 27169,
+  "end": 27307,
+  "html": "Разбор песни, упражнения, материалы и приложение уже входят в занятие.\n        Доплачивать отдельно ни за что не придётся.",
+  "id": "PRICE-03",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "div.price__badge",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 27452,
+  "end": 27470,
+  "html": "−10% по абонементу",
+  "id": "PRICE-04",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "h3.price__title",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 27510,
+  "end": 27515,
+  "html": "Вокал",
+  "id": "PRICE-05",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.price__sub",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 27551,
+  "end": 27586,
+  "html": "Современный и экстрим-вокал · 1 час",
+  "id": "PRICE-06",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span.price__label",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 27700,
+  "end": 27715,
+  "html": "Разовое занятие",
+  "id": "PRICE-07",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "b.price__value",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 27759,
+  "end": 27777,
+  "html": "300 000 <i>сум</i>",
+  "id": "PRICE-08",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span.price__label",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 27890,
+  "end": 27903,
+  "html": "По абонементу",
+  "id": "PRICE-09",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "b.price__value",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 27947,
+  "end": 27965,
+  "html": "270 000 <i>сум</i>",
+  "id": "PRICE-10",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.price__save",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 28034,
+  "end": 28131,
+  "html": "Выгода 30 000 сум с каждого занятия — около 240 000 сум в месяц, если заниматься дважды в неделю.",
+  "id": "PRICE-11",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 28259,
+  "end": 28269,
+  "html": "Записаться",
+  "id": "PRICE-12",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "h3.price__title",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 28370,
+  "end": 28393,
+  "html": "Музыкальная грамотность",
+  "id": "PRICE-13",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.price__sub",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 28429,
+  "end": 28456,
+  "html": "Теория + фортепиано · 1 час",
+  "id": "PRICE-14",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span.price__label",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 28570,
+  "end": 28585,
+  "html": "Разовое занятие",
+  "id": "PRICE-15",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "b.price__value",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 28629,
+  "end": 28647,
+  "html": "230 000 <i>сум</i>",
+  "id": "PRICE-16",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span.price__label",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 28760,
+  "end": 28773,
+  "html": "По абонементу",
+  "id": "PRICE-17",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "b.price__value",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 28817,
+  "end": 28835,
+  "html": "200 000 <i>сум</i>",
+  "id": "PRICE-18",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.price__save",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 28904,
+  "end": 28962,
+  "html": "Выгода 30 000 сум с занятия. Хорошо совмещается с вокалом.",
+  "id": "PRICE-19",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 29088,
+  "end": 29098,
+  "html": "Записаться",
+  "id": "PRICE-20",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "h3.sub__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "div.sub"
+  ],
+  "start": 29191,
+  "end": 29214,
+  "html": "Как считается абонемент",
+  "id": "PRICE-21",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.sub__lead",
+  "parents": [
+   "section.section",
+   "div.container",
+   "div.sub"
+  ],
+  "start": 29247,
+  "end": 29416,
+  "html": "Выбираете дни недели — платите за занятия, которые выпадают на этот месяц.\n        Минимум 4 занятия. За вами закрепляется постоянное время в расписании.",
+  "id": "PRICE-22",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span",
+  "parents": [
+   "div.container",
+   "div.sub",
+   "p.sub__formula"
+  ],
+  "start": 29466,
+  "end": 29484,
+  "html": "Цена по абонементу",
+  "id": "PRICE-23",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "i",
+  "parents": [
+   "div.container",
+   "div.sub",
+   "p.sub__formula"
+  ],
+  "start": 29494,
+  "end": 29495,
+  "html": "×",
+  "id": "PRICE-24",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span",
+  "parents": [
+   "div.container",
+   "div.sub",
+   "p.sub__formula"
+  ],
+  "start": 29505,
+  "end": 29521,
+  "html": "занятий в месяце",
+  "id": "PRICE-25",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "i",
+  "parents": [
+   "div.container",
+   "div.sub",
+   "p.sub__formula"
+  ],
+  "start": 29531,
+  "end": 29532,
+  "html": "=",
+  "id": "PRICE-26",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "b",
+  "parents": [
+   "div.container",
+   "div.sub",
+   "p.sub__formula"
+  ],
+  "start": 29539,
+  "end": 29544,
+  "html": "сумма",
+  "id": "PRICE-27",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.sub__example",
+  "parents": [
+   "section.section",
+   "div.container",
+   "div.sub"
+  ],
+  "start": 29590,
+  "end": 29690,
+  "html": "Например, 4 занятия по вокалу — <b>1 080 000 сум</b>, восемь — <b>2 160 000 сум</b>.",
+  "id": "PRICE-28",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "h3.terms__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "div.terms"
+  ],
+  "start": 29769,
+  "end": 29784,
+  "html": "Условия занятий",
+  "id": "PRICE-29",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "li",
+  "parents": [
+   "div.container",
+   "div.terms",
+   "ul.terms__list"
+  ],
+  "start": 29833,
+  "end": 29920,
+  "html": "Перенести занятие можно не позднее чем за 12 часов. Позже — урок считается проведённым.",
+  "id": "PRICE-30",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "li",
+  "parents": [
+   "div.container",
+   "div.terms",
+   "ul.terms__list"
+  ],
+  "start": 29938,
+  "end": 30021,
+  "html": "Перенесённое занятие проходит в том же месяце, если у педагога есть свободное окно.",
+  "id": "PRICE-31",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "li",
+  "parents": [
+   "div.container",
+   "div.terms",
+   "ul.terms__list"
+  ],
+  "start": 30039,
+  "end": 30103,
+  "html": "Перенос на следующий месяц возможен по согласованию с педагогом.",
+  "id": "PRICE-32",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "li",
+  "parents": [
+   "div.container",
+   "div.terms",
+   "ul.terms__list"
+  ],
+  "start": 30121,
+  "end": 30167,
+  "html": "Оплаченный пакет занятий возврату не подлежит.",
+  "id": "PRICE-33",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "li",
+  "parents": [
+   "div.container",
+   "div.terms",
+   "ul.terms__list"
+  ],
+  "start": 30185,
+  "end": 30248,
+  "html": "Если пропустить разовый урок, повторная запись — по предоплате.",
+  "id": "PRICE-34",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.prices__pay",
+  "parents": [
+   "section.section",
+   "div.container"
+  ],
+  "start": 30312,
+  "end": 30371,
+  "html": "Оплата наличными или по QR-коду через платёжное приложение.",
+  "id": "PRICE-35",
+  "name": "Цены"
+ },
+ {
+  "section": "app",
+  "el": "p.kicker",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 30574,
+  "end": 30589,
+  "html": "Ученикам студии",
+  "id": "APP-01",
+  "name": "Приложение"
+ },
+ {
+  "section": "app",
+  "el": "h2.section__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 30676,
+  "end": 30697,
+  "html": "HARMONY VOCAL TRAINER",
+  "id": "APP-02",
+  "name": "Приложение"
+ },
+ {
+  "section": "app",
+  "el": "p.section__lead",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 30741,
+  "end": 30866,
+  "html": "Наше приложение для тренировок между занятиями — чтобы отработанное\n        на уроке не забывалось за неделю.",
+  "id": "APP-03",
+  "name": "Приложение"
+ },
+ {
+  "section": "app",
+  "el": "li",
+  "parents": [
+   "div.app__inner",
+   "div.app__text",
+   "ul.app__features"
+  ],
+  "start": 31001,
+  "end": 31065,
+  "html": "<b>Распевка на три минуты.</b> Четыре упражнения на каждый день.",
+  "id": "APP-04",
+  "name": "Приложение"
+ },
+ {
+  "section": "app",
+  "el": "li",
+  "parents": [
+   "div.app__inner",
+   "div.app__text",
+   "ul.app__features"
+  ],
+  "start": 31085,
+  "end": 31160,
+  "html": "<b>Тренажёр интонации.</b> Нота видна в реальном времени — попали или мимо.",
+  "id": "APP-05",
+  "name": "Приложение"
+ },
+ {
+  "section": "app",
+  "el": "li",
+  "parents": [
+   "div.app__inner",
+   "div.app__text",
+   "ul.app__features"
+  ],
+  "start": 31180,
+  "end": 31258,
+  "html": "<b>Упражнения на слух.</b> Спеть то, что услышали, не подглядывая в подсказку.",
+  "id": "APP-06",
+  "name": "Приложение"
+ },
+ {
+  "section": "app",
+  "el": "li",
+  "parents": [
+   "div.app__inner",
+   "div.app__text",
+   "ul.app__features"
+  ],
+  "start": 31278,
+  "end": 31360,
+  "html": "<b>Лаборатория.</b> Спектрограмма голоса: видно то, что педагог объясняет словами.",
+  "id": "APP-07",
+  "name": "Приложение"
+ },
+ {
+  "section": "app",
+  "el": "li",
+  "parents": [
+   "div.app__inner",
+   "div.app__text",
+   "ul.app__features"
+  ],
+  "start": 31380,
+  "end": 31437,
+  "html": "<b>Прогресс.</b> Уровни и серия дней — видно, что растёт.",
+  "id": "APP-08",
+  "name": "Приложение"
+ },
+ {
+  "section": "app",
+  "el": "div.app__status",
+  "parents": [
+   "div.container",
+   "div.app__inner",
+   "div.app__text"
+  ],
+  "start": 31498,
+  "end": 31541,
+  "html": "Входит в занятия, отдельно платить не нужно",
+  "id": "APP-09",
+  "name": "Приложение"
+ },
+ {
+  "section": "app",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.app__inner",
+   "div.app__text"
+  ],
+  "start": 31669,
+  "end": 31686,
+  "html": "Начать заниматься",
+  "id": "APP-10",
+  "name": "Приложение"
+ },
+ {
+  "section": "faq",
+  "el": "p.kicker",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 33578,
+  "end": 33585,
+  "html": "Вопросы",
+  "id": "FAQ-01",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "h2.section__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 33672,
+  "end": 33693,
+  "html": "ЧТО ОБЫЧНО СПРАШИВАЮТ",
+  "id": "FAQ-02",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "summary",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 33808,
+  "end": 33843,
+  "html": "Я совсем не умею петь, и слуха нет.",
+  "id": "FAQ-03",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 33865,
+  "end": 34093,
+  "html": "Так приходит большинство. «Нет слуха» почти всегда означает другое: человек слышит высоту, но пока не умеет попасть в неё голосом. Это разные навыки, и второй тренируется. Начинаем с базы — и голос постепенно начинает слушаться.",
+  "id": "FAQ-04",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "summary",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 34181,
+  "end": 34209,
+  "html": "Не поздно начинать взрослым?",
+  "id": "FAQ-05",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 34231,
+  "end": 34402,
+  "html": "Нет: связки — это мышцы, они тренируются в любом возрасте. У взрослых даже есть преимущество — объяснение про механику голоса вы понимаете с первого раза, а не с десятого.",
+  "id": "FAQ-06",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "summary",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 34490,
+  "end": 34525,
+  "html": "Есть ли бесплатное пробное занятие?",
+  "id": "FAQ-07",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 34547,
+  "end": 34689,
+  "html": "Нет. Первое занятие — обычный полноценный урок за 300 000 сум, с разбором голоса и упражнениями. Можно сразу взять абонемент — выйдет дешевле.",
+  "id": "FAQ-08",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "summary",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 34777,
+  "end": 34821,
+  "html": "Сколько времени нужно, чтобы научиться петь?",
+  "id": "FAQ-09",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 34843,
+  "end": 35075,
+  "html": "Зависит от того, чего вы хотите. Чище попадать в ноты — обычно вопрос нескольких занятий. Уверенно петь свою песню целиком — нескольких месяцев. На первом же уроке педагог скажет, где вы сейчас и сколько примерно займёт ваша задача.",
+  "id": "FAQ-10",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "summary",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 35163,
+  "end": 35195,
+  "html": "Сколько раз в неделю заниматься?",
+  "id": "FAQ-11",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 35217,
+  "end": 35367,
+  "html": "В среднем один-два раза — смотрите по своей загруженности и по тому, сколько получается заниматься самостоятельно. Можно и чаще, если хочется быстрее.",
+  "id": "FAQ-12",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "summary",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 35455,
+  "end": 35499,
+  "html": "Можно ли выбрать песню, которую я хочу петь?",
+  "id": "FAQ-13",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 35521,
+  "end": 35703,
+  "html": "Да, с неё обычно и начинаем — своя песня мотивирует лучше любых упражнений. Если она пока не по силам, педагог предложит, что подтянуть, и вы вернётесь к ней через несколько занятий.",
+  "id": "FAQ-14",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "summary",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 35791,
+  "end": 35823,
+  "html": "На каком языке проходят занятия?",
+  "id": "FAQ-15",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 35845,
+  "end": 36051,
+  "html": "На русском и на узбекском — как вам удобнее. На узбекском ведёт Мохитобон, выпускница Государственной консерватории Узбекистана. Скажите при записи, на каком языке хотите заниматься, и мы подберём педагога.",
+  "id": "FAQ-16",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "summary",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 36139,
+  "end": 36173,
+  "html": "С какого возраста вы берёте детей?",
+  "id": "FAQ-17",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 36195,
+  "end": 36420,
+  "html": "С 7–8 лет: в этом возрасте ребёнок уже готов к осознанной и бережной работе с голосом. Малышам полезнее мягкий игровой формат музыкального развития — будем рады видеть их чуть позже. Экстрим-вокал берём подросткам и взрослым.",
+  "id": "FAQ-18",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "summary",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 36508,
+  "end": 36536,
+  "html": "Я стесняюсь петь при других.",
+  "id": "FAQ-19",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 36558,
+  "end": 36723,
+  "html": "Поэтому мы и занимаемся один на один: в кабинете только вы и педагог. Азиза отдельно работает с зажатостью — с ней распеваются даже те, кто раньше не пел ни при ком.",
+  "id": "FAQ-20",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "summary",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 36811,
+  "end": 36841,
+  "html": "Не сорву ли я голос на скриме?",
+  "id": "FAQ-21",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 36863,
+  "end": 37073,
+  "html": "Голос сажает не сама техника, а пение через силу. Мы сразу учим различать нормальную нагрузку и сигнал остановиться, ставим разогрев и охлаждение — так экстрим остаётся безопасным даже при регулярных концертах.",
+  "id": "FAQ-22",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "summary",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 37161,
+  "end": 37179,
+  "html": "Что взять с собой?",
+  "id": "FAQ-23",
+  "name": "Вопросы"
+ },
+ {
+  "section": "faq",
+  "el": "p",
+  "parents": [
+   "div.container",
+   "div.faq__list",
+   "details.faq__item"
+  ],
+  "start": 37201,
+  "end": 37342,
+  "html": "Только себя и хорошее настроение, вода приветствуется. Если есть песня, которую хочется спеть, — пришлите её заранее или назовите на занятии.",
+  "id": "FAQ-24",
+  "name": "Вопросы"
+ },
+ {
+  "section": "contacts",
+  "el": "p.kicker",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 37582,
+  "end": 37590,
+  "html": "Контакты",
+  "id": "CONT-01",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "h2.section__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 37678,
+  "end": 37700,
+  "html": "ДВА ФИЛИАЛА В ТАШКЕНТЕ",
+  "id": "CONT-02",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "p.section__lead",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 37744,
+  "end": 37810,
+  "html": "Выбирайте филиал по педагогу или по тому, куда удобнее добираться.",
+  "id": "CONT-03",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "span.place__num",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 37933,
+  "end": 37942,
+  "html": "Филиал 01",
+  "id": "CONT-04",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "h3.place__title",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 37983,
+  "end": 38007,
+  "html": "Дворец железнодорожников",
+  "id": "CONT-05",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "p.place__addr",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 38044,
+  "end": 38064,
+  "html": "ул. Амира Темура, 30",
+  "id": "CONT-06",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "p.place__text",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 38100,
+  "end": 38205,
+  "html": "Дворец культуры железнодорожников, 2 этаж.\n          От лестницы направо, кабинет 16.",
+  "id": "CONT-07",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "p.place__metro",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 38242,
+  "end": 38275,
+  "html": "Рядом со станцией метро «Ташкент»",
+  "id": "CONT-08",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "p.place__who",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 38310,
+  "end": 38357,
+  "html": "<span>Педагоги:</span> Камила, Азиза, Мохитобон",
+  "id": "CONT-09",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "a.place__route",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 38474,
+  "end": 38491,
+  "html": "Проложить маршрут",
+  "id": "CONT-10",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "span.place__num",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 38591,
+  "end": 38600,
+  "html": "Филиал 02",
+  "id": "CONT-11",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "h3.place__title",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 38641,
+  "end": 38656,
+  "html": "Юсуф Хос Ходжиб",
+  "id": "CONT-12",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "p.place__addr",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 38693,
+  "end": 38717,
+  "html": "ул. Юсуф Хос Ходжиба, 43",
+  "id": "CONT-13",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "p.place__text",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 38753,
+  "end": 38816,
+  "html": "Напротив «Mazzali», под магазином «LEGION».",
+  "id": "CONT-14",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "p.place__metro",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 38853,
+  "end": 38874,
+  "html": "Вход со стороны улицы",
+  "id": "CONT-15",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "p.place__who",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 38909,
+  "end": 38946,
+  "html": "<span>Педагоги:</span> Далер, Гульшан",
+  "id": "CONT-16",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "a.place__route",
+  "parents": [
+   "div.container",
+   "div.places",
+   "article.place"
+  ],
+  "start": 39073,
+  "end": 39090,
+  "html": "Проложить маршрут",
+  "id": "CONT-17",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "span.contacts__label",
+  "parents": [
+   "div.contacts__grid",
+   "div.contacts__info",
+   "div.contacts__item"
+  ],
+  "start": 39277,
+  "end": 39295,
+  "html": "Телефон и WhatsApp",
+  "id": "CONT-18",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "a",
+  "parents": [
+   "div.contacts__info",
+   "div.contacts__item",
+   "p.contacts__value"
+  ],
+  "start": 39368,
+  "end": 39385,
+  "html": "+998 90 176-07-28",
+  "id": "CONT-19",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "span.contacts__label",
+  "parents": [
+   "div.contacts__grid",
+   "div.contacts__info",
+   "div.contacts__item"
+  ],
+  "start": 39486,
+  "end": 39492,
+  "html": "Оплата",
+  "id": "CONT-20",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "p.contacts__value",
+  "parents": [
+   "div.contacts__grid",
+   "div.contacts__info",
+   "div.contacts__item"
+  ],
+  "start": 39537,
+  "end": 39561,
+  "html": "Наличными или по QR-коду",
+  "id": "CONT-21",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "span.contacts__label",
+  "parents": [
+   "div.contacts__grid",
+   "div.contacts__info",
+   "div.contacts__item"
+  ],
+  "start": 39658,
+  "end": 39665,
+  "html": "Соцсети",
+  "id": "CONT-22",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "a.social",
+  "parents": [
+   "div.contacts__info",
+   "div.contacts__item",
+   "div.contacts__socials"
+  ],
+  "start": 39825,
+  "end": 39834,
+  "html": "Instagram",
+  "id": "CONT-23",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "a.social",
+  "parents": [
+   "div.contacts__info",
+   "div.contacts__item",
+   "div.contacts__socials"
+  ],
+  "start": 39936,
+  "end": 39944,
+  "html": "Telegram",
+  "id": "CONT-24",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.contacts__grid",
+   "div.contacts__info"
+  ],
+  "start": 40094,
+  "end": 40115,
+  "html": "Записаться на занятие",
+  "id": "CONT-25",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "button.map__tab",
+  "parents": [
+   "div.contacts__grid",
+   "div.contacts__map",
+   "div.map__tabs"
+  ],
+  "start": 40634,
+  "end": 40682,
+  "html": "Дворец железнодорожников",
+  "id": "CONT-26",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "button.map__tab",
+  "parents": [
+   "div.contacts__grid",
+   "div.contacts__map",
+   "div.map__tabs"
+  ],
+  "start": 40927,
+  "end": 40966,
+  "html": "Юсуф Хос Ходжиб",
+  "id": "CONT-27",
+  "name": "Контакты"
+ },
+ {
+  "section": "contacts",
+  "el": "p",
+  "parents": [
+   "div.contacts__map",
+   "div.map__frame",
+   "div.map-stub"
+  ],
+  "start": 41245,
+  "end": 41261,
+  "html": "Загружаем карту…",
+  "id": "CONT-28",
+  "name": "Контакты"
+ },
+ {
+  "section": "footer",
+  "el": "p.footer__tagline",
+  "parents": [
+   "footer.footer",
+   "div.container",
+   "div.footer__brand"
+  ],
+  "start": 41659,
+  "end": 41768,
+  "html": "Школа индивидуального вокального и музыкального образования.<br>\n        Ташкент, Узбекистан.",
+  "id": "FOOT-01",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "a",
+  "parents": [
+   "div.container",
+   "div.footer__brand",
+   "p.footer__phone"
+  ],
+  "start": 41832,
+  "end": 41849,
+  "html": "+998 90 176-07-28",
+  "id": "FOOT-02",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "a",
+  "parents": [
+   "footer.footer",
+   "div.container",
+   "nav.footer__nav"
+  ],
+  "start": 41956,
+  "end": 41967,
+  "html": "Направления",
+  "id": "FOOT-03",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "a",
+  "parents": [
+   "footer.footer",
+   "div.container",
+   "nav.footer__nav"
+  ],
+  "start": 41995,
+  "end": 42009,
+  "html": "Первое занятие",
+  "id": "FOOT-04",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "a",
+  "parents": [
+   "footer.footer",
+   "div.container",
+   "nav.footer__nav"
+  ],
+  "start": 42038,
+  "end": 42049,
+  "html": "Как мы учим",
+  "id": "FOOT-05",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "a",
+  "parents": [
+   "footer.footer",
+   "div.container",
+   "nav.footer__nav"
+  ],
+  "start": 42080,
+  "end": 42088,
+  "html": "Педагоги",
+  "id": "FOOT-06",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "a",
+  "parents": [
+   "footer.footer",
+   "div.container",
+   "nav.footer__nav"
+  ],
+  "start": 42118,
+  "end": 42125,
+  "html": "Ученики",
+  "id": "FOOT-07",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "a",
+  "parents": [
+   "footer.footer",
+   "div.container",
+   "nav.footer__nav"
+  ],
+  "start": 42154,
+  "end": 42158,
+  "html": "Цены",
+  "id": "FOOT-08",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "a",
+  "parents": [
+   "footer.footer",
+   "div.container",
+   "nav.footer__nav"
+  ],
+  "start": 42184,
+  "end": 42191,
+  "html": "Вопросы",
+  "id": "FOOT-09",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "a",
+  "parents": [
+   "footer.footer",
+   "div.container",
+   "nav.footer__nav"
+  ],
+  "start": 42222,
+  "end": 42230,
+  "html": "Контакты",
+  "id": "FOOT-10",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "a",
+  "parents": [
+   "footer.footer",
+   "div.container",
+   "div.footer__socials"
+  ],
+  "start": 42370,
+  "end": 42386,
+  "html": "@harmonyvocal.uz",
+  "id": "FOOT-11",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "a",
+  "parents": [
+   "footer.footer",
+   "div.container",
+   "div.footer__socials"
+  ],
+  "start": 42467,
+  "end": 42475,
+  "html": "Telegram",
+  "id": "FOOT-12",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "p",
+  "parents": [
+   "footer.footer",
+   "div.container"
+  ],
+  "start": 42549,
+  "end": 42607,
+  "html": "© <span id=\"year\">2026</span> Harmony Vocal Mastery Studio",
+  "id": "FOOT-13",
+  "name": "Футер"
+ },
+ {
+  "section": "footer",
+  "el": "p",
+  "parents": [
+   "footer.footer",
+   "div.container"
+  ],
+  "start": 42619,
+  "end": 42658,
+  "html": "Амира Темура, 30 · Юсуф Хос Ходжиба, 43",
+  "id": "FOOT-14",
+  "name": "Футер"
+ }
+]
