@@ -99,5 +99,5 @@ for sec in order:
     for r in rs:
         L.append('| %s | %s | %s |' % (r['id'], label(r), cell(r['html'])))
 
-open('ТЕКСТЫ-САЙТА.md','w',encoding='utf-8').write('\n'.join(L)+'\n')
+open('harmony-texts.md','w',encoding='utf-8').write('\n'.join(L)+'\n')
 print('строк в таблице:', len(rows)+len(META))
