@@ -59,9 +59,9 @@
    "div.container",
    "nav.nav"
   ],
-  "start": 6111,
+  "start": 6108,
   "end": 6115,
-  "html": "Цены",
+  "html": "Вопросы",
   "id": "MENU-04",
   "name": "Шапка сайта"
  },
@@ -73,9 +73,9 @@
    "div.container",
    "nav.nav"
   ],
-  "start": 6159,
+  "start": 6162,
   "end": 6166,
-  "html": "Вопросы",
+  "html": "Цены",
   "id": "MENU-05",
   "name": "Шапка сайта"
  },
@@ -2140,495 +2140,6 @@
   "name": "Ученики и концерты"
  },
  {
-  "section": "prices",
-  "el": "p.kicker",
-  "parents": [
-   "section.section",
-   "div.container",
-   "header.section__head"
-  ],
-  "start": 27108,
-  "end": 27117,
-  "html": "Стоимость",
-  "id": "PRICE-01",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "h2.section__title",
-  "parents": [
-   "section.section",
-   "div.container",
-   "header.section__head"
-  ],
-  "start": 27187,
-  "end": 27191,
-  "html": "ЦЕНЫ",
-  "id": "PRICE-02",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "p.section__lead",
-  "parents": [
-   "section.section",
-   "div.container",
-   "header.section__head"
-  ],
-  "start": 27235,
-  "end": 27383,
-  "html": "Одна сумма за занятие — разбор песни, упражнения, материалы и приложение\n        уже внутри. Никаких доплат за «продвинутый модуль».",
-  "id": "PRICE-03",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "div.price__badge",
-  "parents": [
-   "div.container",
-   "div.prices__grid",
-   "article.price"
-  ],
-  "start": 27528,
-  "end": 27546,
-  "html": "−10% по абонементу",
-  "id": "PRICE-04",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "h3.price__title",
-  "parents": [
-   "div.container",
-   "div.prices__grid",
-   "article.price"
-  ],
-  "start": 27586,
-  "end": 27591,
-  "html": "Вокал",
-  "id": "PRICE-05",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "p.price__sub",
-  "parents": [
-   "div.container",
-   "div.prices__grid",
-   "article.price"
-  ],
-  "start": 27627,
-  "end": 27662,
-  "html": "Современный и экстрим-вокал · 1 час",
-  "id": "PRICE-06",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "span.price__label",
-  "parents": [
-   "article.price",
-   "div.price__rows",
-   "div.price__row"
-  ],
-  "start": 27776,
-  "end": 27791,
-  "html": "Разовое занятие",
-  "id": "PRICE-07",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "b.price__value",
-  "parents": [
-   "article.price",
-   "div.price__rows",
-   "div.price__row"
-  ],
-  "start": 27835,
-  "end": 27853,
-  "html": "300 000 <i>сум</i>",
-  "id": "PRICE-08",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "span.price__label",
-  "parents": [
-   "article.price",
-   "div.price__rows",
-   "div.price__row"
-  ],
-  "start": 27966,
-  "end": 27979,
-  "html": "По абонементу",
-  "id": "PRICE-09",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "b.price__value",
-  "parents": [
-   "article.price",
-   "div.price__rows",
-   "div.price__row"
-  ],
-  "start": 28023,
-  "end": 28041,
-  "html": "270 000 <i>сум</i>",
-  "id": "PRICE-10",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "p.price__save",
-  "parents": [
-   "div.container",
-   "div.prices__grid",
-   "article.price"
-  ],
-  "start": 28110,
-  "end": 28207,
-  "html": "Выгода 30 000 сум с каждого занятия — около 240 000 сум в месяц, если заниматься дважды в неделю.",
-  "id": "PRICE-11",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "a.btn",
-  "parents": [
-   "div.container",
-   "div.prices__grid",
-   "article.price"
-  ],
-  "start": 28335,
-  "end": 28345,
-  "html": "Записаться",
-  "id": "PRICE-12",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "h3.price__title",
-  "parents": [
-   "div.container",
-   "div.prices__grid",
-   "article.price"
-  ],
-  "start": 28446,
-  "end": 28469,
-  "html": "Музыкальная грамотность",
-  "id": "PRICE-13",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "p.price__sub",
-  "parents": [
-   "div.container",
-   "div.prices__grid",
-   "article.price"
-  ],
-  "start": 28505,
-  "end": 28532,
-  "html": "Теория + фортепиано · 1 час",
-  "id": "PRICE-14",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "span.price__label",
-  "parents": [
-   "article.price",
-   "div.price__rows",
-   "div.price__row"
-  ],
-  "start": 28646,
-  "end": 28661,
-  "html": "Разовое занятие",
-  "id": "PRICE-15",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "b.price__value",
-  "parents": [
-   "article.price",
-   "div.price__rows",
-   "div.price__row"
-  ],
-  "start": 28705,
-  "end": 28723,
-  "html": "230 000 <i>сум</i>",
-  "id": "PRICE-16",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "span.price__label",
-  "parents": [
-   "article.price",
-   "div.price__rows",
-   "div.price__row"
-  ],
-  "start": 28836,
-  "end": 28849,
-  "html": "По абонементу",
-  "id": "PRICE-17",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "b.price__value",
-  "parents": [
-   "article.price",
-   "div.price__rows",
-   "div.price__row"
-  ],
-  "start": 28893,
-  "end": 28911,
-  "html": "200 000 <i>сум</i>",
-  "id": "PRICE-18",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "p.price__save",
-  "parents": [
-   "div.container",
-   "div.prices__grid",
-   "article.price"
-  ],
-  "start": 28980,
-  "end": 29038,
-  "html": "Выгода 30 000 сум с занятия. Хорошо совмещается с вокалом.",
-  "id": "PRICE-19",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "a.btn",
-  "parents": [
-   "div.container",
-   "div.prices__grid",
-   "article.price"
-  ],
-  "start": 29164,
-  "end": 29174,
-  "html": "Записаться",
-  "id": "PRICE-20",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "h3.sub__title",
-  "parents": [
-   "section.section",
-   "div.container",
-   "div.sub"
-  ],
-  "start": 29267,
-  "end": 29290,
-  "html": "Как считается абонемент",
-  "id": "PRICE-21",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "p.sub__lead",
-  "parents": [
-   "section.section",
-   "div.container",
-   "div.sub"
-  ],
-  "start": 29323,
-  "end": 29492,
-  "html": "Выбираете дни недели — платите за занятия, которые выпадают на этот месяц.\n        Минимум 4 занятия. За вами закрепляется постоянное время в расписании.",
-  "id": "PRICE-22",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "span",
-  "parents": [
-   "div.container",
-   "div.sub",
-   "p.sub__formula"
-  ],
-  "start": 29542,
-  "end": 29560,
-  "html": "Цена по абонементу",
-  "id": "PRICE-23",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "i",
-  "parents": [
-   "div.container",
-   "div.sub",
-   "p.sub__formula"
-  ],
-  "start": 29570,
-  "end": 29571,
-  "html": "×",
-  "id": "PRICE-24",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "span",
-  "parents": [
-   "div.container",
-   "div.sub",
-   "p.sub__formula"
-  ],
-  "start": 29581,
-  "end": 29597,
-  "html": "занятий в месяце",
-  "id": "PRICE-25",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "i",
-  "parents": [
-   "div.container",
-   "div.sub",
-   "p.sub__formula"
-  ],
-  "start": 29607,
-  "end": 29608,
-  "html": "=",
-  "id": "PRICE-26",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "b",
-  "parents": [
-   "div.container",
-   "div.sub",
-   "p.sub__formula"
-  ],
-  "start": 29615,
-  "end": 29620,
-  "html": "сумма",
-  "id": "PRICE-27",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "p.sub__example",
-  "parents": [
-   "section.section",
-   "div.container",
-   "div.sub"
-  ],
-  "start": 29666,
-  "end": 29766,
-  "html": "Например, 4 занятия по вокалу — <b>1 080 000 сум</b>, восемь — <b>2 160 000 сум</b>.",
-  "id": "PRICE-28",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "h3.terms__title",
-  "parents": [
-   "section.section",
-   "div.container",
-   "div.terms"
-  ],
-  "start": 29845,
-  "end": 29860,
-  "html": "Условия занятий",
-  "id": "PRICE-29",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "li",
-  "parents": [
-   "div.container",
-   "div.terms",
-   "ul.terms__list"
-  ],
-  "start": 29909,
-  "end": 29996,
-  "html": "Перенести занятие можно не позднее чем за 12 часов. Позже — урок считается проведённым.",
-  "id": "PRICE-30",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "li",
-  "parents": [
-   "div.container",
-   "div.terms",
-   "ul.terms__list"
-  ],
-  "start": 30014,
-  "end": 30097,
-  "html": "Перенесённое занятие проходит в том же месяце, если у педагога есть свободное окно.",
-  "id": "PRICE-31",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "li",
-  "parents": [
-   "div.container",
-   "div.terms",
-   "ul.terms__list"
-  ],
-  "start": 30115,
-  "end": 30179,
-  "html": "Перенос на следующий месяц возможен по согласованию с педагогом.",
-  "id": "PRICE-32",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "li",
-  "parents": [
-   "div.container",
-   "div.terms",
-   "ul.terms__list"
-  ],
-  "start": 30197,
-  "end": 30243,
-  "html": "Оплаченный пакет занятий возврату не подлежит.",
-  "id": "PRICE-33",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "li",
-  "parents": [
-   "div.container",
-   "div.terms",
-   "ul.terms__list"
-  ],
-  "start": 30261,
-  "end": 30324,
-  "html": "Если пропустить разовый урок, повторная запись — по предоплате.",
-  "id": "PRICE-34",
-  "name": "Цены"
- },
- {
-  "section": "prices",
-  "el": "p.prices__pay",
-  "parents": [
-   "section.section",
-   "div.container"
-  ],
-  "start": 30388,
-  "end": 30447,
-  "html": "Оплата наличными или по QR-коду через платёжное приложение.",
-  "id": "PRICE-35",
-  "name": "Цены"
- },
- {
   "section": "app",
   "el": "p.kicker",
   "parents": [
@@ -2636,8 +2147,8 @@
    "div.container",
    "header.section__head"
   ],
-  "start": 30650,
-  "end": 30665,
+  "start": 27107,
+  "end": 27122,
   "html": "Ученикам студии",
   "id": "APP-01",
   "name": "Приложение"
@@ -2650,8 +2161,8 @@
    "div.container",
    "header.section__head"
   ],
-  "start": 30752,
-  "end": 30773,
+  "start": 27209,
+  "end": 27230,
   "html": "HARMONY VOCAL TRAINER",
   "id": "APP-02",
   "name": "Приложение"
@@ -2664,8 +2175,8 @@
    "div.container",
    "header.section__head"
   ],
-  "start": 30817,
-  "end": 30973,
+  "start": 27274,
+  "end": 27430,
   "html": "Голос забывает быстрее, чем кажется. Приложение держит форму между занятиями —\n        три минуты в день вместо часа наверстывания на уроке.",
   "id": "APP-03",
   "name": "Приложение"
@@ -2678,8 +2189,8 @@
    "div.app__text",
    "ul.app__features"
   ],
-  "start": 31108,
-  "end": 31172,
+  "start": 27565,
+  "end": 27629,
   "html": "<b>Распевка на три минуты.</b> Четыре упражнения на каждый день.",
   "id": "APP-04",
   "name": "Приложение"
@@ -2692,8 +2203,8 @@
    "div.app__text",
    "ul.app__features"
   ],
-  "start": 31192,
-  "end": 31267,
+  "start": 27649,
+  "end": 27724,
   "html": "<b>Тренажёр интонации.</b> Нота видна в реальном времени — попали или мимо.",
   "id": "APP-05",
   "name": "Приложение"
@@ -2706,8 +2217,8 @@
    "div.app__text",
    "ul.app__features"
   ],
-  "start": 31287,
-  "end": 31365,
+  "start": 27744,
+  "end": 27822,
   "html": "<b>Упражнения на слух.</b> Спеть то, что услышали, не подглядывая в подсказку.",
   "id": "APP-06",
   "name": "Приложение"
@@ -2720,8 +2231,8 @@
    "div.app__text",
    "ul.app__features"
   ],
-  "start": 31385,
-  "end": 31467,
+  "start": 27842,
+  "end": 27924,
   "html": "<b>Лаборатория.</b> Спектрограмма голоса: видно то, что педагог объясняет словами.",
   "id": "APP-07",
   "name": "Приложение"
@@ -2734,8 +2245,8 @@
    "div.app__text",
    "ul.app__features"
   ],
-  "start": 31487,
-  "end": 31544,
+  "start": 27944,
+  "end": 28001,
   "html": "<b>Прогресс.</b> Уровни и серия дней — видно, что растёт.",
   "id": "APP-08",
   "name": "Приложение"
@@ -2748,8 +2259,8 @@
    "div.app__inner",
    "div.app__text"
   ],
-  "start": 31605,
-  "end": 31648,
+  "start": 28062,
+  "end": 28105,
   "html": "Входит в занятия, отдельно платить не нужно",
   "id": "APP-09",
   "name": "Приложение"
@@ -2762,8 +2273,8 @@
    "div.app__inner",
    "div.app__text"
   ],
-  "start": 31776,
-  "end": 31793,
+  "start": 28233,
+  "end": 28250,
   "html": "Начать заниматься",
   "id": "APP-10",
   "name": "Приложение"
@@ -2776,8 +2287,8 @@
    "div.container",
    "header.section__head"
   ],
-  "start": 33685,
-  "end": 33692,
+  "start": 30142,
+  "end": 30149,
   "html": "Вопросы",
   "id": "FAQ-01",
   "name": "Вопросы"
@@ -2790,8 +2301,8 @@
    "div.container",
    "header.section__head"
   ],
-  "start": 33779,
-  "end": 33800,
+  "start": 30236,
+  "end": 30257,
   "html": "ЧТО ОБЫЧНО СПРАШИВАЮТ",
   "id": "FAQ-02",
   "name": "Вопросы"
@@ -2804,8 +2315,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 33915,
-  "end": 33950,
+  "start": 30372,
+  "end": 30407,
   "html": "Я совсем не умею петь, и слуха нет.",
   "id": "FAQ-03",
   "name": "Вопросы"
@@ -2818,8 +2329,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 33972,
-  "end": 34185,
+  "start": 30429,
+  "end": 30642,
   "html": "Так приходит большинство наших учеников. «Нет слуха» почти всегда значит другое: высоту вы слышите, но пока не попадаете в неё голосом. Это два разных навыка, и второй тренируется — как растяжка или удар в спорте.",
   "id": "FAQ-04",
   "name": "Вопросы"
@@ -2832,8 +2343,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 34273,
-  "end": 34301,
+  "start": 30730,
+  "end": 30758,
   "html": "Не поздно начинать взрослым?",
   "id": "FAQ-05",
   "name": "Вопросы"
@@ -2846,8 +2357,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 34323,
-  "end": 34500,
+  "start": 30780,
+  "end": 30957,
   "html": "Нет. Голос — это мышцы, они тренируются в любом возрасте. У взрослых даже есть фора: объяснение вы понимаете с первого раза, а не с десятого, и дома занимаетесь без напоминаний.",
   "id": "FAQ-06",
   "name": "Вопросы"
@@ -2860,8 +2371,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 34588,
-  "end": 34632,
+  "start": 31045,
+  "end": 31089,
   "html": "Сколько времени нужно, чтобы научиться петь?",
   "id": "FAQ-07",
   "name": "Вопросы"
@@ -2874,8 +2385,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 34654,
-  "end": 34866,
+  "start": 31111,
+  "end": 31323,
   "html": "Смотря чего вы хотите. Чище попадать в ноты — обычно несколько занятий. Уверенно вытянуть свою песню целиком — несколько месяцев. На первом уроке педагог скажет, где вы сейчас и сколько займёт именно ваша задача.",
   "id": "FAQ-08",
   "name": "Вопросы"
@@ -2888,8 +2399,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 34954,
-  "end": 34986,
+  "start": 31411,
+  "end": 31443,
   "html": "Сколько раз в неделю заниматься?",
   "id": "FAQ-09",
   "name": "Вопросы"
@@ -2902,8 +2413,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 35008,
-  "end": 35186,
+  "start": 31465,
+  "end": 31643,
   "html": "Один-два раза. Два дают заметно более быстрый результат, один работает, если вы занимаетесь дома по десять минут в день. Меньше раза в неделю — голос успевает откатываться назад.",
   "id": "FAQ-10",
   "name": "Вопросы"
@@ -2916,8 +2427,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 35274,
-  "end": 35306,
+  "start": 31731,
+  "end": 31763,
   "html": "На каком языке проходят занятия?",
   "id": "FAQ-11",
   "name": "Вопросы"
@@ -2930,8 +2441,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 35328,
-  "end": 35500,
+  "start": 31785,
+  "end": 31957,
   "html": "На русском и на узбекском — как вам удобнее. На узбекском ведёт Мохитобон, выпускница Государственной консерватории Узбекистана. Скажите при записи, и мы подберём педагога.",
   "id": "FAQ-12",
   "name": "Вопросы"
@@ -2944,8 +2455,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 35588,
-  "end": 35616,
+  "start": 32045,
+  "end": 32073,
   "html": "Я стесняюсь петь при других.",
   "id": "FAQ-13",
   "name": "Вопросы"
@@ -2958,8 +2469,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 35638,
-  "end": 35850,
+  "start": 32095,
+  "end": 32307,
   "html": "Поэтому мы и занимаемся один на один: в кабинете только вы и педагог, никакой группы, при которой страшно ошибиться. Азиза отдельно работает с зажатостью — с ней распеваются даже те, кто раньше не пел ни при ком.",
   "id": "FAQ-14",
   "name": "Вопросы"
@@ -2972,8 +2483,8 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 35938,
-  "end": 35968,
+  "start": 32395,
+  "end": 32425,
   "html": "Не сорву ли я голос на скриме?",
   "id": "FAQ-15",
   "name": "Вопросы"
@@ -2986,11 +2497,500 @@
    "div.faq__list",
    "details.faq__item"
   ],
-  "start": 35990,
-  "end": 36201,
+  "start": 32447,
+  "end": 32658,
   "html": "Голос сажает не техника, а пение через силу. С первого занятия учим отличать рабочую нагрузку от сигнала остановиться и ставим разогрев с охлаждением. При таком подходе экстрим выдерживает и регулярные концерты.",
   "id": "FAQ-16",
   "name": "Вопросы"
+ },
+ {
+  "section": "prices",
+  "el": "p.kicker",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 32890,
+  "end": 32899,
+  "html": "Стоимость",
+  "id": "PRICE-01",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "h2.section__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 32969,
+  "end": 32973,
+  "html": "ЦЕНЫ",
+  "id": "PRICE-02",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.section__lead",
+  "parents": [
+   "section.section",
+   "div.container",
+   "header.section__head"
+  ],
+  "start": 33017,
+  "end": 33165,
+  "html": "Одна сумма за занятие — разбор песни, упражнения, материалы и приложение\n        уже внутри. Никаких доплат за «продвинутый модуль».",
+  "id": "PRICE-03",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "div.price__badge",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 33310,
+  "end": 33328,
+  "html": "−10% по абонементу",
+  "id": "PRICE-04",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "h3.price__title",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 33368,
+  "end": 33373,
+  "html": "Вокал",
+  "id": "PRICE-05",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.price__sub",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 33409,
+  "end": 33444,
+  "html": "Современный и экстрим-вокал · 1 час",
+  "id": "PRICE-06",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span.price__label",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 33558,
+  "end": 33573,
+  "html": "Разовое занятие",
+  "id": "PRICE-07",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "b.price__value",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 33617,
+  "end": 33635,
+  "html": "300 000 <i>сум</i>",
+  "id": "PRICE-08",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span.price__label",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 33748,
+  "end": 33761,
+  "html": "По абонементу",
+  "id": "PRICE-09",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "b.price__value",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 33805,
+  "end": 33823,
+  "html": "270 000 <i>сум</i>",
+  "id": "PRICE-10",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.price__save",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 33892,
+  "end": 33989,
+  "html": "Выгода 30 000 сум с каждого занятия — около 240 000 сум в месяц, если заниматься дважды в неделю.",
+  "id": "PRICE-11",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 34117,
+  "end": 34127,
+  "html": "Записаться",
+  "id": "PRICE-12",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "h3.price__title",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 34228,
+  "end": 34251,
+  "html": "Музыкальная грамотность",
+  "id": "PRICE-13",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.price__sub",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 34287,
+  "end": 34314,
+  "html": "Теория + фортепиано · 1 час",
+  "id": "PRICE-14",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span.price__label",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 34428,
+  "end": 34443,
+  "html": "Разовое занятие",
+  "id": "PRICE-15",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "b.price__value",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 34487,
+  "end": 34505,
+  "html": "230 000 <i>сум</i>",
+  "id": "PRICE-16",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span.price__label",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 34618,
+  "end": 34631,
+  "html": "По абонементу",
+  "id": "PRICE-17",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "b.price__value",
+  "parents": [
+   "article.price",
+   "div.price__rows",
+   "div.price__row"
+  ],
+  "start": 34675,
+  "end": 34693,
+  "html": "200 000 <i>сум</i>",
+  "id": "PRICE-18",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.price__save",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 34762,
+  "end": 34820,
+  "html": "Выгода 30 000 сум с занятия. Хорошо совмещается с вокалом.",
+  "id": "PRICE-19",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "a.btn",
+  "parents": [
+   "div.container",
+   "div.prices__grid",
+   "article.price"
+  ],
+  "start": 34946,
+  "end": 34956,
+  "html": "Записаться",
+  "id": "PRICE-20",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "h3.sub__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "div.sub"
+  ],
+  "start": 35049,
+  "end": 35072,
+  "html": "Как считается абонемент",
+  "id": "PRICE-21",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.sub__lead",
+  "parents": [
+   "section.section",
+   "div.container",
+   "div.sub"
+  ],
+  "start": 35105,
+  "end": 35274,
+  "html": "Выбираете дни недели — платите за занятия, которые выпадают на этот месяц.\n        Минимум 4 занятия. За вами закрепляется постоянное время в расписании.",
+  "id": "PRICE-22",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span",
+  "parents": [
+   "div.container",
+   "div.sub",
+   "p.sub__formula"
+  ],
+  "start": 35324,
+  "end": 35342,
+  "html": "Цена по абонементу",
+  "id": "PRICE-23",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "i",
+  "parents": [
+   "div.container",
+   "div.sub",
+   "p.sub__formula"
+  ],
+  "start": 35352,
+  "end": 35353,
+  "html": "×",
+  "id": "PRICE-24",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "span",
+  "parents": [
+   "div.container",
+   "div.sub",
+   "p.sub__formula"
+  ],
+  "start": 35363,
+  "end": 35379,
+  "html": "занятий в месяце",
+  "id": "PRICE-25",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "i",
+  "parents": [
+   "div.container",
+   "div.sub",
+   "p.sub__formula"
+  ],
+  "start": 35389,
+  "end": 35390,
+  "html": "=",
+  "id": "PRICE-26",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "b",
+  "parents": [
+   "div.container",
+   "div.sub",
+   "p.sub__formula"
+  ],
+  "start": 35397,
+  "end": 35402,
+  "html": "сумма",
+  "id": "PRICE-27",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.sub__example",
+  "parents": [
+   "section.section",
+   "div.container",
+   "div.sub"
+  ],
+  "start": 35448,
+  "end": 35548,
+  "html": "Например, 4 занятия по вокалу — <b>1 080 000 сум</b>, восемь — <b>2 160 000 сум</b>.",
+  "id": "PRICE-28",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "h3.terms__title",
+  "parents": [
+   "section.section",
+   "div.container",
+   "div.terms"
+  ],
+  "start": 35627,
+  "end": 35642,
+  "html": "Условия занятий",
+  "id": "PRICE-29",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "li",
+  "parents": [
+   "div.container",
+   "div.terms",
+   "ul.terms__list"
+  ],
+  "start": 35691,
+  "end": 35778,
+  "html": "Перенести занятие можно не позднее чем за 12 часов. Позже — урок считается проведённым.",
+  "id": "PRICE-30",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "li",
+  "parents": [
+   "div.container",
+   "div.terms",
+   "ul.terms__list"
+  ],
+  "start": 35796,
+  "end": 35879,
+  "html": "Перенесённое занятие проходит в том же месяце, если у педагога есть свободное окно.",
+  "id": "PRICE-31",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "li",
+  "parents": [
+   "div.container",
+   "div.terms",
+   "ul.terms__list"
+  ],
+  "start": 35897,
+  "end": 35961,
+  "html": "Перенос на следующий месяц возможен по согласованию с педагогом.",
+  "id": "PRICE-32",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "li",
+  "parents": [
+   "div.container",
+   "div.terms",
+   "ul.terms__list"
+  ],
+  "start": 35979,
+  "end": 36025,
+  "html": "Оплаченный пакет занятий возврату не подлежит.",
+  "id": "PRICE-33",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "li",
+  "parents": [
+   "div.container",
+   "div.terms",
+   "ul.terms__list"
+  ],
+  "start": 36043,
+  "end": 36106,
+  "html": "Если пропустить разовый урок, повторная запись — по предоплате.",
+  "id": "PRICE-34",
+  "name": "Цены"
+ },
+ {
+  "section": "prices",
+  "el": "p.prices__pay",
+  "parents": [
+   "section.section",
+   "div.container"
+  ],
+  "start": 36170,
+  "end": 36229,
+  "html": "Оплата наличными или по QR-коду через платёжное приложение.",
+  "id": "PRICE-35",
+  "name": "Цены"
  },
  {
   "section": "contacts",
@@ -3490,9 +3490,9 @@
    "div.container",
    "nav.footer__nav"
   ],
-  "start": 41113,
+  "start": 41110,
   "end": 41117,
-  "html": "Цены",
+  "html": "Вопросы",
   "id": "FOOT-08",
   "name": "Футер"
  },
@@ -3504,9 +3504,9 @@
    "div.container",
    "nav.footer__nav"
   ],
-  "start": 41143,
+  "start": 41146,
   "end": 41150,
-  "html": "Вопросы",
+  "html": "Цены",
   "id": "FOOT-09",
   "name": "Футер"
  },
