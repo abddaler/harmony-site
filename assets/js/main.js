@@ -162,7 +162,11 @@
 
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
+        // Второе условие важно при прыжке по ссылке меню: блоки, которые
+        // остались выше экрана, посетитель уже «проехал» — если их не
+        // показать, при прокрутке вверх он упрётся в пустоту.
+        var passed = entry.boundingClientRect.top < 0;
+        if (!entry.isIntersecting && !passed) return;
         entry.target.classList.add('is-in');
         io.unobserve(entry.target);
       });

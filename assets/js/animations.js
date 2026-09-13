@@ -2,6 +2,12 @@
    HARMONY — animations.js
    GSAP + ScrollTrigger. Если GSAP не загрузился — контент
    остаётся видимым, сайт работает как обычная статика.
+
+   Правило, которое здесь нельзя нарушать: никаких сдвигов по
+   вертикали у блоков контента. Раньше блоки выезжали снизу и
+   на iOS зависали в промежуточном положении, наезжая друг на
+   друга. Двигаем только прозрачность, размытие и масштаб —
+   они не влияют на поток вёрстки.
    =========================================================== */
 (function () {
   'use strict';
@@ -21,7 +27,7 @@
 
   var isDesktop = window.matchMedia('(min-width: 900px)').matches;
 
-  /* ================= HERO: вступление ================= */
+  /* ================= ПЕРВЫЙ ЭКРАН ================= */
 
   // Заголовок анимируется построчно, поэтому сам h1 прячем не целиком —
   // иначе строки «проявятся» внутри невидимого родителя.
@@ -30,24 +36,39 @@
   var heroLines = qa('#hero .display__line');
 
   gsap.set(heroBits, { opacity: 0 });
-  gsap.set(heroLines, { opacity: 0 });
-  gsap.set('.hero__mic', { opacity: 0, scale: .94 });
-  gsap.set('.hero__rings span', { opacity: 0, scale: .82 });
+  gsap.set(heroLines, { opacity: 0, filter: 'blur(14px)' });
+  gsap.set('.hero__mic', { opacity: 0, scale: .93 });
   gsap.set('.hero__scroll', { opacity: 0 });
 
   function playHero() {
     var tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-    tl.to('.hero__rings span', { opacity: 1, scale: 1, duration: 1.3, stagger: .12, ease: 'power2.out' }, 0)
-      .to('.hero__mic', { opacity: 1, scale: 1, duration: 1.2 }, .1)
+    tl.to('.hero__mic', { opacity: 1, scale: 1, duration: 1.4, ease: 'power2.out' }, 0)
       .to(qa('#hero .kicker'), { opacity: 1, duration: .6 }, .15)
-      .to(heroLines, { opacity: 1, duration: .9, stagger: .11 }, .25)
+      // строки заголовка выходят из расфокуса — как будто наводят резкость
+      .to(heroLines, { opacity: 1, filter: 'blur(0px)', duration: 1, stagger: .13 }, .25)
       .to(qa('#hero .hero__lead, #hero .hero__cta, #hero .hero__facts'),
-          { opacity: 1, duration: .8, stagger: .12 }, .7)
-      .to('.hero__scroll', { opacity: 1, duration: .6 }, 1.2);
+          { opacity: 1, duration: .8, stagger: .12 }, .75)
+      .to('.hero__scroll', { opacity: 1, duration: .6 }, 1.3)
+      .add(countUp, .9);
 
-    // Логотип проявляется вместе с первым экраном
     tl.from('.header .logo__img', { opacity: 0, duration: .7 }, .1);
+  }
+
+  /* Цифры на первом экране набегают до своего значения */
+  function countUp() {
+    qa('.hero__facts b').forEach(function (el) {
+      var target = el.textContent.trim();
+      var num = parseInt(target.replace(/\D/g, ''), 10);
+      if (!num || target.indexOf(':') !== -1) return;   // «1:1» не считаем
+      var box = { v: 0 };
+      el.style.minWidth = el.getBoundingClientRect().width + 'px';
+      gsap.to(box, {
+        v: num, duration: 1.1, ease: 'power2.out',
+        onUpdate: function () { el.textContent = Math.round(box.v); },
+        onComplete: function () { el.textContent = target; }
+      });
+    });
   }
 
   // Ждём, пока уйдёт прелоадер
@@ -59,7 +80,7 @@
 
   if (typeof ScrollTrigger === 'undefined') return;
 
-  /* ================= ПАРАЛЛАКС ФОНА И ДЕКОРА ================= */
+  /* ================= ПАРАЛЛАКС ПОДСВЕТОК ================= */
 
   qa('[data-parallax]').forEach(function (el) {
     var speed = parseFloat(el.dataset.parallax) || .1;
@@ -75,12 +96,30 @@
     });
   });
 
-  // Круги медленно вращаются на десктопе
-  if (isDesktop) {
-    gsap.to('.bg-decor__rings', {
-      rotate: 26,
-      ease: 'none',
-      scrollTrigger: { trigger: document.body, start: 'top top', end: 'bottom bottom', scrub: 1.2 }
+  /* ================= БЛИК ЗА КУРСОРОМ ================= */
+  /* Стеклянные карточки подсвечиваются там, где курсор. Только на
+     десктопе и только при наведении — на телефонах смысла нет. */
+  if (isDesktop && window.matchMedia('(hover: hover)').matches) {
+    var glassCards = qa('.card, .track, .price, .teacher, .step, .sub, .terms, .gig');
+    var pending = null;
+    glassCards.forEach(function (el) {
+      el.classList.add('has-sheen');
+      var sheen = document.createElement('span');
+      sheen.className = 'sheen';
+      el.appendChild(sheen);
+      el.addEventListener('pointermove', function (e) {
+        if (pending) return;
+        pending = requestAnimationFrame(function () {
+          pending = null;
+          var r = el.getBoundingClientRect();
+          el.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+          el.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+        });
+      });
+      el.addEventListener('pointerleave', function () {
+        el.style.setProperty('--mx', '50%');
+        el.style.setProperty('--my', '-20%');
+      });
     });
   }
 

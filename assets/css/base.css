@@ -191,44 +191,25 @@ p:last-child{ margin-bottom:0; }
   overflow:hidden;
 }
 
-/* Концентрические круги — фирменный приём аккаунта */
-.bg-decor__rings{
+/* Две мягкие подсветки вместо колец, полос и зерна: фон дышит,
+   но не спорит с содержимым. Кольца ушли ещё и потому, что дублировали
+   лучи на самой картинке микрофона. */
+.bg-decor__glow{
   position:absolute;
-  top:-15vh; right:-30vw;
-  width:110vw; height:110vw;
-  max-width:1100px; max-height:1100px;
+  top:-20vh; right:-18vw;
+  width:min(120vw, 900px);
+  aspect-ratio:1;
   border-radius:50%;
-  background:
-    repeating-radial-gradient(circle at center,
-      rgba(47,214,232,.075) 0 1px,
-      transparent 1px 42px);
-  opacity:.85;
+  background:radial-gradient(circle at center,
+    rgba(47,214,232,.13), rgba(47,214,232,.05) 42%, transparent 68%);
+  filter:blur(28px);
 }
-.bg-decor__rings--2{
+.bg-decor__glow--2{
   top:auto; right:auto;
-  bottom:-25vh; left:-35vw;
-  background:
-    repeating-radial-gradient(circle at center,
-      rgba(47,214,232,.055) 0 1px,
-      transparent 1px 34px);
-}
-
-/* Вертикальные полосы — «звуковая дорожка» */
-.bg-decor__bars{
-  position:absolute; inset:0;
-  background-image:repeating-linear-gradient(
-    90deg,
-    rgba(255,255,255,.028) 0 1px,
-    transparent 1px 88px);
-  mask-image:linear-gradient(180deg, transparent, #000 25%, #000 75%, transparent);
-  -webkit-mask-image:linear-gradient(180deg, transparent, #000 25%, #000 75%, transparent);
-}
-
-/* Зерно поверх фона */
-.bg-decor__noise{
-  position:absolute; inset:-50%;
-  opacity:.05;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  bottom:-26vh; left:-24vw;
+  width:min(110vw, 780px);
+  background:radial-gradient(circle at center,
+    rgba(79,140,255,.11), rgba(47,214,232,.04) 45%, transparent 70%);
 }
 
 /* Секции лежат над декором. Шапку сюда не включаем — у неё своя
@@ -309,14 +290,22 @@ main, .footer, .marquee{ position:relative; z-index:1; }
 .js-anim .reveal,
 .js-anim .reveal-stagger{
   opacity:0;
-  transition:opacity .5s var(--ease);
+  filter:blur(9px);
+  transform:scale(.988);
+  transition:opacity .6s var(--ease), filter .6s var(--ease), transform .6s var(--ease);
 }
 .js-anim .reveal.is-in,
-.js-anim .reveal-stagger.is-in{ opacity:1; }
+.js-anim .reveal-stagger.is-in{
+  opacity:1;
+  filter:blur(0);
+  transform:none;
+}
 
 /* Первый экран ведёт GSAP-таймлайн; если GSAP не загрузился —
-   эти элементы всё равно остаются видимыми */
-.js-anim #hero .reveal{ opacity:1; }
+   эти элементы всё равно остаются видимыми.
+   Размытие и масштаб здесь тоже снимаем: таймлайн трогает только
+   прозрачность, и без этого сброса первый экран остался бы мутным. */
+.js-anim #hero .reveal{ opacity:1; filter:none; transform:none; }
 
 /* ---------- ДОСТУПНОСТЬ: меньше движения ---------- */
 

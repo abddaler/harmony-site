@@ -15,10 +15,18 @@
   transition:background-color .35s var(--ease), padding .35s var(--ease), box-shadow .35s;
 }
 .header.is-stuck{
+  /* плотный фон — запасной вариант, если размытие не поддерживается */
   background:#111827;
   background:color-mix(in srgb, var(--ink) 97%, transparent);
   padding:9px 0;
   box-shadow:0 1px 0 rgba(47,214,232,.16);
+}
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))){
+  .header.is-stuck{
+    background:color-mix(in srgb, var(--ink) 62%, transparent);
+    -webkit-backdrop-filter:blur(20px) saturate(1.4);
+    backdrop-filter:blur(20px) saturate(1.4);
+  }
 }
 
 .header__inner{
@@ -169,24 +177,6 @@ body.nav-open{ overflow:hidden; }
   /* тени нет: на тёмном фоне чёрное размытие не видно, а браузер
      всё равно пересчитывал бы его на всю картинку при каждом кадре */
 }
-
-/* Концентрические кольца вместо размытого свечения —
-   тот же приём, что в оформлении аккаунта */
-.hero__rings{
-  position:absolute;
-  inset:0;
-  display:grid;
-  place-items:center;
-  z-index:1;
-}
-.hero__rings span{
-  position:absolute;
-  border-radius:50%;
-  border:1px solid rgba(47,214,232,.42);
-}
-.hero__rings span:nth-child(1){ width:min(74vw, 430px); aspect-ratio:1; }
-.hero__rings span:nth-child(2){ width:min(86vw, 505px); aspect-ratio:1; border-color:rgba(47,214,232,.24); }
-.hero__rings span:nth-child(3){ width:min(98vw, 580px); aspect-ratio:1; border-color:rgba(47,214,232,.12); }
 
 .hero__scroll{
   position:absolute;
@@ -1359,4 +1349,64 @@ body.nav-open{ overflow:hidden; }
 
   .teacher:hover .teacher__photo::before,
   .teacher:hover .teacher__photo::after{ transform:none; }
+}
+
+/* ================= СТЕКЛО =================
+   Один слой на все панели. Порядок важен: правило идёт последним,
+   поэтому перекрывает собственные фоны карточек выше по файлу.
+
+   Сначала задаём плотный фон — он же запасной вариант там, где
+   размытие не поддерживается. Полупрозрачность включаем только
+   внутри @supports, иначе на старых браузерах карточка станет дырой. */
+
+.card, .track, .step, .price, .sub, .terms, .gig,
+.faq__item, .myths, .first__cta, .booking__box{
+  position:relative;
+  background:var(--bg-2);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--radius);
+}
+
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))){
+  .card, .track, .step, .price, .sub, .terms, .gig,
+  .faq__item, .myths, .first__cta{
+    background:linear-gradient(158deg, rgba(255,255,255,.075), rgba(255,255,255,.025));
+    -webkit-backdrop-filter:blur(18px) saturate(1.25);
+    backdrop-filter:blur(18px) saturate(1.25);
+  }
+}
+
+/* Акцентные панели остаются бирюзовыми, но тоже сквозь стекло */
+.sub, .myths, .first__cta{ border-color:var(--cyan-line); }
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))){
+  .sub, .myths, .first__cta{
+    background:linear-gradient(158deg, rgba(47,214,232,.11), rgba(47,214,232,.03));
+  }
+}
+
+/* Светящаяся кромка по верхнему краю — то, что и читается как стекло */
+.card::after, .track::after, .step::after, .price::after,
+.sub::after, .terms::after, .gig::after, .myths::after, .first__cta::after{
+  content:'';
+  position:absolute; left:0; right:0; top:0; height:1px;
+  border-radius:inherit;
+  pointer-events:none;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent);
+}
+
+/* Блик за курсором. Отдельный элемент, а не псевдоэлемент:
+   ::before у карточек уже занят акцентной полоской слева. */
+.sheen{
+  position:absolute; inset:0;
+  border-radius:inherit;
+  pointer-events:none;
+  opacity:0;
+  transition:opacity .4s var(--ease);
+  background:radial-gradient(300px circle at var(--mx, 50%) var(--my, -20%),
+             rgba(47,214,232,.15), transparent 68%);
+}
+.has-sheen:hover > .sheen{ opacity:1; }
+
+@media (prefers-reduced-motion: reduce){
+  .sheen{ display:none; }
 }
