@@ -907,20 +907,6 @@ body.nav-open{ overflow:hidden; }
 /* Широкий общий план на всю ширину блока — по нему читается масштаб зала */
 .gig__photo--wide{ grid-column:1 / -1; }
 .gig__photo--wide img{ aspect-ratio:16/9; }
-/* Подпись лежит поверх кадра. Пока в вёрстке были заглушки, фон под ней
-   был ровный и тёмный; на живых фото низ кадра бывает светлым — бирюза
-   на нём пропадает. Мягкая подложка снизу решает это для любого снимка. */
-.gig__photo figcaption{
-  position:absolute;
-  left:0; right:0; bottom:0;
-  padding:26px 12px 10px;
-  text-align:center;
-  font-family:var(--font-display);
-  font-size:.7rem;
-  letter-spacing:.12em;
-  color:var(--cyan);
-  background:linear-gradient(to top, rgba(14,21,35,.82), rgba(14,21,35,.5) 55%, transparent);
-}
 
 .reviews__note{
   margin-top:38px;
