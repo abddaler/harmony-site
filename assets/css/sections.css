@@ -1396,16 +1396,28 @@ body.nav-open{ overflow:hidden; }
 
 /* Блик за курсором. Отдельный элемент, а не псевдоэлемент:
    ::before у карточек уже занят акцентной полоской слева. */
+/* Координаты объявлены через @property, иначе браузер считает их простым
+   текстом и не умеет анимировать: блик прыгал бы за курсором рывками.
+   Там, где @property не поддержан, работают запасные значения в var(). */
+@property --mx{ syntax:'<percentage>'; inherits:true; initial-value:50%; }
+@property --my{ syntax:'<percentage>'; inherits:true; initial-value:-20%; }
+
 .sheen{
   position:absolute; inset:0;
   border-radius:inherit;
   pointer-events:none;
   opacity:0;
-  transition:opacity .4s var(--ease);
+  /* Гаснет заметно дольше, чем загорается. Когда курсор идёт с одной
+     карточки на соседнюю, старый блик ещё тает, а новый уже разгорается —
+     в зазоре между карточками не остаётся пустого кадра. */
+  transition:opacity .5s var(--ease), --mx .16s linear, --my .16s linear;
   background:radial-gradient(300px circle at var(--mx, 50%) var(--my, -20%),
              rgba(47,214,232,.15), transparent 68%);
 }
-.has-sheen:hover > .sheen{ opacity:1; }
+.has-sheen:hover > .sheen{
+  opacity:1;
+  transition:opacity .22s var(--ease), --mx .16s linear, --my .16s linear;
+}
 
 @media (prefers-reduced-motion: reduce){
   .sheen{ display:none; }

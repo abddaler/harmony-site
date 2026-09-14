@@ -101,24 +101,43 @@
      десктопе и только при наведении — на телефонах смысла нет. */
   if (isDesktop && window.matchMedia('(hover: hover)').matches) {
     var glassCards = qa('.card, .track, .price, .teacher, .step, .sub, .terms, .gig');
-    var pending = null;
     glassCards.forEach(function (el) {
       el.classList.add('has-sheen');
       var sheen = document.createElement('span');
       sheen.className = 'sheen';
       el.appendChild(sheen);
+
+      // счётчик кадра свой у каждой карточки: с общим на все соседние
+      // карточки перебивали друг другу кадр, и блик дёргался на переходе
+      var pending = null;
+
+      function place(e) {
+        var r = el.getBoundingClientRect();
+        el.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+        el.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+      }
+
+      el.addEventListener('pointerenter', function (e) {
+        // Блик должен проявиться сразу под курсором. Если оставить плавность
+        // координат, он поедет к нему из точки, где курсор был в прошлый раз.
+        sheen.style.transitionProperty = 'opacity';
+        place(e);
+        requestAnimationFrame(function () { sheen.style.transitionProperty = ''; });
+      });
+
       el.addEventListener('pointermove', function (e) {
         if (pending) return;
         pending = requestAnimationFrame(function () {
           pending = null;
-          var r = el.getBoundingClientRect();
-          el.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
-          el.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+          place(e);
         });
       });
+
       el.addEventListener('pointerleave', function () {
-        el.style.setProperty('--mx', '50%');
-        el.style.setProperty('--my', '-20%');
+        // Координаты не трогаем: раньше блик прыгал в верх карточки и уже
+        // оттуда гас — со стороны это читалось как обрыв. Теперь он просто
+        // растворяется там, где его оставил курсор.
+        if (pending) { cancelAnimationFrame(pending); pending = null; }
       });
     });
   }
