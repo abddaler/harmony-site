@@ -88,8 +88,9 @@ L.append('| ID | Что это | Текст |')
 L.append('|---|---|---|')
 for i,n,t in META: L.append('| %s | %s | %s |' % (i, n, cell(t)))
 
+# порядок как на странице: цены идут после «Вопросов»
 order = ['head','header','hero','marquee','tracks','first','method','teachers',
-         'reviews','prices','app','faq','contacts','footer']
+         'reviews','app','faq','prices','contacts','footer']
 for sec in order:
     rs = [r for r in rows if r['section']==sec]
     if not rs: continue
@@ -100,4 +101,16 @@ for sec in order:
         L.append('| %s | %s | %s |' % (r['id'], label(r), cell(r['html'])))
 
 open('harmony-texts.md','w',encoding='utf-8').write('\n'.join(L)+'\n')
+
+# та же таблица в CSV — для тех, кто правит в Excel или Google Таблицах.
+# Пишем её здесь же, иначе файлы разъезжаются после правок вёрстки.
+import csv
+with open('harmony-texts.csv','w',encoding='utf-8-sig',newline='') as f:
+    w = csv.writer(f, quoting=csv.QUOTE_ALL)
+    w.writerow(['ID','Раздел','Что это','Текст'])
+    for i,n,t in META: w.writerow([i,'Метатеги',n,cell(t)])
+    for sec in order:
+        for r in [x for x in rows if x['section']==sec]:
+            w.writerow([r['id'], r['name'], label(r), cell(r['html'])])
+
 print('строк в таблице:', len(rows)+len(META))
