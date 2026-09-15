@@ -725,6 +725,28 @@ body.nav-open{ overflow:hidden; }
   margin:0 auto 20px;
   display:grid;
   place-items:center;
+  border-radius:50%;
+}
+/* На наведении от портрета расходятся две полоски. Это отдельные элементы,
+   а не тень: тень со spread даёт размытый ореол, а нужна именно тонкая
+   линия. ::before и ::after занять нельзя — на них два постоянных кольца,
+   которые должны оставаться на месте. Волны вне потока, соседние карточки
+   от них не двигаются. */
+.teacher__ripple{
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  border:2px solid var(--cyan);
+  opacity:0;
+  pointer-events:none;
+}
+.teacher:hover .teacher__ripple{ animation:teacherRipple 2s var(--ease) infinite; }
+/* вторая волна выходит на середине цикла первой — идут друг за другом */
+.teacher:hover .teacher__ripple:nth-of-type(2){ animation-delay:1s; }
+@keyframes teacherRipple{
+  0%  { transform:scale(1);    opacity:.75; }
+  80% { opacity:0; }
+  100%{ transform:scale(1.45); opacity:0; }
 }
 /* внешнее и среднее кольцо */
 .teacher__photo::before,
@@ -733,7 +755,7 @@ body.nav-open{ overflow:hidden; }
   position:absolute;
   border-radius:50%;
   border:2px solid var(--cyan);
-  transition:transform .5s var(--ease);
+  transition:transform .5s var(--ease), opacity .5s var(--ease);
 }
 .teacher__photo::before{ inset:0; opacity:.9; }
 .teacher__photo::after{ inset:6.5%; opacity:.55; }
@@ -746,8 +768,10 @@ body.nav-open{ overflow:hidden; }
   object-position:center top;
   background:#f2f2f0;
 }
-.teacher:hover .teacher__photo::before{ transform:scale(1.045); }
-.teacher:hover .teacher__photo::after{ transform:scale(1.02); }
+/* Кольца расходятся сильнее прежнего (было 1.045 / 1.02) и подсвечиваются:
+   владелец просил, чтобы отклик на наведение читался явно. */
+.teacher:hover .teacher__photo::before{ transform:scale(1.075); opacity:1; }
+.teacher:hover .teacher__photo::after{ transform:scale(1.04); opacity:.8; }
 
 .teacher__name{
   font-family:var(--font-display);

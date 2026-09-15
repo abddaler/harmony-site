@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <title>Harmony</title>
-  <circle cx="256" cy="256" r="256" fill="#141c2e"/>
-  <g fill="#ffffff" transform="translate(256 256) scale(1.12) translate(-256 -203)">
+  <g fill="#2fd6e8" transform="translate(256 256) scale(1.12) translate(-256 -203)">
     <circle cx="146" cy="72" r="19.5"/>
     <rect x="130" y="105" width="32" height="248"/>
     <circle cx="201" cy="105" r="19.5"/>

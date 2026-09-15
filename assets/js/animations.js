@@ -84,12 +84,21 @@
 
   qa('[data-parallax]').forEach(function (el) {
     var speed = parseFloat(el.dataset.parallax) || .1;
-    gsap.to(el, {
+    var trigger = el.closest('section') || document.body;
+
+    // Отсчёт для того, что видно сразу, должен начинаться с текущего места.
+    // При 'top bottom' блок первого экрана считается уже наполовину
+    // пройденным, и микрофон открывался сдвинутым вниз примерно на 16 px —
+    // из-за этого он не совпадал по центру с текстом слева.
+    var docTop = trigger.getBoundingClientRect().top + window.pageYOffset;
+    var visibleAtLoad = docTop < window.innerHeight;
+
+    gsap.fromTo(el, { yPercent: 0 }, {
       yPercent: speed * 100,
       ease: 'none',
       scrollTrigger: {
-        trigger: el.closest('section') || document.body,
-        start: 'top bottom',
+        trigger: trigger,
+        start: visibleAtLoad ? 'top top' : 'top bottom',
         end: 'bottom top',
         scrub: true
       }
