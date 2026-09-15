@@ -346,8 +346,14 @@
 <div class="quick" aria-label="Быстрая связь">
   <a class="quick__btn quick__btn--tg" href="https://t.me/harmonyvocal_uz"
      target="_blank" rel="noopener" aria-label="Написать в Telegram" data-quick="telegram">
+    <!-- Самолётик оптически тяжелее справа: замер центра тяжести дал сдвиг
+         на 2.3 единицы из 24 вправо и 0.5 вверх, и в круглой кнопке это
+         читалось как «иконка не по центру». Компенсируем сдвигом, заодно
+         чуть уменьшаем, чтобы кончик хвоста не срезался краем viewBox. -->
     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <path d="M21.9 4.3 18.9 19.1c-.2 1-.8 1.2-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.5-.9.5l.3-4.6 8.4-7.6c.4-.3-.1-.5-.6-.2L7.3 13.2 2.7 11.8c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.5.2 1 .9z"/>
+      <g transform="translate(12 12) scale(.95) translate(-12 -12) translate(-2.3 .5)">
+        <path d="M21.9 4.3 18.9 19.1c-.2 1-.8 1.2-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.5-.9.5l.3-4.6 8.4-7.6c.4-.3-.1-.5-.6-.2L7.3 13.2 2.7 11.8c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.5.2 1 .9z"/>
+      </g>
     </svg>
   </a>
   <a class="quick__btn quick__btn--ig" href="https://www.instagram.com/harmonyvocal.uz"
