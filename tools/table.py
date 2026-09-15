@@ -30,7 +30,8 @@ BY_EL = {
  'p.place__who':'Педагоги филиала','a.place__route':'Ссылка на маршрут',
  'span.contacts__label':'Подпись контакта','p.contacts__value':'Значение контакта',
  'a.social':'Соцсеть','button.map__tab':'Вкладка карты',
- 'p.footer__tagline':'Описание в футере',
+ 'p.footer__tagline':'Описание в футере','p.footer__legal':'Ссылки на документы в футере',
+ 'p.footer__copy':'Копирайт в футере','p.footer__addr':'Адреса в футере',
 }
 BY_PARENT = {
  'ul.track__list':'Пункт списка направления','details.faq__item':None,
@@ -41,6 +42,7 @@ BY_PARENT = {
  'figure.gig__photo':'Подпись под фото концерта','p.first__price-line':'Цифра под шагами',
  'p.sub__formula':'Формула абонемента','div.footer__socials':'Соцсеть в футере',
  'div.gig__text':'Текст про концерты','p.contacts__value':'Телефон',
+
  'div.map-stub':'Надпись при загрузке карты','p.footer__phone':'Телефон в футере',
 }
 def label(r):

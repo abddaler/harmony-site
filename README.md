@@ -104,13 +104,16 @@ Hero → Направления (современный / экстрим / му�
 ## Структура
 
 ```
-index.html
+index.html           главная
+privacy.html         политика конфиденциальности
+offer.html           публичная оферта
 assets/
   css/
     fonts.css        локальные Oswald + Inter (latin + cyrillic)
     base.css         переменные, типографика, кнопки, фоновый декор
     sections.css     стили по секциям
     responsive.css   брейкпоинты 600 / 900 / 1200
+    doc.css          оформление правовых страниц
   js/
     main.js          меню, модалка записи, слайдер, FAQ, ленивая карта
     animations.js    GSAP + ScrollTrigger

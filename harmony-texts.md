@@ -342,5 +342,6 @@
 | FOOT-10 | Пункт меню в футере | Контакты |
 | FOOT-11 | Соцсеть в футере | @harmonyvocal.uz |
 | FOOT-12 | Соцсеть в футере | Telegram |
-| FOOT-13 | p | © <span id="year">2026</span> Harmony Vocal Mastery Studio |
-| FOOT-14 | p | Амира Темура, 30 · Юсуф Хос Ходжиба, 43 |
+| FOOT-13 | Копирайт в футере | © <span id="year">2026</span> Harmony Vocal Mastery Studio |
+| FOOT-14 | Ссылки на документы в футере | <a href="privacy.html">Политика конфиденциальности</a> · <a href="offer.html">Публичная оферта</a> |
+| FOOT-15 | Адреса в футере | Амира Темура, 30 · Юсуф Хос Ходжиба, 43 |
