@@ -382,7 +382,11 @@ body.nav-open{ overflow:hidden; }
 }
 .track__sub{ color:var(--muted); font-size:.95rem; margin-bottom:20px; }
 
-.track__list{ margin-bottom:20px; }
+/* Список растягивается на свободную высоту — за счёт этого подпись и
+   кнопка прижимаются к низу карточки и встают на один уровень во всех
+   трёх колонках. Раньше карточки были одной высоты, а кнопки внутри
+   плавали: разброс доходил до 165 px. */
+.track__list{ margin-bottom:20px; flex:1 1 auto; }
 .track__list li{
   position:relative;
   padding:9px 0 9px 26px;
@@ -397,7 +401,16 @@ body.nav-open{ overflow:hidden; }
   background:var(--cyan);
 }
 
-.track__meta,
+/* Подпись с уточнением под списком: «С 7–8 лет», «Ведёт Камила».
+   Здесь была висячая запятая — селектор склеивался со следующим
+   правилом, и подпись молча получала стили секции «Первое занятие»:
+   display:grid, свой gap и отступ. */
+.track__meta{
+  margin:0 0 16px;
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.4;
+}
 
 /* ================= ПЕРВОЕ ЗАНЯТИЕ ================= */
 
