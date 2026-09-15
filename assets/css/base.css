@@ -81,6 +81,44 @@ p:last-child{ margin-bottom:0; }
 
 ::selection{ background:var(--cyan); color:var(--ink); }
 
+/* ---------- ВЫДЕЛЕНИЕ ТЕКСТА ----------
+   Запрещаем там, где выделять нечего и где оно выглядит мусором: крупные
+   заголовки (у них поверх лежит копия с шумовой маской, и на выделении
+   вместо фактуры получается бирюзовая заливка во всю строку), кнопки,
+   меню, бегущая строка, служебные подписи и элементы управления.
+
+   Везде, где текст можно захотеть скопировать, выделение оставлено:
+   адреса филиалов, телефон, цены, описания направлений и педагогов,
+   ответы в FAQ, правовые страницы. Люди копируют адрес, чтобы вставить
+   его в карты или такси — отнимать это ради косметики не стоит. */
+.display,
+.display__line,
+.kicker,
+.btn,
+.header,
+.nav,
+.footer__nav,
+.marquee,
+.faq__item > summary,
+.map__tab,
+.slider__dots,
+.slider__arrow,
+.quick,
+.preloader,
+.track__tag,
+.price__badge,
+.place__num,
+.sub__formula,
+.hero__facts,
+.hero__scroll,
+.teacher__ripple{
+  -webkit-user-select:none;
+  user-select:none;
+}
+
+/* Серая вспышка при касании на мобильных — у нас свои состояния нажатия */
+a, button, summary, .btn{ -webkit-tap-highlight-color:transparent; }
+
 :focus-visible{
   outline:2px solid var(--cyan);
   outline-offset:3px;
