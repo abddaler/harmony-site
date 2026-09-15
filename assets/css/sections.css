@@ -222,7 +222,6 @@ body.nav-open{ overflow:hidden; }
 .marquee__track{
   display:flex;
   align-items:center;
-  gap:22px;
   width:max-content;
   animation:marquee 34s linear infinite;
   font-family:var(--font-display);
@@ -232,10 +231,20 @@ body.nav-open{ overflow:hidden; }
   color:var(--white);
   white-space:nowrap;
 }
+/* Интервалы живут внутри группы, между группами их нет: замыкающий отступ
+   несёт сама группа. Иначе шаг анимации не совпал бы с шириной группы —
+   ровно на этом лента раньше дёргалась на стыке. */
+.marquee__group{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  padding-right:22px;
+}
 .marquee__track i{ color:var(--cyan); font-style:normal; font-size:.6rem; }
+/* -20% — это ровно одна группа из пяти */
 @keyframes marquee{
   from{ transform:translateX(0); }
-  to  { transform:translateX(-50%); }
+  to  { transform:translateX(-20%); }
 }
 
 /* ================= МЕТОД ================= */
@@ -1387,9 +1396,10 @@ body.nav-open{ overflow:hidden; }
 
 /* Блик за курсором. Отдельный элемент, а не псевдоэлемент:
    ::before у карточек уже занят акцентной полоской слева. */
-/* Координаты объявлены через @property, иначе браузер считает их простым
-   текстом и не умеет анимировать: блик прыгал бы за курсором рывками.
-   Там, где @property не поддержан, работают запасные значения в var(). */
+/* Координаты объявлены через @property, чтобы браузер считал их числами,
+   а не текстом. Плавности по ним намеренно нет: точку двигает сам курсор,
+   обновление идёт раз в кадр из animations.js. Переход по --mx/--my тут
+   когда-то стоял и читался как задержка — блик догонял курсор. */
 @property --mx{ syntax:'<percentage>'; inherits:true; initial-value:50%; }
 @property --my{ syntax:'<percentage>'; inherits:true; initial-value:-20%; }
 
@@ -1401,13 +1411,13 @@ body.nav-open{ overflow:hidden; }
   /* Гаснет заметно дольше, чем загорается. Когда курсор идёт с одной
      карточки на соседнюю, старый блик ещё тает, а новый уже разгорается —
      в зазоре между карточками не остаётся пустого кадра. */
-  transition:opacity .5s var(--ease), --mx .16s linear, --my .16s linear;
+  transition:opacity .5s var(--ease);
   background:radial-gradient(300px circle at var(--mx, 50%) var(--my, -20%),
              rgba(47,214,232,.15), transparent 68%);
 }
 .has-sheen:hover > .sheen{
   opacity:1;
-  transition:opacity .22s var(--ease), --mx .16s linear, --my .16s linear;
+  transition:opacity .22s var(--ease);
 }
 
 @media (prefers-reduced-motion: reduce){

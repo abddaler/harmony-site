@@ -100,7 +100,9 @@
   /* Стеклянные карточки подсвечиваются там, где курсор. Только на
      десктопе и только при наведении — на телефонах смысла нет. */
   if (isDesktop && window.matchMedia('(hover: hover)').matches) {
-    var glassCards = qa('.card, .track, .price, .teacher, .step, .sub, .terms, .gig');
+    // .teacher сюда не входит: у карточки педагога нет фона, и блик
+    // обрисовывал прямоугольник там, где визуально карточки нет
+    var glassCards = qa('.card, .track, .price, .step, .sub, .terms, .gig');
     glassCards.forEach(function (el) {
       el.classList.add('has-sheen');
       var sheen = document.createElement('span');
@@ -117,13 +119,9 @@
         el.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
       }
 
-      el.addEventListener('pointerenter', function (e) {
-        // Блик должен проявиться сразу под курсором. Если оставить плавность
-        // координат, он поедет к нему из точки, где курсор был в прошлый раз.
-        sheen.style.transitionProperty = 'opacity';
-        place(e);
-        requestAnimationFrame(function () { sheen.style.transitionProperty = ''; });
-      });
+      // Точку ставим сразу на входе, иначе первый кадр блик покажется там,
+      // где курсор был в прошлое наведение.
+      el.addEventListener('pointerenter', place);
 
       el.addEventListener('pointermove', function (e) {
         if (pending) return;

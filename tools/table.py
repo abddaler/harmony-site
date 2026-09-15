@@ -34,6 +34,7 @@ BY_EL = {
 }
 BY_PARENT = {
  'ul.track__list':'Пункт списка направления','details.faq__item':None,
+ 'div.marquee__group':'Слово в бегущей строке',
  'div.marquee__track':'Слово в бегущей строке','nav.footer__nav':'Пункт меню в футере',
  'ul.terms__list':'Пункт условий','ul.app__features':'Пункт списка приложения',
  'ul.hero__facts':'Цифра на первом экране','li.step':None,'article.card':None,
