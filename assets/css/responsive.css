@@ -141,6 +141,7 @@
   .header.is-stuck .logo__img{ height:30px; }
   .footer__logo{ height:52px; }
   .preloader__logo{ height:44px; }
+  .preloader__ring{ width:330px; }
 
   /* Приложение: текст + телефон */
   .app__inner{
