@@ -1465,17 +1465,28 @@ body.nav-open{ overflow:hidden; }
   flex-direction:column;
   gap:10px;
 }
+/* уступают место, когда на экране настоящая кнопка записи */
+.quick{ transition:opacity .3s var(--ease), transform .3s var(--ease); }
+.quick.is-away{
+  opacity:0;
+  transform:translateY(14px);
+  pointer-events:none;
+}
 .quick__btn{
   display:grid;
   place-items:center;
-  width:44px;
-  height:44px;
+  width:48px;
+  height:48px;
   border-radius:50%;
   background:var(--bg-2);
   border:1px solid var(--cyan-line);
   color:var(--cyan);
   box-shadow:0 6px 18px rgba(0,0,0,.35);
-  transition:transform .25s var(--ease), border-color .25s, color .25s;
+  /* в покое чуть приглушены, чтобы не спорить с контентом,
+     при касании и наведении разгораются в полную силу */
+  opacity:.8;
+  transition:transform .25s var(--ease), border-color .25s,
+             color .25s, opacity .25s;
 }
 @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))){
   .quick__btn{
@@ -1485,8 +1496,10 @@ body.nav-open{ overflow:hidden; }
   }
 }
 .quick__btn svg{ width:21px; height:21px; fill:currentColor; }
-.quick__btn:hover{ transform:translateY(-2px); border-color:var(--cyan); color:var(--white); }
-.quick__btn:focus-visible{ outline:2px solid var(--cyan); outline-offset:3px; }
+.quick__btn:hover{ opacity:1; transform:translateY(-2px); border-color:var(--cyan); color:var(--white); }
+/* на телефоне наведения нет — «загорание» даёт само касание */
+.quick__btn:active{ opacity:1; border-color:var(--cyan); color:var(--white); transform:scale(.94); }
+.quick__btn:focus-visible{ opacity:1; outline:2px solid var(--cyan); outline-offset:3px; }
 
 /* при открытом мобильном меню кнопки убираем — иначе висят поверх него */
 body.nav-open .quick{ display:none; }

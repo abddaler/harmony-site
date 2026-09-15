@@ -186,6 +186,54 @@
     btn.addEventListener('click', function () { closeNav(); });
   });
 
+  /* ================= ПЛАВАЮЩИЕ КНОПКИ СВЯЗИ ================= */
+  /* Убираем их только тогда, когда кнопка записи реально оказывается под
+     ними: на телефоне такие кнопки во всю ширину, и плавающие ложились
+     поверх главного действия страницы.
+
+     Сначала прятали по одному тому, что кнопка записи видна на экране, —
+     но кнопок записи одиннадцать, и почти на любой прокрутке какая-то из
+     них в кадре. Плавающие пропадали насовсем и теряли смысл. Поэтому
+     считаем именно пересечение прямоугольников. */
+  (function initQuick() {
+    var quick = $('.quick');
+    if (!quick) return;
+
+    var targets = $$('[data-booking]');
+    if (!targets.length) return;
+
+    var pending = false;
+    var GAP = 12;   // небольшой зазор, чтобы кнопки не липли вплотную
+
+    function covered() {
+      var q = quick.getBoundingClientRect();
+      for (var i = 0; i < targets.length; i++) {
+        var r = targets[i].getBoundingClientRect();
+        if (!r.width || !r.height) continue;
+        if (r.bottom < 0 || r.top > window.innerHeight) continue;   // вне экрана
+        if (r.right  < q.left - GAP || r.left > q.right  + GAP) continue;
+        if (r.bottom < q.top  - GAP || r.top  > q.bottom + GAP) continue;
+        return true;
+      }
+      return false;
+    }
+
+    function update() {
+      pending = false;
+      quick.classList.toggle('is-away', covered());
+    }
+
+    function schedule() {
+      if (pending) return;
+      pending = true;
+      requestAnimationFrame(update);
+    }
+
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    update();
+  })();
+
   /* ================= КАРТА ФИЛИАЛОВ ================= */
   /* Грузится лениво: iframe появляется, когда блок подходит к экрану.
      Вкладки переключают филиал. */
