@@ -1488,8 +1488,8 @@ body.nav-open{ overflow:hidden; }
 .quick__btn{
   display:grid;
   place-items:center;
-  width:48px;
-  height:48px;
+  width:64px;
+  height:64px;
   border-radius:50%;
   background:var(--bg-2);
   border:1px solid var(--cyan-line);
@@ -1508,7 +1508,7 @@ body.nav-open{ overflow:hidden; }
     backdrop-filter:blur(12px) saturate(1.2);
   }
 }
-.quick__btn svg{ width:21px; height:21px; fill:currentColor; }
+.quick__btn svg{ width:28px; height:28px; fill:currentColor; }
 .quick__btn:hover{ opacity:1; transform:translateY(-2px); border-color:var(--cyan); color:var(--white); }
 /* на телефоне наведения нет — «загорание» даёт само касание */
 .quick__btn:active{ opacity:1; border-color:var(--cyan); color:var(--white); transform:scale(.94); }

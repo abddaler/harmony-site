@@ -167,10 +167,8 @@
   .hero__title{ font-size:clamp(3.6rem, 5.4vw, 6.6rem); }
   .section__title{ font-size:clamp(3rem, 4.6vw, 4.6rem); }
   .marquee__track{ font-size:1.15rem; }
-  /* на десктопе кнопки связи чуть крупнее и дальше от края */
+  /* на десктопе размер тот же, только отступ от края больше */
   .quick{ right:22px; bottom:22px; gap:12px; }
-  .quick__btn{ width:52px; height:52px; }
-  .quick__btn svg{ width:24px; height:24px; }
   .marquee__group{ gap:28px; padding-right:28px; }
 }
 
