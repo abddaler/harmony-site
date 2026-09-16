@@ -1076,17 +1076,6 @@ body.nav-open{ overflow:hidden; }
   object-fit:contain;
   display:block;
 }
-.slide figcaption{
-  position:absolute;
-  left:0; right:0; bottom:14px;
-  text-align:center;
-  font-family:var(--font-display);
-  font-size:.72rem;
-  letter-spacing:.14em;
-  color:var(--cyan);
-  text-shadow:0 2px 8px rgba(0,0,0,.9);
-}
-
 /* Стрелки */
 .slider__arrow{
   position:absolute;
