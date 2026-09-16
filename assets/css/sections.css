@@ -1063,11 +1063,17 @@ body.nav-open{ overflow:hidden; }
   position:relative;
   margin:0;
   height:100%;
-  background:#1a2135;
+  /* фон подобран по кромке самих скриншотов (медиана — 16,23,38): при
+     contain сверху и снизу остаётся по 18 px поля, и на этом цвете шва
+     не видно */
+  background:#101726;
 }
+/* contain, а не cover. Скриншоты 520×1044 (9:18.07), а экран макета
+   примерно 9:19.3 — при cover срезало по 9 px с каждой стороны, это
+   6% ширины: слева уходил край заголовка, справа кнопка закрытия. */
 .slide img{
   width:100%; height:100%;
-  object-fit:cover;
+  object-fit:contain;
   display:block;
 }
 .slide figcaption{
